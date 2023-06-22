@@ -10,6 +10,10 @@ import Section from './Section';
 import React, { useEffect, useState } from 'react';
 import CoverPhoto from '../photoComponents/CoverPhoto';
 
+//Photos
+import OBoard from '../../pictures/O-Board_Pic.png';
+import EBoard from '../../pictures/E-Board_Pic.png';
+
 
 
 const MainPage = (props) => {
@@ -20,14 +24,33 @@ const MainPage = (props) => {
   const scholarShip = "Scholarship";
 
   //Section Paragraphs
-  const [fileContent, setFileContent] = useState('');
+
+  //Constitution Text
+  const [constitutionFile, setConstitutionFile] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch('/textfiles/Constitution.txt');
         const text = await response.text();
-        setFileContent(text);
+        setConstitutionFile(text);
+      } catch (error) {
+        console.error('Error fetching file:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+    //ScholarShip Text
+    const [scholarShipFile, setScholarShipFile] = useState('');
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/textfiles/ScholarShip.txt');
+        const text = await response.text();
+        setScholarShipFile(text);
       } catch (error) {
         console.error('Error fetching file:', error);
       }
@@ -39,10 +62,10 @@ const MainPage = (props) => {
     return <div>
         <CoverPhoto /*Calls the CoverPhoto Component*//> 
 
-        <Section text = {events} subText = "Test"/>
-        <Section text = {boardMembers} subText = "Test"/>
-        <Section text = {scholarShip} subText = "Test"/>
-        <Section text = {constitution} subText = {fileContent} maxLength = {100}/>
+        <Section text = {events} subText = "TBD"/>
+        <Section text = {boardMembers} photo = {OBoard} photo2 = {EBoard}/>
+        <Section text = {scholarShip} subText = {scholarShipFile}/>
+        <Section text = {constitution} subText = {constitutionFile} maxLength = {100}/>
     </div>
 }
 

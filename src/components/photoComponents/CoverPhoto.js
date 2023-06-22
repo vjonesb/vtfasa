@@ -6,7 +6,7 @@
     Is the component of the cover photo
 */
 
-import logo from '../../fasa_pic.png';
+import logo from '../../pictures/fasa_pic.png';
 
 
 function CoverPhoto() {
