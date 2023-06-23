@@ -23,7 +23,7 @@ function App() {
     Show cases the website in the order of the components being rendered
   */
   return (
-    <div>
+    <div className = "App">
       
       <MainHeader text = {fasaName}/* Calls the title Component *//>
       <MainPage/>
