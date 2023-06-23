@@ -63,7 +63,7 @@ const MainPage = (props) => {
         <CoverPhoto /*Calls the CoverPhoto Component*//> 
 
         <Section text = {events} subText = "TBD"/>
-        <Section text = {boardMembers} photo = {OBoard} photo2 = {EBoard}/>
+        <Section class = "Picture" text = {boardMembers} photo = {OBoard} photo2 = {EBoard}/>
         <Section text = {scholarShip} subText = {scholarShipFile}/>
         <Section text = {constitution} subText = {constitutionFile} maxLength = {100}/>
     </div>
