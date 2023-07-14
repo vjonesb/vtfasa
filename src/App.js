@@ -1,35 +1,46 @@
-/**
-	author: Patrick Badiang
-	Date: 6/15/23
 
-	description:
-    Is the main App
-*/
-import './App.css';
-import MainHeader from './components/textComponents/MainHeader';
-import MainPage from './components/textComponents/MainPage';
+import MainHeader from './components/MainHeader';
+import CssBaseline from '@mui/material/CssBaseline';
 
-/**
-  is the host of all the components and is the one that runs first
-  to instiate the other components.
- */
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import { themeOptions } from './ThemeOptions.tsx';
+
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Main from './Main.js';
+import BoardMembers from './components/pages/boardPage/BoardMembers.js';
+
+
 function App() {
-  const fasaName = "Filipino American Student Association";
+  const fasaName = "FASA AT VT";
 
 
-  
-  
-  /*
-    Show cases the website in the order of the components being rendered
-  */
+  const theme = createTheme(themeOptions);
+
   return (
-    <div className = "App">
-      
-      <MainHeader text = {fasaName}/* Calls the title Component *//>
-      <MainPage/>
-      
+    
+    <ThemeProvider theme={theme}>
 
-    </div>
+        <CssBaseline />
+        
+        <BrowserRouter>
+        <div>
+          <MainHeader text = {fasaName}/>
+        </div>
+      <main>
+        <Routes>
+        
+          <Route path ="/" element = {<Main theme = {theme}/>} />
+          <Route path ="board" element = {<BoardMembers theme = {theme}/>} />
+
+        </Routes>
+      </main>
+    </BrowserRouter>
+    </ThemeProvider>
+    
+
+      
   );
 }
 

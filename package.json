@@ -1,19 +1,37 @@
 {
-  "name": "fasa-website",
+  "name": "materialui",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.13.7",
+    "@mui/material": "^5.13.7",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "buffer": "^6.0.3",
+    "googleapis": "^120.0.0",
+    "https-browserify": "^1.0.0",
+    "latest-version": "^7.0.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "querystring-es3": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "6.4",
     "react-scripts": "5.0.1",
-    "react-textarea-autosize": "^8.4.1",
-    "web-vitals": "^2.1.4"
+    "react-social-media-embed": "^2.3.5",
+    "stream-browserify": "^3.0.0",
+    "url": "^0.11.1",
+    "util": "^0.12.5",
+    "web-vitals": "^3.3.2"
+  },
+  "browser": {
+    "child_process": false
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start --config webpack.config.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

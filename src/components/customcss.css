@@ -1,0 +1,7 @@
+.activeNavLink {
+    color: white; /* Set the desired text color for the active NavLink */
+  }
+  
+  .navLink {
+    color: black; /* Set the desired text color for the regular NavLink */
+  }
