@@ -1,3 +1,9 @@
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * description:
+ * simply is the divider whenever one is needed
+ */
 import { Box} from "@mui/material";
 
 const Divider = (props) => {

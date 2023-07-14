@@ -1,4 +1,9 @@
-
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * description:
+ * is the DOM
+ */
 import MainHeader from './components/MainHeader';
 import CssBaseline from '@mui/material/CssBaseline';
 

@@ -1,5 +1,15 @@
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * NOT IMPLEMENTED 
+ * 
+ * description:
+ * displays four photos, this is an attempt to showcase all photos that
+ * are within a google folder
+ */
+
 import React, { useEffect, useState } from 'react';
-import { ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
+import { ImageList, ImageListItem } from "@mui/material";
 
 const Pictures = (props) => {
   const [imageUrls, setImageUrls] = useState([]);

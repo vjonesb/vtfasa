@@ -1,3 +1,10 @@
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * Description:
+ * calls the bordordCornerText class and puts in the section that we need
+ */
+
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import BordordConerText from "./BordordConerText";
 

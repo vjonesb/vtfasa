@@ -1,3 +1,11 @@
+/**
+ *  author: Patrick Vyn Badiang
+ * 
+ *  Description: 
+ *  is the bordord corners and inserts any text needed
+ */
+
+
 import { Box } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 

@@ -1,3 +1,12 @@
+/**
+ *  author: Patrick Vyn Badiang
+ * 
+ * Description:
+ * is the footer of the page, contains the socials
+ * 
+ */
+
+
 import { Typography, Button, ButtonGroup } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 

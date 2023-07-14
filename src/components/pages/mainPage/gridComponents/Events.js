@@ -1,6 +1,12 @@
-import { Card, CardContent, Typography } from "@mui/material";
-import { InstagramEmbed, FacebookEmbed, YouTubeEmbed } from 'react-social-media-embed';
-import Pictures from "./Pictures";
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * Description:
+ * Includes the embedded sources from both instagram and youtube
+ */
+
+import { Card, CardContent } from "@mui/material";
+import { InstagramEmbed, YouTubeEmbed } from 'react-social-media-embed';
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
 
