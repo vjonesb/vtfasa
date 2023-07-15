@@ -12,6 +12,13 @@ const MainHeader = (props) => {
 
     return (
         <Box>
+            <Box sx = {{position: 'fixed',
+                top: '0',
+                width: '100%',
+                height: '64px', // Adjust the height to match the top margin
+                backgroundColor: '#f5f5f5', // Set the background color or any desired styling
+                zIndex: 999, // Set a higher z-index value
+            }}/>
             <AppBar sx = {{
                 marginTop: '5px',
                 marginBottom: '5px',
