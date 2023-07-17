@@ -9,7 +9,7 @@
  *  with the title and description
  */
 
-import { Typography, Card, CardMedia, CardContent, Box } from "@mui/material";
+import { Typography, Card, CardMedia, CardContent } from "@mui/material";
 
 import { useState } from 'react';
 
@@ -36,10 +36,11 @@ const CardWithDropDown = (props) => {
   };
 
   return (<div>
-    <Box sx = {{height: '150px'}}/>
     <Card
       elevation={0}
       sx={{ maxWidth: 345,
+        display: 'grid',
+        gridTemplateRows: 'auto 1fr auto',
         margin: 'unset',
         backgroundColor: 'transparent', // Remove default background
         }}
@@ -47,8 +48,11 @@ const CardWithDropDown = (props) => {
       onMouseLeave={handleMouseLeave}
     >
       <CardMedia
-        sx={{ height: 300 }}
-        image = {pic}
+        component="img"
+        src={pic}
+        alt="Image"
+        style={{ objectFit: 'contain', height: '100%',borderRadius: '1000px' }}
+
       >
       </CardMedia>
       

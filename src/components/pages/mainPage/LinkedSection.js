@@ -19,7 +19,6 @@ import Grid from '@mui/material/Unstable_Grid2/Grid2';
 
 const LinkedSection = (props) =>{
 
-    const link = props.link;
 
 
     return (
@@ -47,7 +46,9 @@ const LinkedSection = (props) =>{
                                 href = {props.link}
                                 align='center'
                                 color = "#F5F5F5">
-                                    <Typography  variant = 'h3'>
+                                    <Typography  variant = 'h3' sx ={{
+                                        
+                                    }}>
                                         {props.text}
                                     </Typography>
                                     </Link>

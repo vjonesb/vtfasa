@@ -18,7 +18,7 @@ const Events = (props) => {
         <Grid container xs = {12} mt ={5}>
             <Grid item xs>
                     <Grid item xs>
-                        <Card>
+                        <Card sx = {{borderRadius: '0px'}}>
                             <CardContent style = {{overflow: 'auto', height:500}}>
                             <div 
                             style={{ display: 'flex', justifyContent: 'center' }}>
@@ -38,7 +38,7 @@ const Events = (props) => {
                 
             </Grid>
             <Grid item xs = {6}>
-            <Card>
+            <Card sx = {{borderRadius: '0px'}}>
                     <CardContent>
                         <YouTubeEmbed url="https://youtu.be/fxG30pJZt1Q"
                         height = {460}

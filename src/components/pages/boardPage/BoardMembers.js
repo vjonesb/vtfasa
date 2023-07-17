@@ -7,30 +7,30 @@
  * 
  *  Passes down the image as well as a title and description
  */
+import { Box, Typography } from '@mui/material';
 
-import Oboard from '../../../pictures/O-Board_Pic.png';
-import Eboard from '../../../pictures/E-Board_Pic.png';
-
-import NewMember from "./CardWithDropDown";
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
+import ExecutiveBoard from './ExecutiveBoard';
 
 
 
 function BoardMembers() {
   
-  return (<Grid container justifyContent="center">
-    <Grid item xs>
-      <NewMember picture = {Oboard}
-      title = "Officer Board"
-      description = "The new members for our 2023-2024 school year!"/>
+  return (<div>
+  <Box sx = {{height: '150px'}}/>
+
+  <Grid container xs = {12}direction={'column'}>
+    <Grid item>
+      <Typography variant = 'h2' align='center'>Executive Board</Typography>
+      <ExecutiveBoard/>
+      
     </Grid>
     <Grid item xs>
-      <NewMember picture = {Eboard}
-      title = "Executive Board"
-      description = "The new executive board for our 2023-2024 school year!"/>
+      <Box sx = {{border: 1}}/>
     </Grid>
     
   </Grid>
+  </div>
   
   );
 }

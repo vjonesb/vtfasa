@@ -13,7 +13,7 @@ const BordordConerText = (props) => {
     return (
         <div align = 'center'>
         <Grid container xs = {12}>
-                <Grid container xs = {1} direction = "column" >
+                <Grid container xs = {1} direction = "column" mt = {2}>
                   <Grid xs = {8}>
                     <Box sx = {{ 
                       borderLeft: 1,
@@ -30,8 +30,7 @@ const BordordConerText = (props) => {
                     {props.inside}
                 </div>
               </Grid>
-              <Grid container xs = {1} direction = "column" >
-                  <Grid xs/>
+              <Grid container xs = {1} direction = "column-reverse" mb = {2} >
                   <Grid xs = {8}>
                     <Box sx = {{ 
                       borderRight: 1,
@@ -42,7 +41,6 @@ const BordordConerText = (props) => {
                       position: 'relative',
                       paddingBottom: '100%', }}/>
                   </Grid>
-                
               </Grid>
             </Grid>
             </div>

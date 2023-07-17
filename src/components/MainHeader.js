@@ -12,15 +12,8 @@ const MainHeader = (props) => {
 
     return (
         <Box>
-            <Box sx = {{position: 'fixed',
-                top: '0',
-                width: '100%',
-                height: '64px', // Adjust the height to match the top margin
-                backgroundColor: '#f5f5f5', // Set the background color or any desired styling
-                zIndex: 999, // Set a higher z-index value
-            }}/>
+            
             <AppBar sx = {{
-                marginTop: '5px',
                 marginBottom: '5px',
                 height: '100px'
             }}>
@@ -38,8 +31,13 @@ const MainHeader = (props) => {
                         variant="h3"
                         fontWeight={'bold'}
                         sx = {{
+                            fontSize: {
+                                xs: '1rem',   // Extra-small devices (phones)
+                                sm: '2.5rem', // Small devices (tablets)
+                                md: '3rem',   // Medium devices (desktops)
+                                lg: '4rem',   // Large devices (large desktops)
+                              },
                             flexGrow: 1,
-                            textDecoration: 'underline'
                         }}>{props.text}
                     </Typography>
                     <ButtonGroup 
@@ -48,7 +46,11 @@ const MainHeader = (props) => {
                         <Button href = "/"
                             sx={{ my: 2, color: 'white', display: 'block' }}>
 
-                            <Typography variant = "h6" fontWeight={'bold'} sx = {{textDecoration: 'underline'}}>
+                            <Typography variant = "h6" fontWeight={'bold'}
+                            sx = {{fontSize: {
+                                xs: '1rem',   // Extra-small devices (phones)
+                                
+                              },}} >
                             Home
                             </Typography>        
                                                 
@@ -56,7 +58,11 @@ const MainHeader = (props) => {
                         <Button href = "/board"
                             sx={{ my: 2, color: 'white', display: 'block' }}>
 
-                            <Typography variant = "h6" fontWeight={'bold'} sx = {{textDecoration: 'underline'}}>
+                            <Typography variant = "h6" fontWeight={'bold'}
+                            sx = {{fontSize: {
+                                xs: '1rem',   // Extra-small devices (phones)
+                                
+                              },}}>
                             Board
                             </Typography>        
 

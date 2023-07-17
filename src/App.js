@@ -18,10 +18,11 @@ import BoardMembers from './components/pages/boardPage/BoardMembers.js';
 
 
 function App() {
-  const fasaName = "FASA AT VT";
+  const fasaName = "FASA at VT";
 
 
   const theme = createTheme(themeOptions);
+  
 
   return (
     
