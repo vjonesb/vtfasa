@@ -7,11 +7,11 @@
  * 
  *  Passes down the image as well as a title and description
  */
-import President from '../../../pictures/President.png';
-import VicePresident from '../../../pictures/VicePres.png';
-import ExternalPres from '../../../pictures/ExternalPres.png';
-import Treasurer from '../../../pictures/Treasurer.png';
-import Secretary from '../../../pictures/Secretary.png';
+import President from '../../../pictures/ExecutiveBoard/President.png';
+import VicePresident from '../../../pictures/ExecutiveBoard/VicePres.png';
+import ExternalPres from '../../../pictures/ExecutiveBoard/ExternalPres.png';
+import Treasurer from '../../../pictures/ExecutiveBoard/Treasurer.png';
+import Secretary from '../../../pictures/ExecutiveBoard/Secretary.png';
 
 
 

@@ -11,6 +11,7 @@ import { Box, Typography } from '@mui/material';
 
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 import ExecutiveBoard from './ExecutiveBoard';
+import OfficerBoard from './OfficerBoard';
 
 
 
@@ -26,7 +27,8 @@ function BoardMembers() {
       
     </Grid>
     <Grid item xs>
-      <Box sx = {{border: 1}}/>
+      <Typography variant = 'h2' align='center'>Officer Board</Typography>
+      <OfficerBoard/>
     </Grid>
     
   </Grid>
