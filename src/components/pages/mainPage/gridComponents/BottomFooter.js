@@ -17,9 +17,7 @@ function BottomFooter() {
     const instagram = 'https://www.instagram.com/vt_fasa/';
 
     return (
-        <Grid container xs = {12}>
-            
-            
+        <Grid container xs = {12}>     
             <Grid item xs>
                 <div align = 'center'>
                 <ButtonGroup variant = 'contained' color = 'secondary'>
@@ -40,11 +38,7 @@ function BottomFooter() {
                     </Button>
                 </ButtonGroup>
                 </div>
-                
-                
             </Grid>
-            
-
         </Grid>
         
     );

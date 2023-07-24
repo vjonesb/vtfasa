@@ -9,7 +9,7 @@
  *  with the title and description
  */
 
-import { Typography, Card, CardMedia, CardContent } from "@mui/material";
+import { Card, CardMedia, CardContent, Link } from "@mui/material";
 
 import { useState } from 'react';
 
@@ -35,8 +35,10 @@ const CardWithDropDown = (props) => {
     setIsHovered(false);
   };
 
-  return (<div>
+  return (
+    <a href={props.link} target="_blank" rel="noopener noreferrer">
     <Card
+      
       elevation={0}
       sx={{ maxWidth: 345,
         display: 'grid',
@@ -55,22 +57,9 @@ const CardWithDropDown = (props) => {
 
       >
       </CardMedia>
-      
-        <AnimatedContentWrapper isHovered={isHovered}>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {props.title}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {props.description}
-          </Typography>
-        </CardContent>
-      </AnimatedContentWrapper>
-      
-      
-      
+
     </Card>
-    </div>
+    </a>
   );
 }
 

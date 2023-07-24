@@ -1,5 +1,4 @@
 
-import NewMember from "./CardWithDropDown";
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 //Sports chairs
 import SportsChair1 from '../../../pictures/OfficerBoard/SportsChair1.png';
@@ -39,7 +38,7 @@ import D7Chair2 from '../../../pictures/OfficerBoard/D7Chair2.png';
 //Historian
 import HistorianChair1 from '../../../pictures/OfficerBoard/HistorianChair1.png';
 import HistorianChair2 from '../../../pictures/OfficerBoard/HistorianChair2.png';
-import SportsChairs from "./DifferentCommitties/SportsChairs.js";
+import MemberIcon from "./DifferentCommitties/MemberIcon.js";
 
 function OfficerBoard() {
 
@@ -47,19 +46,79 @@ function OfficerBoard() {
         <Grid container xs = {12} justifyContent="center">
     <Grid item xs = {2}/>
     <Grid container xs = {8}>
-        <SportsChairs chair1 = {SportsChair1} chair2 = {SportsChair2}/>
-        <SportsChairs chair1 = {PromoChair1} chair2 = {PromoChair2}/>
-        <SportsChairs chair1 = {CultureChair1} chair2 = {CultureChair2}/>
-        <SportsChairs chair1 = {HospitalityChair1} chair2 = {HospitalityChair2}/>
+        <MemberIcon chair = {SportsChair1}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {SportsChair2}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {FundRaisingChair1}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {FundRaisingChair2}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {FundRaisingChair3}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {PromoChair1}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {PromoChair2}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
     </Grid>
     <Grid item xs = {2}/>
     <Grid item xs = {2}/>
     <Grid container xs = {8}>
-        <SportsChairs chair1 = {D7Chair1} chair2 = {D7Chair2}/>
-        <SportsChairs chair1 = {HistorianChair1} chair2 = {HistorianChair2}/>
-        <SportsChairs chair1 = {CultureChair1} chair2 = {CultureChair2}/>
-        <SportsChairs chair1 = {HospitalityChair1} chair2 = {HospitalityChair2}/>
+        <MemberIcon chair = {EventChair1}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {EventChair2}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {EventChair3}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {D7Chair1}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {D7Chair2}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {HistorianChair1}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {HistorianChair2}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
     </Grid>
+    <Grid item xs = {2}/>
+    <Grid item xs = {2}/>
+    <Grid container xs = {8}>
+        <MemberIcon chair = {ServiceChair1}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {ServiceChair2}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {ServiceChair3}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {CultureChair1}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {CultureChair2}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {HospitalityChair1}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {HospitalityChair2}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+    </Grid>
+    <Grid item xs = {2}/>
     <Grid item xs = {2}/>
   </Grid>
 

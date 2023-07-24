@@ -16,47 +16,127 @@ import Secretary from '../../../pictures/ExecutiveBoard/Secretary.png';
 
 
 
-import NewMember from "./CardWithDropDown";
+import { Button, ButtonGroup, Card } from '@mui/material';
+import ExecutiveMemberHighlight from './ExecutiveMemberHighlight';
+import { styled } from '@mui/system';
+import React, { useState } from 'react';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 
-
+const CutomPositionCard = styled(Card)(({ theme}) => ({
+  background: '#EED589',
+  borderRadius: '20px',
+}));
 
 function ExecutiveBoard() {
+
+  const [activeVariant, setActiveVariant] = useState('variant1');
+
+  const handleButtonClick = (variant) => {
+    setActiveVariant(variant);
+  };
+
+  const renderElement = () => {
+    switch (activeVariant) {
+      case 'president':
+        return (
+          <CutomPositionCard elevation={5}>
+            <ExecutiveMemberHighlight key = "president"
+            image = {President}
+            position = "President"
+            name = "Pamela Untalan" 
+            major = "Buisness International Technology"
+            minor = "NA"/>
+          </CutomPositionCard>
+        );
+      case 'internalvicepres':
+        return (
+          <CutomPositionCard elevation={5}>
+            <ExecutiveMemberHighlight key = "ivp"
+            image = {VicePresident}
+            position = "Internal Vice President"
+            name = "Delfin Lagman" 
+            major = "Buisness International Technology"
+            minor = "NA"/>
+          </CutomPositionCard>
+        );
+      case 'externalvicepres':
+        return (
+          <CutomPositionCard elevation={5}>
+            <ExecutiveMemberHighlight key = "evp"
+            image = {ExternalPres}
+            position = "External Vice President"
+            name = "Alexa Marticio" 
+            major = "Buisness International Technology"
+            minor = "NA"/>
+          </CutomPositionCard>
+        );
+        case 'secretary':
+          return(
+            <CutomPositionCard elevation={5}>
+              <ExecutiveMemberHighlight key = "secretary"
+              image = {Secretary}
+              position = "Secretary"
+              name = "Eric Domingo" 
+              major = "Buisness International Technology"
+              minor = "NA"/>
+            </CutomPositionCard>
+          );
+        case 'treasurer' :
+          return(
+            <CutomPositionCard elevation={5}>
+              <ExecutiveMemberHighlight key = "treasurer"
+              image = {Treasurer}
+              position = "Treasurer"
+              name = "Megan Sambile" 
+              major = "Buisness International Technology"
+              minor = "NA"/>
+            </CutomPositionCard>
+          );
+      default:
+        return (
+          <CutomPositionCard elevation={5}>
+            <ExecutiveMemberHighlight key = "president"
+            image = {President}
+            position = "President"
+            name = "Pamela Untalan" 
+            major = "Buisness International Technology"
+            minor = "NA"/>
+          </CutomPositionCard>
+        );
+    }
+  };
   
-  return (<Grid container xs = {12} justifyContent="center">
-    <Grid item xs/>
-    <Grid container xs = {8}>
-        <Grid item xs>
-        <NewMember picture = {VicePresident}
-        title = "Delfin Lagman"
-        description = "The new Internal Vice President for our 2023-2024 school year!"/>
-        </Grid>
-        <Grid item xs>
-        <NewMember picture = {ExternalPres}
-        title = "Alexa Marticio"
-        description = "The new External Vice President for our 2023-2024 school year!"/>
-        </Grid>
-        <Grid item xs>
-        <NewMember picture = {President}
-        title = "Pamela Untalan"
-        description = "Our 2023-2024 club president!"/>
-        </Grid>
-        
-        <Grid item xs>
-        <NewMember picture = {Secretary}
-        title = "Eric Domingo"
-        description = "Our 2023-2024 club Secretary!"/>
-        </Grid>
-        <Grid item xs>
-        <NewMember picture = {Treasurer}
-        title = "Megan Simbile"
-        description = "Our 2023-2024 club Treasurer!"/>
-        </Grid>
+  return (<div>
+    <Grid item>
+      <ButtonGroup variant='text'>
+        <Button 
+          onClick={() => handleButtonClick('president')}>
+          President
+        </Button>
+        <Button 
+          onClick={() => handleButtonClick('internalvicepres')}>
+          Internal Vice President
+        </Button>
+        <Button 
+          onClick={() => handleButtonClick('externalvicepres')}>
+          External Vice President
+        </Button>
+        <Button 
+          onClick={() => handleButtonClick('secretary')}>
+          Secretary
+        </Button>
+        <Button 
+          onClick={() => handleButtonClick('treasurer')}>
+          Treasurer
+        </Button>
+      </ButtonGroup>
+      <div>
+        {/* Element to be showcased */}
+        {renderElement()}
+      </div>
     </Grid>
-    <Grid item xs/>
-    
-  </Grid>
-  
+
+    </div>
   );
 }
 

@@ -64,8 +64,27 @@ const MainHeader = (props) => {
                                 
                               },}}>
                             Board
-                            </Typography>        
-
+                            </Typography>   
+                        </Button>
+                        <Button href = "/"
+                            sx={{ my: 2, color: 'white', display: 'block' }}>
+                            <Typography variant = "h6" fontWeight={'bold'}
+                            sx = {{fontSize: {
+                                xs: '1rem',   // Extra-small devices (phones)
+                                
+                              },}} >
+                            Resources
+                            </Typography>                                 
+                        </Button>
+                        <Button href = "/"
+                            sx={{ my: 2, color: 'white', display: 'block' }}>
+                            <Typography variant = "h6" fontWeight={'bold'}
+                            sx = {{fontSize: {
+                                xs: '1rem',   // Extra-small devices (phones)
+                                
+                              },}} >
+                            Constitution
+                            </Typography>                                 
                         </Button>
                         
                     </ButtonGroup>

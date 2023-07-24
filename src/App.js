@@ -14,7 +14,7 @@ import { themeOptions } from './ThemeOptions.tsx';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Main from './Main.js';
-import BoardMembers from './components/pages/boardPage/BoardMembers.js';
+import BoardPage from './components/pages/boardPage/BoardPage';
 
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
         <Routes>
         
           <Route path ="/" element = {<Main theme = {theme}/>} />
-          <Route path ="board" element = {<BoardMembers theme = {theme}/>} />
+          <Route path ="board" element = {<BoardPage theme = {theme}/>} />
 
         </Routes>
       </main>

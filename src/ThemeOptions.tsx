@@ -10,6 +10,9 @@ export const themeOptions: ThemeOptions = {
       main: '#852d1a',
       
     },
+    tertiary: {
+      main: '#FFFFFFF',
+    },
     
     divider: '#263238',
     background: {

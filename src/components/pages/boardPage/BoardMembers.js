@@ -14,17 +14,15 @@ import ExecutiveBoard from './ExecutiveBoard';
 import OfficerBoard from './OfficerBoard';
 
 
-
 function BoardMembers() {
   
-  return (<div>
-  <Box sx = {{height: '150px'}}/>
+  return (<Box sx = {{ marginTop:'50px'}}>
+  <Grid container xs = {12}direction={'column'}
+  justifyContent="center" alignItems="center">
+    
 
-  <Grid container xs = {12}direction={'column'}>
     <Grid item>
-      <Typography variant = 'h2' align='center'>Executive Board</Typography>
       <ExecutiveBoard/>
-      
     </Grid>
     <Grid item xs>
       <Typography variant = 'h2' align='center'>Officer Board</Typography>
@@ -32,7 +30,9 @@ function BoardMembers() {
     </Grid>
     
   </Grid>
-  </div>
+  
+  
+  </Box>
   
   );
 }
