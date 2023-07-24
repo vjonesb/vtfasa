@@ -54,6 +54,7 @@ function BoardPage() {
                 </CustomPaper>
               </div>
             
+            
             <BoardMembers/>
             <Paper sqaure sx = {{width: 'full'}}>
                 <Box sx = {{height: '20px'}} mt = {10}/>
