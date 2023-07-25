@@ -18,5 +18,8 @@ export const themeOptions: ThemeOptions = {
       default: '#fbf3db',
     },
   },
+  typography: {
+    fontFamily: 'Rubik',
+  },
   
 };

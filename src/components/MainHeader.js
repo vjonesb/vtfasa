@@ -5,14 +5,42 @@
     Is the mean header of the page, does not change
 */
 import FasaImg from '../pictures/FasaLogo.png';
-import { Typography, Box, AppBar, Toolbar, Button, ButtonGroup, Avatar } from "@mui/material";
+import { Typography, Box, AppBar, Toolbar, Button, ButtonGroup, Avatar, useScrollTrigger } from "@mui/material";
+import Slide from '@mui/material/Slide';
+import PropTypes from 'prop-types';
+
+
+function HideOnScroll(props) {
+  const { children, window } = props;
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+  });
+
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
+}
+
+HideOnScroll.propTypes = {
+    children: PropTypes.element.isRequired,
+    /**
+     * Injected by the documentation to work in an iframe.
+     * You won't need it on your project.
+     */
+    window: PropTypes.func,
+  };
 
 const MainHeader = (props) => {
     
 
     return (
         <Box>
-            
+            <HideOnScroll {...props}>
             <AppBar sx = {{
                 marginBottom: '5px',
                 height: '100px'
@@ -102,6 +130,7 @@ const MainHeader = (props) => {
                     </ButtonGroup>
                 </Toolbar>
             </AppBar>
+            </HideOnScroll>
         </Box>
 
     );
