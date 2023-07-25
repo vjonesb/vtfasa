@@ -38,8 +38,15 @@ function BoardMembers() {
             <Typography 
             ml={2}
             mr={2}
-          
-            variant = 'h2' align='center'>
+            variant = 'h2' align='center'
+            sx = {{
+              fontSize: {
+                xs: '1rem',   // Extra-small devices (phones)
+                sm: '1.5rem', // Small devices (tablets)
+                md: '2rem',   // Medium devices (desktops)
+                lg: '4rem',   // Large devices (large desktops)
+              }
+          }}>
               Officer Board
             </Typography>
           </CustomPaper>

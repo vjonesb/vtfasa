@@ -9,7 +9,7 @@
  *  with the title and description
  */
 
-import { Card, CardMedia, CardContent, Link } from "@mui/material";
+import { Card, CardMedia } from "@mui/material";
 
 import { useState } from 'react';
 
@@ -38,22 +38,22 @@ const CardWithDropDown = (props) => {
   return (
     <a href={props.link} target="_blank" rel="noopener noreferrer">
     <Card
+      elevation={2}
       
-      elevation={0}
       sx={{ maxWidth: 345,
+        borderRadius:'1000px',
         display: 'grid',
-        gridTemplateRows: 'auto 1fr auto',
         margin: 'unset',
         backgroundColor: 'transparent', // Remove default background
         }}
       onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+      onMouseLeave={handleMouseLeave}>
       <CardMedia
         component="img"
         src={pic}
         alt="Image"
-        style={{ objectFit: 'contain', height: '100%',borderRadius: '1000px' }}
+        style={{
+          objectFit: 'contain', height: '100%',borderRadius: '1000px' }}
 
       >
       </CardMedia>

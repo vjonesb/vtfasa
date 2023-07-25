@@ -43,7 +43,7 @@ import MemberIcon from "./DifferentCommitties/MemberIcon.js";
 function OfficerBoard() {
 
     return (
-        <Grid container xs = {12} justifyContent="center">
+        <Grid container xs = {12} justifyContent="center" >
     <Grid item xs = {2}/>
     <Grid container xs = {8}>
         <MemberIcon chair = {SportsChair1}

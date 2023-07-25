@@ -2,10 +2,8 @@
  *  author: Patrick Vyn Badiang
  * 
  *  Description:
- *  Call the CardWithDropDown component whenever we want
- *  to add a new member.
- * 
- *  Passes down the image as well as a title and description
+ *  Calls the ExecutiveHighlight class and passes down an image
+ *  along with the answers to the QnA that was given
  */
 import President from '../../../pictures/ExecutiveBoard/President.png';
 import VicePresident from '../../../pictures/ExecutiveBoard/VicePres.png';
@@ -110,27 +108,67 @@ function ExecutiveBoard() {
     <Grid item>
       <ButtonGroup variant='text'>
         <Button 
-          onClick={() => handleButtonClick('president')}>
+          onClick={() => handleButtonClick('president')}
+          sx = {{
+            fontSize: {
+              xs: '0.7rem',   // Extra-small devices (phones)
+              sm: '0.7rem', // Small devices (tablets)
+              md: '1rem',   // Medium devices (desktops)
+              lg: '1.8rem',   // Large devices (large desktops)
+            },
+          }}>
           President
         </Button>
         <Button 
-          onClick={() => handleButtonClick('internalvicepres')}>
+          onClick={() => handleButtonClick('internalvicepres')}
+          sx = {{
+            fontSize: {
+              xs: '0.7rem',   // Extra-small devices (phones)
+              sm: '0.7rem', // Small devices (tablets)
+              md: '1rem',   // Medium devices (desktops)
+              lg: '1.8rem',   // Large devices (large desktops)
+            },
+          }}>
           Internal Vice President
         </Button>
         <Button 
-          onClick={() => handleButtonClick('externalvicepres')}>
+          onClick={() => handleButtonClick('externalvicepres')}
+          sx = {{
+            fontSize: {
+              xs: '0.7rem',   // Extra-small devices (phones)
+              sm: '0.7rem', // Small devices (tablets)
+              md: '1rem',   // Medium devices (desktops)
+              lg: '1.8rem',   // Large devices (large desktops)
+            },
+          }}>
           External Vice President
         </Button>
         <Button 
-          onClick={() => handleButtonClick('secretary')}>
+          onClick={() => handleButtonClick('secretary')}
+          sx = {{
+            fontSize: {
+              xs: '0.7rem',   // Extra-small devices (phones)
+              sm: '0.7rem', // Small devices (tablets)
+              md: '1rem',   // Medium devices (desktops)
+              lg: '1.8rem',   // Large devices (large desktops)
+            },
+          }}>
           Secretary
         </Button>
         <Button 
-          onClick={() => handleButtonClick('treasurer')}>
+          onClick={() => handleButtonClick('treasurer')}
+          sx = {{
+            fontSize: {
+              xs: '0.7rem',   // Extra-small devices (phones)
+              sm: '0.7rem', // Small devices (tablets)
+              md: '1rem',   // Medium devices (desktops)
+              lg: '1.8rem',   // Large devices (large desktops)
+            },
+          }}>
           Treasurer
         </Button>
       </ButtonGroup>
-      <div>
+      <div style={{marginTop: '10px'}}>
         {/* Element to be showcased */}
         {renderElement()}
       </div>

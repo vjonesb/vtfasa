@@ -47,8 +47,17 @@ function BoardPage() {
                   src='/pictures/fasa_pic.png' // Replace with the actual path to your image
                   alt = 'cover'
                   style={styles.image}/>
-                <CustomPaper style={styles.paper}>
-                  <Typography variant="h3">
+                <CustomPaper style={styles.paper}
+                elevation={8}>
+                  <Typography variant="h3"
+                  sx = {{
+                      fontSize: {
+                        xs: '1rem',   // Extra-small devices (phones)
+                        sm: '1.5rem', // Small devices (tablets)
+                        md: '2rem',   // Medium devices (desktops)
+                        lg: '3rem',   // Large devices (large desktops)
+                      }
+                  }}>
                     Executive Board
                   </Typography>
                 </CustomPaper>

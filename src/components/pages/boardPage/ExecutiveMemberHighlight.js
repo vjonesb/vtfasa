@@ -1,3 +1,10 @@
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * Description:
+ * Dynamically receives the images and puts a bio
+ */
+
 import { CardMedia, CardContent,Box, Typography, Paper } from '@mui/material';
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import { styled } from '@mui/system';

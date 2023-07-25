@@ -76,7 +76,7 @@ const MainHeader = (props) => {
                             Resources
                             </Typography>                                 
                         </Button>
-                        <Button href = "/"
+                        <Button href = "/constitution"
                             sx={{ my: 2, color: 'white', display: 'block' }}>
                             <Typography variant = "h6" fontWeight={'bold'}
                             sx = {{fontSize: {

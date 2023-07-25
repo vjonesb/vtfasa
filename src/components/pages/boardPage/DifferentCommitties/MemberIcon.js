@@ -6,7 +6,7 @@ const MemberIcon = (props) => {
 
     return (
         <Grid container xs>
-            <Grid item xs>
+            <Grid item>
                 <NewMember picture = {chair} link = {props.link}/>
             </Grid>
         </Grid>
