@@ -7,14 +7,8 @@
 
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import BordordConerText from "./BordordConerText";
-import { styled } from '@mui/system';
 
-import { Card, Paper } from "@mui/material";
 
-const CustomPaper = styled(Paper)(({ theme }) => ({
-  background: '#F5F5F5',
-  // Add any other custom styles here
-}));
 
 const BordordConerSection = (props) => {
 

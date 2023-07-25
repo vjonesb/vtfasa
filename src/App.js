@@ -16,6 +16,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Main from './Main.js';
 import BoardPage from './components/pages/boardPage/BoardPage';
 import ConstitutionPage from './components/pages/constitutionPage/ConstitutionPage';
+import ResourcesPage from './components/pages/resourcesPage/ResourcesPage';
 
 function App() {
   const fasaName = "FASA at VT";
@@ -40,7 +41,7 @@ function App() {
           <Route path ="/" element = {<Main theme = {theme}/>} />
           <Route path ="board" element = {<BoardPage theme = {theme}/>} />
           <Route path = "constitution" element = {<ConstitutionPage theme = {theme}/>}/>
-
+          <Route path = "resources" element = {<ResourcesPage theme = {theme}/>}/>
         </Routes>
       </main>
     </BrowserRouter>

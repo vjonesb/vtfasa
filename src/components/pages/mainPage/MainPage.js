@@ -10,9 +10,10 @@ import Section from './Section';
 
 //Photos
 
-import { Paper, Box, ImageList, ImageListItem} from '@mui/material';
+import { Paper, Box, ImageList, styled} from '@mui/material';
 import Divider from '../../Divider';
 import Grid from '@mui/material/Unstable_Grid2';
+import CarouselTemplate from '../../CarouselTemplate';
 
 import Events from './gridComponents/Events';
 import BordordConerSection from './gridComponents/BordordCornerSection';
@@ -22,7 +23,15 @@ import SummaryOfFasa from './gridComponents/SummaryOfFasa';
 import Scholarship from './gridComponents/Scholarship';
 import BottomFooter from './gridComponents/BottomFooter';
 
+const ImageListContainer = styled('div')({
+  maxHeight: 800,
+  overflow: 'auto',
+});
 
+const ImageListStyled = styled(ImageList)({
+  width: '100%',
+  height: '100%',
+});
 
 
 const MainPage = (props) => {
@@ -36,26 +45,28 @@ const MainPage = (props) => {
       img: '/pictures/fasa_pic.png',
       title: 'OBoard',
     },
+    {
+      id: 2,
+      img: '/pictures/CultureShowPhoto1.jpeg',
+      title: 'CultureShow',
+    },
   ];
 
     return (
     <div style={{ overflow: 'hidden', marginTop: '100px' }}>
         <Divider color = 'black'/>
-        <ImageList cols={1}
-          sx = {{
-            marginLeft:'5px',
-            marginRight: '5px'        
-          }}>
-          {imageData.map((item) => (
-            <ImageListItem key={item.id}>
-              <img 
-                src={item.img} 
-                alt={item.title} 
-                
-                />
-            </ImageListItem>
-          ))}
-        </ImageList>
+        <ImageListContainer>
+          <ImageListStyled cols={1}
+            sx = {{
+              marginLeft:'5px',
+              maxheight: "50vh",
+              width: "100%", 
+              alignContent: "center"   
+            }}>
+            <CarouselTemplate images = {imageData}/>
+          </ImageListStyled>
+        </ImageListContainer>
+        
         <Grid container xs = {12}direction={'column'}>
             <BordordConerSection inside = {<SummaryOfFasa/>}/>
             <Section text = {events} 
