@@ -48,7 +48,10 @@ const MainHeader = (props) => {
 
                             <Typography variant = "h6" fontWeight={'bold'}
                             sx = {{fontSize: {
-                                xs: '1rem',   // Extra-small devices (phones)
+                                xs: '0.3rem',   // Extra-small devices (phones)
+                                sm: '0.7rem', // Small devices (tablets)
+                                md: '1rem',   // Medium devices (desktops)
+                                lg: '1rem',   // Large devices (large desktops)
                                 
                               },}} >
                             Home
@@ -60,7 +63,10 @@ const MainHeader = (props) => {
 
                             <Typography variant = "h6" fontWeight={'bold'}
                             sx = {{fontSize: {
-                                xs: '1rem',   // Extra-small devices (phones)
+                                xs: '0.3rem',   // Extra-small devices (phones)
+                                sm: '0.7rem', // Small devices (tablets)
+                                md: '1rem',   // Medium devices (desktops)
+                                lg: '1rem',   // Large devices (large desktops)
                                 
                               },}}>
                             Board
@@ -70,7 +76,10 @@ const MainHeader = (props) => {
                             sx={{ my: 2, color: 'white', display: 'block' }}>
                             <Typography variant = "h6" fontWeight={'bold'}
                             sx = {{fontSize: {
-                                xs: '1rem',   // Extra-small devices (phones)
+                                xs: '0.3rem',   // Extra-small devices (phones)
+                                sm: '0.7rem', // Small devices (tablets)
+                                md: '1rem',   // Medium devices (desktops)
+                                lg: '1rem',   // Large devices (large desktops)
                                 
                               },}} >
                             Resources
@@ -80,7 +89,10 @@ const MainHeader = (props) => {
                             sx={{ my: 2, color: 'white', display: 'block' }}>
                             <Typography variant = "h6" fontWeight={'bold'}
                             sx = {{fontSize: {
-                                xs: '1rem',   // Extra-small devices (phones)
+                                xs: '0.3rem',   // Extra-small devices (phones)
+                                sm: '0.7rem', // Small devices (tablets)
+                                md: '1rem',   // Medium devices (desktops)
+                                lg: '1rem',   // Large devices (large desktops)
                                 
                               },}} >
                             Constitution
