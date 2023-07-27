@@ -14,12 +14,12 @@ export const themeOptions: ThemeOptions = {
     
     divider: '#263238',
     background: {
-      paper: '#224343',
+      paper: '#38182F',
       default: '#fbf3db',
     },
   },
   typography: {
-    fontFamily: 'Rubik',
+    fontFamily: 'Bree Serif',
   },
   
 };

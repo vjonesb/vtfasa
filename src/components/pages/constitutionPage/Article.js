@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 
 const CustomAccordion = styled(Accordion)(({ theme }) => ({
-    background: '#7393B3', // Change the background color to lightblue or any other color you prefer
+    background: '#FFC000', // Change the background color to lightblue or any other color you prefer
     // Add any other styles you want to customize the Accordion component
     }));
 
@@ -32,7 +32,7 @@ const Article = (props) => {
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
                             id="panel1a-header">
-                                <Typography variant="h4">
+                                <Typography variant="h4" >
                                     {props.title}
                                 </Typography>
                             </AccordionSummary>

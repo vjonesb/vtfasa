@@ -21,7 +21,7 @@ import React, { useState } from 'react';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 
 const CutomPositionCard = styled(Card)(({ theme}) => ({
-  background: '#EED589',
+  background: '#FBF3DB',
   borderRadius: '20px',
 }));
 
@@ -106,7 +106,7 @@ function ExecutiveBoard() {
   
   return (<div>
     <Grid item>
-      <ButtonGroup variant='text'>
+      <ButtonGroup variant='text' elevation = {8}>
         <Button 
           onClick={() => handleButtonClick('president')}
           sx = {{

@@ -11,7 +11,7 @@ import { styled } from '@mui/system';
 
 
 const CustomBioPaper = styled(Paper)(({ theme }) => ({
-  background: '#FFEEEE',
+  background: '#E29CA2',
   width: '100%',
   height: '100%',
   display: 'flex',

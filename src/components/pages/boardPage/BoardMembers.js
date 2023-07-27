@@ -15,7 +15,7 @@ import OfficerBoard from './OfficerBoard';
 import { styled } from '@mui/system';
 
 const CustomPaper = styled(Paper)(({ theme }) => ({
-  background: '#EED589',
+  background: '#FFC000',
   
 }));
 
