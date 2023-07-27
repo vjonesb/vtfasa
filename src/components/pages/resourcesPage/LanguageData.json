@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "img": "/pictures/resources/LanguageDataLogos/GoFilipinoLogo.png",
+        "title": "Go Filipino: Let’s Learn Tagalog Podcast",
+        "description": "Tagalog, which is mainly spoken in the Philippines, is one of the most beautiful languages in Asia. Writer and self-confessed language nerd Kris Andres wants to share that beauty with you.",
+        "link": "https://open.spotify.com/show/7C4x591YrBiOuuMtLijhsN"
+    },
+    {
+        "id": 2,
+        "img": "/pictures/resources/LanguageDataLogos/OmniglotLogo.png",
+        "title": "Omniglot: Online Encyclopedia of Tagalog Alphabet Pronunciation",
+        "description": "Tagalog is a Philippine language spoken in the Philippines, particularly in Manila, central and southern parts of Luzon, and also on the islands of Lubang, Marinduque, and the northern and eastern parts of Mindoro. ",
+        "link": "https://omniglot.com/writing/tagalog.htm"
+    },
+    {
+        "id": 3,
+        "img": "/pictures/resources/LanguageDataLogos/DropsLogo.png",
+        "title": "Drops: Learn Tagalog 5 minutes a day for free!",
+        "description": "In just five minutes a day, you will learn Tagalog through our beautifully illustrated, immersive and playful lessons. You focus on the part of Tagalog that matters most — words. It’s effective, fun and free.",
+        "link": "https://languagedrops.com/language/learn-tagalog"
+    },
+    {
+        "id": 4,
+        "img": "/pictures/resources/LanguageDataLogos/FreeTextBookLogo.png",
+        "title": "Free Textbook PDF of Basic Tagalog",
+        "description": "Completely updated and expanded with new materials. More than 2,000 contemporary Tagalog words",
+        "link": "https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Austronesian/Tagalog%2C%20Basic%20%28Aspillera%29.pdf"
+    }
+
+]

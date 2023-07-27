@@ -45,11 +45,6 @@ const MainPage = (props) => {
       img: '/pictures/fasa_pic.png',
       title: 'OBoard',
     },
-    {
-      id: 2,
-      img: '/pictures/CultureShowPhoto1.jpeg',
-      title: 'CultureShow',
-    },
   ];
 
     return (

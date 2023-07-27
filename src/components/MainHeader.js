@@ -5,7 +5,7 @@
     Is the mean header of the page, does not change
 */
 import FasaImg from '../pictures/FasaLogo.png';
-import { Typography, Box, AppBar, Toolbar, Button, ButtonGroup, Avatar, useScrollTrigger } from "@mui/material";
+import { Typography, Box, AppBar, Toolbar, Button, ButtonGroup, Avatar, useScrollTrigger, Link } from "@mui/material";
 import Slide from '@mui/material/Slide';
 import PropTypes from 'prop-types';
 
@@ -55,7 +55,9 @@ const MainHeader = (props) => {
                             height: '75px',
                             marginRight: '10px'
                         }}/>
-                    <Typography 
+                        <Typography 
+                        component= {Link}
+                        href = "/"
                         variant="h3"
                         fontWeight={'bold'}
                         sx = {{
@@ -66,8 +68,13 @@ const MainHeader = (props) => {
                                 lg: '4rem',   // Large devices (large desktops)
                               },
                             flexGrow: 1,
+                            color: 'inherit',
+                            textDecoration: 'none',
+                            '&:hover': {
+                            },
                         }}>{props.text}
                     </Typography>
+                    
                     <ButtonGroup 
                         variant = 'contained' disableElevation
                         aria-label="outlined primary button group">

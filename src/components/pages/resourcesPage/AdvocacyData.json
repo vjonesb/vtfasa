@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "img": "/pictures/resources/AdvocacyDataLogos/PUSOLogo.png",
+      "title": "(Community Work) Join/Learn about PUSO Foundation",
+      "description": "Purposeful Unconditional Service to Others",
+      "link": "https://www.pusofoundation.org/"
+    },
+    {
+        "id": 2,
+        "img": "/pictures/resources/AdvocacyDataLogos/OrangeAAPALogo.png",
+        "title": "(Mental Health) Join/Learn about AAPA:",
+        "description": "Asian American Psychological Association Statement on Monterey Park Shooting",
+        "link": "https://aapaonline.org/"
+      },
+      {
+        "id": 3,
+        "img": "/pictures/resources/AdvocacyDataLogos/OCANationalLogo.png",
+        "title": "(General) Join/Learn about OCA: National",
+        "description": "Protecting AAPI communities",
+        "link": "https://www.ocanational.org/"
+      },
+      {
+        "id": 4,
+        "img": "/pictures/resources/AdvocacyDataLogos/OCADCLogo.png",
+        "title": "(General) Join/Learn about OCA: DC",
+        "description": "The founding local Chapter of OCA-Asian Pacific American Advocates",
+        "link": "https://oca-dc.org/"
+      },
+      {
+        "id": 5,
+        "img": "/pictures/resources/AdvocacyDataLogos/FYLProLogo.png",
+        "title": "(Leadership/Policies) Join/Learn about FYLPRO:",
+        "description": "A network of leaders passioante about the Pilipino heritage",
+        "link": "https://fylpro.org/ "
+      },
+      {
+        "id": 6,
+        "img": "/pictures/resources/AdvocacyDataLogos/AFYLogo.png",
+        "title": "(General) Join/Learn about AFY:",
+        "description": "Young people understand that reproductive and sexual health and rights",
+        "link": "https://www.smchealth.org/filipino-mental-health-initiative"
+      }
+    
+  ]

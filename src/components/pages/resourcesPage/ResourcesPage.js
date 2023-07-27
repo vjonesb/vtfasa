@@ -1,23 +1,23 @@
-import { Typography, Paper, Box,Card, CardContent, CardMedia } from "@mui/material";
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * description:
+ * After declaring the header text, it calls ResourcesTemplate
+ * and passes an array of elements it wants to be displayed below it.
+ */
+
+
+import { Typography, Paper, Box } from "@mui/material";
 
 import BottomFooter from "../mainPage/gridComponents/BottomFooter";
+import ResourcesTemplate from "./ResourcesTemplate";
+import HealthData from "./HealthData.json";
+import AdvocacyData from "./AdvocacyData.json";
+import LanguageData from "./LanguageData.json";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import Divider from "../../Divider";
-import Masonry from '@mui/lab/Masonry';
-import { styled } from '@mui/system';
+import CustomDivider from '../../SmallerDivider';
+import Divider from '../../Divider';
 
-const CustomMasonryCard = styled(Card)(({ theme }) => ({
-    background: '#7393B3',
-    
-  }));
-
-const CustomCard = styled(Card)(({ theme }) => ({
-    background: '#FBF3DB',
-}))
-
-
-
-  
 
 function ResourcesPage() {
 
@@ -34,70 +34,7 @@ function ResourcesPage() {
             marginTop: '100px'
           },
     };
-    const imageData = [
-        {
-          id: 1,
-          img: '/pictures/resources/logo-share-SanMatero.png',
-          title: 'SanMatero',
-          description: 'Filipino Mental Health Initiative',
-          link: 'https://www.smchealth.org/filipino-mental-health-initiative',
-        },
-        
-        {
-          id: 2,
-          img: '/pictures/resources/frontiersLogo.webp',
-          title: 'Mental Health',
-          description: 'State of Mental Health in the Philippines',
-          link: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2021.706483/full',
-        },
-        {
-            id: 3,
-            img: '/pictures/resources/NamiLogo.png',
-            title: 'Identity Problems',
-            description: 'Asian American and Pacific Islander',
-            link: 'https://www.nami.org/Your-Journey/Identity-and-Cultural-Dimensions/Asian-American-and-Pacific-Islander',
-        },
-        {
-            id: 4,
-            img: '/pictures/resources/OrangeAAPALogo.png',
-            title: 'Asian American Psychology Association',
-            description: 'Asian American Psychological Association',
-            link: 'https://aapaonline.org/',
-        },
-        {
-            id: 5,
-            img: '/pictures/resources/GreenAAPALogo.png',
-            title: 'Trauma Violence',
-            description: 'Trauma and Violence Exposure among Asian American and Pacific Islander children',
-            link: 'https://aapaonline.org/wp-content/uploads/2014/06/AAPA_Trauma-Violence-web1.pdf',
-
-        },
-        {
-            id: 6,
-            img: "/pictures/resources/YellowAAPALogo.png",
-            title: "Substance Abuse",
-            description: 'Substance Abuse & Asian American Pacific Islanders',
-            link: 'https://aapaonline.org/wp-content/uploads/2014/06/AA-Substance-Use_final-web.pdf',
-
-        },
-        {
-            id: 7,
-            img: '/pictures/resources/GreenAAPALogo.png',
-            title: 'Intimate Partner Violence',
-            description: 'Intimate Partner Violence Among Asian American and Pacific Islander Women',
-            link: 'https://aapaonline.org/wp-content/uploads/2014/06/AA_IPV-final-web.pdf',
-
-        },
-        {
-            id: 8,
-            img: '/pictures/resources/HumanRightsLogo.png',
-            title: 'Coming Out',
-            description: 'Living Authentically as LGBTQ Asian and Pacific Islander Americans',
-            link: 'https://assets2.hrc.org/files/assets/resources/HRC-Coming_Out-API-FINAL-web-2018.pdf',
-        },
-        
-      ];
-
+    
     return(
         <div>
             <div style={styles.container} >
@@ -106,40 +43,47 @@ function ResourcesPage() {
                   alt = 'cover'
                   style={styles.image}/>
               </div>
-              <Typography variant="h1" align="center">
+              <Typography variant="h3" align="center">
                 Health
               </Typography>
-              <Divider color = "black"/>
+              <CustomDivider color = "green"/>
 
-              <Grid container xs = {12}>
-                <Grid item xs/>
-                <Grid item xs = {10}>
-                <CustomMasonryCard sx={{ maxHeight: '500px', overflowY: 'auto' }}>
-                    <div style ={{marginLeft: 30, marginTop: 30}}>
-                    <Masonry columns={3} spacing={4}>
-                        {imageData.map((item) => (
-                            <a href={item.link} target="_blank" rel="noopener noreferrer">
-                            <CustomCard elevation={6}>
-                                <CardMedia sx = {{height: 140}}
-                                image = {item.img}/>
-                                <CardContent>
-                                    <Typography variant="h6">
-                                        {item.title}
-                                    </Typography>
-                                    <Typography variant="body2">
-                                        {item.description}
-                                    </Typography>
-                                </CardContent>
-                            </CustomCard>  
-                            </a>
-                        ))}
-                    </Masonry>
-                    </div>
-                    </CustomMasonryCard>
+              
+              <Grid container direction={'column'} spacing={4}>
+                <Grid item>
+                    <ResourcesTemplate section = "Health"
+                        color = "#00A36C"
+                        images = {HealthData}/>
                 </Grid>
-                <Grid item xs/>
+                <Grid item>
+                    <Typography variant="h3" align="center">
+                        Advocacy
+                    </Typography>
+                    
+                    <CustomDivider color = "#FFBF00"/>
+                        
+                        
+                    <ResourcesTemplate section = "Advocacy"
+                        color = "#FFBF00"
+                        images = {AdvocacyData}/>
+
+                </Grid>
+                <Grid item>
+                    <Typography variant="h3" align="center">
+                        Language
+                    </Typography>
+                    <CustomDivider color = "red"/>
+                    <ResourcesTemplate 
+                    color = "#AA4A44"
+                        images = {LanguageData}/>
+                </Grid>
+              
+
+              
+              
               </Grid>
 
+              
               <Paper sqaure sx = {{width: 'full'}}>
                 <Box sx = {{height: '20px'}} mt = {10}/>
                     <Divider color = 'green'/>
