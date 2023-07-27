@@ -7,7 +7,7 @@ import Article from "./Article";
 
 
 const CustomPaper = styled(Paper)(({ theme }) => ({
-    background: '#EED589',    
+    background: '#7393B3',    
   }));
 
 

@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 
 const CustomAccordion = styled(Accordion)(({ theme }) => ({
-    background: '#EED589', // Change the background color to lightblue or any other color you prefer
+    background: '#7393B3', // Change the background color to lightblue or any other color you prefer
     // Add any other styles you want to customize the Accordion component
     }));
 

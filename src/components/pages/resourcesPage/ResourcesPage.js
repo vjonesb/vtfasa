@@ -6,10 +6,17 @@ import Divider from "../../Divider";
 import Masonry from '@mui/lab/Masonry';
 import { styled } from '@mui/system';
 
-const CustomCard = styled(Card)(({ theme }) => ({
-    background: '#FBF3DB',
+const CustomMasonryCard = styled(Card)(({ theme }) => ({
+    background: '#7393B3',
     
   }));
+
+const CustomCard = styled(Card)(({ theme }) => ({
+    background: '#FBF3DB',
+}))
+
+
+
   
 
 function ResourcesPage() {
@@ -107,12 +114,12 @@ function ResourcesPage() {
               <Grid container xs = {12}>
                 <Grid item xs/>
                 <Grid item xs = {10}>
-                <CustomCard sx={{ maxHeight: '500px', overflowY: 'auto' }}>
-                    <div style ={{marginLeft: 30}}>
+                <CustomMasonryCard sx={{ maxHeight: '500px', overflowY: 'auto' }}>
+                    <div style ={{marginLeft: 30, marginTop: 30}}>
                     <Masonry columns={3} spacing={4}>
                         {imageData.map((item) => (
                             <a href={item.link} target="_blank" rel="noopener noreferrer">
-                            <CustomCard>
+                            <CustomCard elevation={6}>
                                 <CardMedia sx = {{height: 140}}
                                 image = {item.img}/>
                                 <CardContent>
@@ -128,7 +135,7 @@ function ResourcesPage() {
                         ))}
                     </Masonry>
                     </div>
-                    </CustomCard>
+                    </CustomMasonryCard>
                 </Grid>
                 <Grid item xs/>
               </Grid>
