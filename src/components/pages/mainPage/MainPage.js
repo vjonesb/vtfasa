@@ -10,10 +10,9 @@ import Section from './Section';
 
 //Photos
 
-import { Paper, Box, ImageList, styled} from '@mui/material';
+import { Paper, Box} from '@mui/material';
 import Divider from '../../Divider';
 import Grid from '@mui/material/Unstable_Grid2';
-import CarouselTemplate from '../../CarouselTemplate';
 
 import Events from './gridComponents/Events';
 import BordordConerSection from './gridComponents/BordordCornerSection';
@@ -23,50 +22,34 @@ import SummaryOfFasa from './gridComponents/SummaryOfFasa';
 import Scholarship from './gridComponents/Scholarship';
 import BottomFooter from './gridComponents/BottomFooter';
 
-const ImageListContainer = styled('div')({
-  maxHeight: 800,
-  overflow: 'auto',
-});
-
-const ImageListStyled = styled(ImageList)({
-  width: '100%',
-  height: '100%',
-});
-
-
 const MainPage = (props) => {
     //Section Titles
   const events = "Events";
-  
 
-  const imageData = [
-    {
-      id: 1,
-      img: '/pictures/fasa_pic.png',
-      title: 'OBoard',
-    },
-  ];
+  const styles = {
+    container: {
+        position: 'relative',
+        width: '100%',
+        marginTop: '0px',
+      },
+      image: {
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+      },
+};
 
     return (
     <div style={{ overflow: 'hidden', marginTop: '100px' }}>
         <Divider color = 'black'/>
-        <ImageListContainer>
-          <ImageListStyled cols={1}
-            sx = {{
-              marginLeft:'5px',
-              maxheight: "50vh",
-              width: "100%", 
-              alignContent: "center"   
-            }}>
-            <CarouselTemplate images = {imageData}/>
-          </ImageListStyled>
-        </ImageListContainer>
+        <img
+                  src='/pictures/fasa_pic.png' // Replace with the actual path to your image
+                  alt = 'cover'
+                  style={styles.image}/>
         
         <Grid container xs = {12}direction={'column'}>
             <BordordConerSection inside = {<SummaryOfFasa/>}/>
-            <Section text = {events} 
-              colorBox1 = "#852d1a" 
-              colorBox2 = "#f8c043"/>
+            <Section text = {events}/>
             <Events sx = {{marginTop: '10px'}}/>
             <BordordConerSection  inside = {<Scholarship/>}/>
             <Box sx = {{height: '30px'}}/>
@@ -75,7 +58,7 @@ const MainPage = (props) => {
         >
           <Paper sqaure sx = {{width: 'full'}}>
             <Box sx = {{height: '20px'}}/>
-            <Divider color = 'green'/>
+            <Divider color = '#224343'/>
             <BottomFooter/>
             <Box sx = {{height: '30px'}}/>
           </Paper>

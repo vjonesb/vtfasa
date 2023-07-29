@@ -15,10 +15,11 @@ const Events = (props) => {
 
 
     return (
-        <Grid container xs = {12} mt ={5}>
+        <Grid container xs = {12} mt ={5} spacing = {1}>
+            <Grid item xs = {1}/>
             <Grid item xs>
                     <Grid item xs>
-                        <Card sx = {{borderRadius: '0px'}}>
+                        <Card sx = {{borderRadius: '30px'}}>
                             <CardContent style = {{overflow: 'auto', height:500}}>
                             <div 
                             style={{ display: 'flex', justifyContent: 'center' }}>
@@ -26,11 +27,9 @@ const Events = (props) => {
                             style={{
                                 maxWidth: 550,           
                             }}
-                            width="100%"
+                                width="100%"
                                 align = 'center' />
                                 </div>
-
-                            
                             </CardContent>
                         </Card>
                 </Grid>
@@ -38,7 +37,7 @@ const Events = (props) => {
                 
             </Grid>
             <Grid item xs = {6}>
-            <Card sx = {{borderRadius: '0px'}}>
+            <Card sx = {{borderRadius: '30px'}}>
                     <CardContent>
                         <YouTubeEmbed url="https://youtu.be/fxG30pJZt1Q"
                         height = {460}
@@ -50,6 +49,7 @@ const Events = (props) => {
                 
                 
             </Grid>
+            <Grid item xs = {1}/>
             
         </Grid>
         

@@ -13,7 +13,7 @@ import React, { useEffect, useState } from 'react';
 import { Typography, Button } from "@mui/material";
 import SendIcon from '@mui/icons-material/Send';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
-import LinkedSection from '../LinkedSection';
+import Section from '../Section';
 
 const scrollableTextStyle = {
     overflow: 'auto',
@@ -42,12 +42,7 @@ function Scholarship() {
         <Grid container xs = {12} marginTop = {4}>
             <Grid xs = {12}>
                 <div maxWidth={400}>
-                    <LinkedSection
-                        link = {linkTo}
-                        target="_blank" rel="noopener"
-                        text = "Scholarship" 
-                        colorBox1 = "#852d1a" 
-                        colorBox2 = "#f8c043"/>
+                <Section text = "Scholarship"/>
                 </div>
                 
                 <div style={scrollableTextStyle}>

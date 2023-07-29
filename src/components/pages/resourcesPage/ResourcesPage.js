@@ -44,7 +44,7 @@ function ResourcesPage() {
                   style={styles.image}/>
               </div>
               <Typography variant="h3" align="center">
-                Health
+                Mental Health
               </Typography>
               <CustomDivider color = "green"/>
 
@@ -57,7 +57,7 @@ function ResourcesPage() {
                 </Grid>
                 <Grid item>
                     <Typography variant="h3" align="center">
-                        Advocacy
+                        Other Organizations for Advocacy
                     </Typography>
                     
                     <CustomDivider color = "#FFBF00"/>
@@ -70,7 +70,7 @@ function ResourcesPage() {
                 </Grid>
                 <Grid item>
                     <Typography variant="h3" align="center">
-                        Language
+                        Links to learn our language: Tagalog!
                     </Typography>
                     <CustomDivider color = "red"/>
                     <ResourcesTemplate 
@@ -86,7 +86,7 @@ function ResourcesPage() {
               
               <Paper sqaure sx = {{width: 'full'}}>
                 <Box sx = {{height: '20px'}} mt = {10}/>
-                    <Divider color = 'green'/>
+                <Divider color = '#224343'/>
                     <BottomFooter/>
                 <Box sx = {{height: '30px'}}/>
             </Paper>

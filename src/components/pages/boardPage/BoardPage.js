@@ -67,7 +67,7 @@ function BoardPage() {
             <BoardMembers/>
             <Paper sqaure sx = {{width: 'full'}}>
                 <Box sx = {{height: '20px'}} mt = {10}/>
-                <Divider color = 'green'/>
+                <Divider color = '#224343'/>
                 <BottomFooter/>
             <Box sx = {{height: '30px'}}/>
           </Paper>

@@ -11,20 +11,31 @@
  * But if there is no props.subText and it has a props.photo 
  * then it'll create a photo component
  */
-import { Typography, Box} from '@mui/material';
+import { Typography, Paper, styled} from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 
 
-
+const CustomPaper = styled(Paper)({
+    background: '#e8dab3',
+  });
 
 const Section = (props) =>{
 
 
     return (
         <Grid container xs = {12} >
-            <Grid xs = {2}/>
-            <Grid xs = {8}>
-                    <div align = 'center'>
+            <Grid xs/>
+            <Grid xs = {4}>
+                <CustomPaper sx = {{
+                    
+                    height: '65px'}}>
+                    <Typography variant='h3' align='center'>
+                        {props.text}
+                    </Typography>
+
+                </CustomPaper>
+                
+                    {/* <div align = 'center'>
                         <Box position = "relative" height = {60} maxWidth={400}>
                             <Box
                                 position="absolute"
@@ -47,11 +58,11 @@ const Section = (props) =>{
                                 >{props.text}</Typography>
                             </Box>
                         </Box>
-                    </div>
+                    </div> */}
                     
                     
             </Grid>
-            <Grid xs = {2}/>
+            <Grid xs/>
         </Grid>
     )
 }

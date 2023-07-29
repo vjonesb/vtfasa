@@ -13,7 +13,7 @@
  */
 
 
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Card, CardContent, CardMedia, Typography, Paper } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import { styled } from '@mui/system';
 import Masonry from '@mui/lab/Masonry';
@@ -21,12 +21,6 @@ import Masonry from '@mui/lab/Masonry';
 
 
 const ResourcesTemplate = (props) => {
-    
-
-    const CustomMasonryCard = styled(Card)(({ theme }) => ({
-        background: '#FBF3DB',
-        
-    }));
     
     const CustomCard = styled(Card)(({ theme }) => ({
         background: props.color,
@@ -41,7 +35,7 @@ const ResourcesTemplate = (props) => {
                 </Grid>
                 {/* <Divider orientation="vertical" flexItem/> */}
                 <Grid item xs = {8}>
-                    <CustomMasonryCard sx={{ maxHeight: '400px', overflowY: 'auto', marginLeft: '20px' }}>
+                    <Paper sx={{ maxHeight: '400px', overflowY: 'auto', marginLeft: '20px' }}>
                         <div style ={{marginLeft: 30, marginTop: 30}}>
                         <Masonry columns={2} spacing={4}>
                             {props.images.map((item, i) => (
@@ -62,7 +56,7 @@ const ResourcesTemplate = (props) => {
                             ))}
                         </Masonry>
                         </div>
-                    </CustomMasonryCard>
+                    </Paper>
                 </Grid>
         </Grid>
 

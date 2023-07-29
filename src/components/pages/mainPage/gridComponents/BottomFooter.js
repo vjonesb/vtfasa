@@ -9,6 +9,11 @@
 
 import { Typography, Button, ButtonGroup } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import Youtube from '@mui/icons-material/SubscriptionsOutlined';
+import Instagram from '@mui/icons-material/CameraAltOutlined';
+
+
 
 function BottomFooter() {
 
@@ -21,17 +26,20 @@ function BottomFooter() {
             <Grid item xs>
                 <div align = 'center'>
                 <ButtonGroup variant = 'contained' color = 'secondary'>
-                    <Button href= {faceBook}  target="_blank" rel="noopener" >
+                    <Button href= {faceBook}  target="_blank" rel="noopener"
+                    startIcon = {<FacebookIcon/>} >
                         <Typography variant = 'body1' color = "white">
                             FaceBook
                         </Typography>
                     </Button>
-                    <Button href= {instagram} target="_blank" rel="noopener" >
+                    <Button href= {instagram} target="_blank" rel="noopener" 
+                    startIcon = {<Instagram/>}>
                         <Typography variant = 'body1' color = "white">
                             Instagram
                         </Typography>
                     </Button>
-                    <Button href= {youTube}  target="_blank" rel="noopener" >
+                    <Button href= {youTube}  target="_blank" rel="noopener" 
+                    startIcon = {<Youtube/>}>
                         <Typography variant = 'body1' color = "white">
                             Youtube
                         </Typography>
