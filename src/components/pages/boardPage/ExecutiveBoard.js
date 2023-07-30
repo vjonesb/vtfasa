@@ -106,7 +106,7 @@ function ExecutiveBoard() {
   
   return (<div>
     <Grid item>
-      <ButtonGroup variant='text' elevation = {8}>
+      <ButtonGroup variant = 'text' elevation = {8}>
         <Button 
           onClick={() => handleButtonClick('president')}
           sx = {{

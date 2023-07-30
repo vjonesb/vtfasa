@@ -21,6 +21,7 @@ import BordordConerSection from './gridComponents/BordordCornerSection';
 import SummaryOfFasa from './gridComponents/SummaryOfFasa';
 import Scholarship from './gridComponents/Scholarship';
 import BottomFooter from './gridComponents/BottomFooter';
+import EmailFormDialog from './EmailFormDialog';
 
 const MainPage = (props) => {
     //Section Titles
@@ -43,11 +44,12 @@ const MainPage = (props) => {
     <div style={{ overflow: 'hidden', marginTop: '100px' }}>
         <Divider color = 'black'/>
         <img
-                  src='/pictures/fasa_pic.png' // Replace with the actual path to your image
-                  alt = 'cover'
-                  style={styles.image}/>
-        
+          src='/pictures/fasa_pic.png' // Replace with the actual path to your image
+          alt = 'cover'
+          style={styles.image}/>
+       
         <Grid container xs = {12}direction={'column'}>
+            <EmailFormDialog/>
             <BordordConerSection inside = {<SummaryOfFasa/>}/>
             <Section text = {events}/>
             <Events sx = {{marginTop: '10px'}}/>

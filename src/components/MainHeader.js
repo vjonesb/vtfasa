@@ -9,7 +9,6 @@ import { Typography, Box, AppBar, Toolbar, Button, ButtonGroup, Avatar, useScrol
 import Slide from '@mui/material/Slide';
 import PropTypes from 'prop-types';
 
-
 function HideOnScroll(props) {
   const { children, window } = props;
   // Note that you normally won't need to set the window ref as useScrollTrigger
@@ -78,6 +77,7 @@ const MainHeader = (props) => {
                     <ButtonGroup 
                         variant = 'contained' disableElevation
                         aria-label="outlined primary button group">
+                        
                         <Button href = "/"
                             sx={{ my: 2, color: 'white', display: 'block' }}>
 
@@ -131,6 +131,19 @@ const MainHeader = (props) => {
                                 
                               },}} >
                             Constitution
+                            </Typography>                                 
+                        </Button>
+                        <Button href = "/donation"
+                            sx={{ my: 2, color: 'white', display: 'block' }}>
+                            <Typography variant = "h6" fontWeight={'bold'}
+                            sx = {{fontSize: {
+                                xs: '0.3rem',   // Extra-small devices (phones)
+                                sm: '0.7rem', // Small devices (tablets)
+                                md: '1rem',   // Medium devices (desktops)
+                                lg: '1rem',   // Large devices (large desktops)
+                                
+                              },}} >
+                            Donate Now
                             </Typography>                                 
                         </Button>
                         
