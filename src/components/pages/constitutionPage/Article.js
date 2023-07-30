@@ -1,3 +1,10 @@
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * description:
+ * takes in the path passed down, then makes a new accordian
+ * with the file content from the path.
+ */
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import { styled } from '@mui/system';
 

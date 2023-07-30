@@ -51,7 +51,9 @@ function BoardPage() {
                 elevation={8}>
                   <Typography variant="h3"
                   sx = {{
-                      fontSize: {
+                      fontSize: { 
+                        //has different breaksizes so that it's mobile compatible
+
                         xs: '1rem',   // Extra-small devices (phones)
                         sm: '1.5rem', // Small devices (tablets)
                         md: '2rem',   // Medium devices (desktops)

@@ -1,4 +1,9 @@
-
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * description:
+ * is the oBoard manager with a new row every 7 members
+ */
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 //Sports chairs
 import SportsChair1 from '../../../pictures/OfficerBoard/SportsChair1.png';

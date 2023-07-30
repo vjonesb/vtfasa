@@ -1,3 +1,13 @@
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * description:
+ * Calls newStep component whenever we want to add
+ * a new step to the donations. We give it a title and description
+ * as well as the path to the image.
+ * 
+ */
+
 import { Box, Button, Paper, Typography } from "@mui/material";
 import Divider from "../../Divider";
 import BottomFooter from "../mainPage/gridComponents/BottomFooter";

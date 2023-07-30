@@ -4,6 +4,7 @@
  *  Description:
  *  Calls the ExecutiveHighlight class and passes down an image
  *  along with the answers to the QnA that was given
+ *
  */
 import President from '../../../pictures/ExecutiveBoard/President.png';
 import VicePresident from '../../../pictures/ExecutiveBoard/VicePres.png';
@@ -27,6 +28,8 @@ const CutomPositionCard = styled(Card)(({ theme}) => ({
 
 function ExecutiveBoard() {
 
+  //activeVariant is the variable to get callled
+  //and it changes do to setActiveVariant
   const [activeVariant, setActiveVariant] = useState('variant1');
 
   const handleButtonClick = (variant) => {
@@ -37,6 +40,7 @@ function ExecutiveBoard() {
     switch (activeVariant) {
       case 'president':
         return (
+          //Each one is a new variant with different variables
           <CutomPositionCard elevation={5}>
             <ExecutiveMemberHighlight key = "president"
             image = {President}

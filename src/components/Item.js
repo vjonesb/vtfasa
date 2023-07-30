@@ -1,3 +1,9 @@
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * description:
+ * Is called by the CarouselTemplate
+ */
 import { Paper } from '@mui/material'
 
 function Item({item})

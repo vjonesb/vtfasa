@@ -1,3 +1,12 @@
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * description:
+ * is the constitution page manager
+ * Calls a new article component for each article section
+ * gives it the path of the file  and gives a title.
+ */
+
 import { Typography, Paper, Box } from "@mui/material";
 import { styled } from '@mui/system';
 import Divider from "../../Divider";

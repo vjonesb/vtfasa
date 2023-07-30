@@ -1,3 +1,10 @@
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * description:
+ * Takes in props to find the path and the title and description
+ * Displays the new step with said definitions.
+ */
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 

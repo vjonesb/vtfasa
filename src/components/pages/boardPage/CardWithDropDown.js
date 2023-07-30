@@ -3,10 +3,12 @@
  * 
  *  Description:
  * 
- *  Showcases both Eboard and OBoard
+ *  Showcases OBoard
  * 
  *  When they hover over the card then it drops down 
  *  with the title and description
+ * 
+ * can be implemented by wrapping card with "AnimatedContentWrapper"
  */
 
 import { Card, CardMedia } from "@mui/material";
