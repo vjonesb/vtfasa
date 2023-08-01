@@ -13,6 +13,7 @@ import Grid from '@mui/material/Unstable_Grid2/Grid2';
 import ExecutiveBoard from './ExecutiveBoard';
 import OfficerBoard from './OfficerBoard';
 import { styled } from '@mui/system';
+import WebMaster from './WebMaster';
 
 const CustomPaper = styled(Paper)(({ theme }) => ({
   background: '#FFC000',
@@ -56,6 +57,25 @@ function BoardMembers() {
     </Grid>
     <Grid item xs>
       <OfficerBoard/>
+    </Grid>
+    <Grid item xs>
+      <Paper>
+        <Typography variant='h3'
+        sx = {{
+          marginLeft: '10px',
+          marginRight: '10px',
+          fontSize: {
+            xs: '1rem',   // Extra-small devices (phones)
+            sm: '1.5rem', // Small devices (tablets)
+            md: '2rem',   // Medium devices (desktops)
+            lg: '4rem',   // Large devices (large desktops)
+          }
+      }}>
+          Web Masters
+        </Typography>
+        <WebMaster/>
+      </Paper>
+
     </Grid>
     
   </Grid>

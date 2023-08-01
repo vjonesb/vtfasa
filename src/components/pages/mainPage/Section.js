@@ -26,9 +26,7 @@ const Section = (props) =>{
         <Grid container xs = {12} >
             <Grid xs/>
             <Grid xs = {4}>
-                <CustomPaper sx = {{
-                    
-                    height: '65px'}}>
+                <CustomPaper>
                     <Typography variant='h3' align='center'>
                         {props.text}
                     </Typography>
