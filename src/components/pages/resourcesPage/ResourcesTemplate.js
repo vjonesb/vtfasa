@@ -22,8 +22,21 @@ import Masonry from '@mui/lab/Masonry';
 
 const ResourcesTemplate = (props) => {
     
+    const ContentWrapper = styled(CardContent)(({theme}) => ({
+        position: 'absolute',
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+    }));
+    
     const CustomCard = styled(Card)(({ theme }) => ({
         background: props.color,
+        position: 'relative',
+        paddingTop: '0.5%',
+        [theme.breakpoints.down('xs')] : {
+            paddingTop: '100%',
+        }
     }));
     
     return(

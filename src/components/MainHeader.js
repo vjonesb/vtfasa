@@ -8,7 +8,6 @@ import FasaImg from '../pictures/FasaLogo.png';
 import { Typography, Box, AppBar, Toolbar, Button, ButtonGroup, Avatar, useScrollTrigger, Link, useMediaQuery } from "@mui/material";
 import Slide from '@mui/material/Slide';
 import PropTypes from 'prop-types';
-import { useState } from 'react';
 
 import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
@@ -46,16 +45,7 @@ HideOnScroll.propTypes = {
 const MainHeader = (props) => {
 
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
-  const [open, setOpen] = useState(false);
-
-  const handleOpen = () => {
-    setOpen(true);
-  }
-
-  const handleClose = () => {
-    setOpen(false);
-  }
-
+  
   const handleActionClick = (action) => {
     //handle the click of each speed dial action here
     //IMplement custom logic for each action
@@ -108,9 +98,7 @@ const MainHeader = (props) => {
                     height: '75px',
                     marginRight: '10px'
                 }}/>}
-              onClose={handleClose}
-              onOpen={handleOpen}
-              open={open}
+              open= {true}
               direction="right"
               sx={{
                 position: 'fixed',

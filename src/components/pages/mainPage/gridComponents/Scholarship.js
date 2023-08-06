@@ -41,7 +41,7 @@ function Scholarship() {
     return (
         <Grid container xs = {12} marginTop = {4}>
             <Grid xs = {12}>
-                <div maxWidth={400}>
+                <div maxWidth={400} style={{marginTop: '15px'}}>
                 <Section text = "Scholarship"/>
                 </div>
                 
@@ -64,6 +64,7 @@ function Scholarship() {
                         size = "large"
                         target="_blank" rel="noopener"
                         endIcon = {<SendIcon/>}
+                        sx = {{marginBottom: '15px'}}
                     >Scholarship</Button>
                     
                 </div>

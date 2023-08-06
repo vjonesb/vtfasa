@@ -28,8 +28,22 @@ export const themeOptions: ThemeOptions = {
       xl: 1920,    // Large laptops and desktops
     },
   },
+  
   typography: {
-    fontFamily: 'Bree Serif',  
+    fontFamily: 'Bree Serif', 
+    h2: {
+      fontSize: '2rem',
+      '@media (min-width:600px)': {
+        fontSize: '3rem', // Font size for tablets and larger
+      },
+      '@media (min-width:960px)': {
+        fontSize: '3.5rem', // Font size for small laptops and larger
+      },
+      '@media (min-width:1280px)': {
+        fontSize: '4.5rem', // Font size for medium laptops and larger
+      },
+
+    }, 
       h3: {
         fontSize: '1rem',   // Default font size for all devices
         '@media (min-width:600px)': {

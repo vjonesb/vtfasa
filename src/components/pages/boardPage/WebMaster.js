@@ -1,32 +1,37 @@
 import styled from "@emotion/styled";
-import { Card, CardContent, Paper, Typography } from "@mui/material";
+import { Card, CardContent, CardMedia } from "@mui/material";
 import backgroundImage from './BackgroundPic.png';
 
+import FundRaisingChair1 from '../../../pictures/OfficerBoard/FundraisingChair1.png';
 
-const BackgroundImagePaper = styled(Paper)(({theme}) => ({
+
+const BackgroundImageCard = styled(Card)(({theme}) => ({
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: '100% 100%',
-  backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'center',
-  width: '100%',
-  
-  padding: theme.spacing(2),
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    width: '100%',
+    padding: theme.spacing(2),
   // Add other styles as needed for the Paper component
 }))
 
 function WebMaster() {
     return(
         <div>
-            <BackgroundImagePaper elevation={3}>
-                <Card>
+                <BackgroundImageCard>
                     <CardContent>
-                        <Typography>
-                            This is card
-                        </Typography>
+                        <CardMedia 
+                        component="img"
+                        src={FundRaisingChair1}
+                        alt="Image"
+                        style={{
+                            objectFit: 'contain',
+                            }}
+                        />    
+                                   
+                        
                     </CardContent>
-                </Card>
-                
-            </BackgroundImagePaper>
+                </BackgroundImageCard>
         </div>
     );
 }

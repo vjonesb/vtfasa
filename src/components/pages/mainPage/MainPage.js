@@ -42,18 +42,30 @@ const MainPage = (props) => {
 
     return (
     <div style={{ overflow: 'hidden', marginTop: '100px' }}>
-        <Divider color = 'black'/>
         <img
           src='/pictures/fasa_pic.png' // Replace with the actual path to your image
           alt = 'cover'
           style={styles.image}/>
        
-        <Grid container xs = {12}direction={'column'}>
-            <EmailFormDialog/>
-            <BordordConerSection inside = {<SummaryOfFasa/>}/>
-            <Section text = {events}/>
-            <Events sx = {{marginTop: '10px'}}/>
-            <BordordConerSection  inside = {<Scholarship/>}/>
+        <Grid container xs = {12}direction={'column'} spacing = {2}>
+            <Grid item>
+              <EmailFormDialog/>
+            </Grid>
+            <Grid>
+                <BordordConerSection inside = {<SummaryOfFasa/>}/>
+                
+                
+              
+            </Grid>
+            <Grid>
+              <Section text = {events}/>
+              <Events sx = {{marginTop: '10px'}}/>
+            </Grid>
+            <Grid item>
+              <BordordConerSection  inside = {<Scholarship/>}/>
+            </Grid>
+            
+            
             <Box sx = {{height: '30px'}}/>
         </Grid>
         <Box
