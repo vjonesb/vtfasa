@@ -73,9 +73,12 @@ function BoardMembers() {
       }}>
           Web Masters
         </Typography>
-        <WebMaster/>
+        
       </Paper>
 
+    </Grid>
+    <Grid item xs>
+    <WebMaster/>
     </Grid>
     
   </Grid>
