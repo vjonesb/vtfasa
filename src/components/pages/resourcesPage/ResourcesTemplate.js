@@ -13,7 +13,7 @@
  */
 
 
-import { Card, CardContent, CardMedia, Typography, Paper } from "@mui/material";
+import { Card, CardContent, CardMedia, Typography, Paper, useMediaQuery } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import { styled } from '@mui/system';
 import Masonry from '@mui/lab/Masonry';
@@ -21,14 +21,6 @@ import Masonry from '@mui/lab/Masonry';
 
 
 const ResourcesTemplate = (props) => {
-    
-    const ContentWrapper = styled(CardContent)(({theme}) => ({
-        position: 'absolute',
-        top: 0,
-        bottom: 0,
-        left: 0,
-        right: 0,
-    }));
     
     const CustomCard = styled(Card)(({ theme }) => ({
         background: props.color,
@@ -38,6 +30,9 @@ const ResourcesTemplate = (props) => {
             paddingTop: '100%',
         }
     }));
+
+    const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+
     
     return(
         <Grid container xs = {12}>
@@ -53,7 +48,15 @@ const ResourcesTemplate = (props) => {
                         <Masonry columns={2} spacing={4}>
                             {props.images.map((item, i) => (
                                 <a href={item.link} target="_blank" rel="noopener noreferrer">
-                                <CustomCard elevation={6}>
+                                {isSmallScreen ? (
+                                    <CustomCard elevation = {6}>
+                                        <Typography variant = "h6" ml = {1}>
+                                            {item.title}
+                                        </Typography>
+                                    </CustomCard>
+
+                                ) : (
+                                    <CustomCard elevation={6}>
                                     <CardMedia sx = {{height: 140}}
                                     image = {item.img}/>
                                     <CardContent>
@@ -65,6 +68,9 @@ const ResourcesTemplate = (props) => {
                                         </Typography>
                                     </CardContent>
                                 </CustomCard>  
+
+                                )}
+                                
                                 </a>
                             ))}
                         </Masonry>
