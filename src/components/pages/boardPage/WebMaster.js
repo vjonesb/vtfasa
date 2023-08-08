@@ -24,7 +24,7 @@ function WebMaster() {
     const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
     return(
         <Grid container xs = {12} direction={'row'} spacing={2}>
-            <Grid item xs = {3}/>
+            <Grid item xs = {2}/>
             <Grid item xs>
                 <BackgroundImageCard>
                     <a href="https://www.instagram.com/patrick.vyn/" target="_blank" rel="noopener noreferrer"
@@ -75,7 +75,7 @@ function WebMaster() {
                         ) : (
                             <Paper sx = {{borderRadius: '0px'}}>
                                 <Typography ml={1} variant="body2" align="center">
-                                    Name: Nessa <br />
+                                    Name: Vanessa Jones <br />
                                     Grade: Sophomore <br />
                                     Role: Web Developer
                                 </Typography>
@@ -89,7 +89,7 @@ function WebMaster() {
                     </a>
                 </BackgroundImageCard>
             </Grid>
-            <Grid item xs = {3}/>
+            <Grid item xs = {2}/>
                 
         </Grid>
     );

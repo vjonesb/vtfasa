@@ -44,19 +44,48 @@ export const themeOptions: ThemeOptions = {
       },
 
     }, 
-      h3: {
+    h3: {
         fontSize: '1rem',   // Default font size for all devices
         '@media (min-width:600px)': {
           fontSize: '2.5rem', // Font size for tablets and larger
         },
         '@media (min-width:960px)': {
-          fontSize: '3rem', // Font size for small laptops and larger
+          fontSize: '4rem', // Font size for small laptops and larger
         },
         '@media (min-width:1280px)': {
           fontSize: '4rem', // Font size for medium laptops and larger
         },
+    },
+    h6: {
+      fontSize: '0.6rem',   // Default font size for all devices
+      '@media (min-width:600px)': {
+        fontSize: '1.3rem', // Font size for tablets and larger
       },
-    }
+      '@media (min-width:960px)': {
+        fontSize: '2rem', // Font size for small laptops and larger
+      },
+      '@media (min-width:1280px)': {
+        fontSize: '4rem', // Font size for medium laptops and larger
+      },
+  },
+
+
+    body2: {
+        fontSize: '0.5rem',
+        '@media (min-width:600px)': {
+          fontSize: '0.7rem',   // Extra-small devices (phones)
+          
+        },
+        '@media (min-width:960px)' : {
+          fontSize: '1rem',   // Medium devices (desktops)
+        },
+        '@media (min-width:1280px)' : {
+          fontSize: '1.8rem',   // Large devices (large desktops)
+
+        }
+      }
+  }
+  
   
   
 };

@@ -15,7 +15,7 @@ import Secretary from '../../../pictures/ExecutiveBoard/Secretary.png';
 
 
 
-import { Button, ButtonGroup, Card } from '@mui/material';
+import { Button, ButtonGroup, Card, Typography } from '@mui/material';
 import ExecutiveMemberHighlight from './ExecutiveMemberHighlight';
 import { styled } from '@mui/system';
 import React, { useState } from 'react';
@@ -111,65 +111,45 @@ function ExecutiveBoard() {
   return (<div>
     <Grid item>
       <ButtonGroup variant = 'text' elevation = {8}>
-        <Button 
+        <Button
           onClick={() => handleButtonClick('president')}
-          sx = {{
-            fontSize: {
-              xs: '0.7rem',   // Extra-small devices (phones)
-              sm: '0.7rem', // Small devices (tablets)
-              md: '1rem',   // Medium devices (desktops)
-              lg: '1.8rem',   // Large devices (large desktops)
-            },
-          }}>
-          President
+          >
+            <Typography variant='body2'>
+            President
+            </Typography>
         </Button>
         <Button 
           onClick={() => handleButtonClick('internalvicepres')}
-          sx = {{
-            fontSize: {
-              xs: '0.7rem',   // Extra-small devices (phones)
-              sm: '0.7rem', // Small devices (tablets)
-              md: '1rem',   // Medium devices (desktops)
-              lg: '1.8rem',   // Large devices (large desktops)
-            },
-          }}>
+           >
+          <Typography variant='body2'>
+
           Internal Vice President
+          </Typography>
         </Button>
         <Button 
           onClick={() => handleButtonClick('externalvicepres')}
-          sx = {{
-            fontSize: {
-              xs: '0.7rem',   // Extra-small devices (phones)
-              sm: '0.7rem', // Small devices (tablets)
-              md: '1rem',   // Medium devices (desktops)
-              lg: '1.8rem',   // Large devices (large desktops)
-            },
-          }}>
-          External Vice President
+           >
+            <Typography variant='body2'>
+            External Vice President
+
+
+            </Typography>
         </Button>
         <Button 
           onClick={() => handleButtonClick('secretary')}
-          sx = {{
-            fontSize: {
-              xs: '0.7rem',   // Extra-small devices (phones)
-              sm: '0.7rem', // Small devices (tablets)
-              md: '1rem',   // Medium devices (desktops)
-              lg: '1.8rem',   // Large devices (large desktops)
-            },
-          }}>
+           >
+          <Typography variant='body2'>
+
           Secretary
+          </Typography>
         </Button>
         <Button 
           onClick={() => handleButtonClick('treasurer')}
-          sx = {{
-            fontSize: {
-              xs: '0.7rem',   // Extra-small devices (phones)
-              sm: '0.7rem', // Small devices (tablets)
-              md: '1rem',   // Medium devices (desktops)
-              lg: '1.8rem',   // Large devices (large desktops)
-            },
-          }}>
+           >
+          <Typography variant='body2'>
+
           Treasurer
+          </Typography>
         </Button>
       </ButtonGroup>
       <div style={{marginTop: '10px'}}>

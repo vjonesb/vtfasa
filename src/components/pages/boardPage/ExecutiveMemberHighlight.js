@@ -58,7 +58,7 @@ const ExecutiveMemberHighlight = (props) => {
             <Grid item xs/>
             <Grid item xs = {11}>
             <CustomBioPaper elevation={2}>
-                <Typography
+                <Typography variant='body2'
                 ml={2}
                 mt={1}
                 mb= {1}>
