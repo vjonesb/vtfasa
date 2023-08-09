@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import { Card, CardContent, CardMedia, Paper, Typography, useMediaQuery } from "@mui/material";
-import backgroundImage from './BackgroundPic.png';
+import backgroundImage from '../BackgroundPic.png';
 
 
-import WebMasterChair1 from '../../../pictures/OfficerBoard/WebMasterChair1.png';
-import WebMasterChair2 from '../../../pictures/OfficerBoard/WebMasterChair2.png';
+import WebMasterChair1 from '../../../../pictures/OfficerBoard/WebMasterChair1.png';
+import WebMasterChair2 from '../../../../pictures/OfficerBoard/WebMasterChair2.png';
 
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
