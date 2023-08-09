@@ -49,11 +49,11 @@ function SmallOfficerBoard() {
 
     return (
         <Grid container xs = {12} justifyContent="center" >
-    <Grid container xs = {8}>
-        <MemberIcon chair = {SportsChair1}
+            <Grid container xs = {8}>
+        <MemberIcon chair = {PromoChair1}
          link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
          />
-        <MemberIcon chair = {SportsChair2}
+        <MemberIcon chair = {PromoChair2}
          link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
          />
     </Grid>
@@ -69,14 +69,13 @@ function SmallOfficerBoard() {
          />
     </Grid>
     <Grid container xs = {8}>
-        <MemberIcon chair = {PromoChair1}
+        <MemberIcon chair = {HistorianChair1}
          link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
          />
-        <MemberIcon chair = {PromoChair2}
+        <MemberIcon chair = {HistorianChair2}
          link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
          />
     </Grid>
-        
     <Grid container xs = {8}>
         <MemberIcon chair = {EventChair1}
          link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
@@ -97,14 +96,6 @@ function SmallOfficerBoard() {
          />
     </Grid>
     <Grid container xs = {8}>
-        <MemberIcon chair = {HistorianChair1}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-        <MemberIcon chair = {HistorianChair2}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-    </Grid>
-    <Grid container xs = {8}>
         <MemberIcon chair = {ServiceChair1}
          link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
          />
@@ -115,6 +106,16 @@ function SmallOfficerBoard() {
          link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
          />
     </Grid>
+    
+    <Grid container xs = {8}>
+        <MemberIcon chair = {SportsChair1}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+        <MemberIcon chair = {SportsChair2}
+         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
+         />
+    </Grid>
+    
     <Grid container xs = {8}>
         <MemberIcon chair = {CultureChair1}
          link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"

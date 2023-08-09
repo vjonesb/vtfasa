@@ -50,6 +50,8 @@ const ResourcesTemplate = (props) => {
                                 <a href={item.link} target="_blank" rel="noopener noreferrer">
                                 {isSmallScreen ? (
                                     <CustomCard elevation = {6}>
+                                        <CardMedia sx = {{height: 30}}
+                                        image = {item.img}/>
                                         <Typography variant = "h6" ml = {1}>
                                             {item.title}
                                         </Typography>
