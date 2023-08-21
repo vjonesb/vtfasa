@@ -6,12 +6,32 @@
  * Is centered with the help of the Grid components
  */
 import * as React from 'react';
+import axios from 'axios';
+
 
 import { Button,TextField,Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 
 
 function EmailFormDialog() {
+
+  //The email
+  const [email, setEmail] = React.useState('');
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  }
+
+  const handleEmailSubmit = () => {
+    axios.post('http://localhost:3000/api/updateExcel', {email})
+      .then ((response) => {
+        //Success message
+        handleClose();
+      })
+      .catch((error) => {
+        console.error('Error sending email: ', error);
+      })
+  }
 
   //Is set true so that it opens when it first loads
   const [open, setOpen] = React.useState(true);
@@ -23,6 +43,8 @@ function EmailFormDialog() {
   const handleClose = () => {
     setOpen(false);
   };
+
+
 
   return (
     <div>
@@ -47,11 +69,13 @@ function EmailFormDialog() {
                         type="email"
                         fullWidth
                         variant="standard"
+                        value = {email}
+                        onChange={handleEmailChange}
                     />
                     </DialogContent>
                     <DialogActions>
                     <Button onClick={handleClose}>Cancel</Button>
-                    <Button onClick={handleClose}>Subscribe</Button>
+                    <Button onClick={handleEmailSubmit}>Subscribe</Button>
                     </DialogActions>
                 </Dialog>
 

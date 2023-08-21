@@ -74,7 +74,13 @@ function DonationPage(){
                                 <Grid item xs/>
                             </Grid>
                         </Grid>
-                        <Grid item xs = {12}>
+
+                        {/**Delete when donation has been set up */}
+                        <Grid item xs = {5}>
+                          <NewStep img = "/pictures/donating/ComingSoon.png"
+                          title = "Coming Soon"/>
+                        </Grid>
+                        {/* <Grid item xs = {12}>
                             <NewStep img = "/pictures/donating/Step1.png"
                             title = "Step 1"
                             body = " Select how often you want to donate, along with the amount you would like to donate."/>
@@ -105,7 +111,7 @@ function DonationPage(){
                                 <Grid item xs/>
                             </Grid>
                             
-                        </Grid>
+                        </Grid> */}
                     </Grid>
                     
                     

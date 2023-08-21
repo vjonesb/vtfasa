@@ -19,12 +19,10 @@ import ConstitutionPage from './components/pages/constitutionPage/ConstitutionPa
 import ResourcesPage from './components/pages/resourcesPage/ResourcesPage';
 import DonationPage from './components/pages/donationPage/DonationPage';
 
+
 function App() {
   const fasaName = "FASA at VT";
-
-
-  const theme = createTheme(themeOptions);
-  
+  const theme = createTheme(themeOptions);  
 
   return (
     
