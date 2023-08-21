@@ -17,7 +17,6 @@ const Divider = (props) => {
         height: 5,
         marginRight: '200px',
         marginLeft: '200px',
-        
       }}/>
     )
 

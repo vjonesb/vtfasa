@@ -9,13 +9,7 @@ import { Typography, Box, AppBar, Toolbar, Button, ButtonGroup, Avatar, useScrol
 import Slide from '@mui/material/Slide';
 import PropTypes from 'prop-types';
 
-import SpeedDial from '@mui/material/SpeedDial';
-import SpeedDialAction from '@mui/material/SpeedDialAction';
-import HomeIcon from '@mui/icons-material/Home';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import HelpIcon from '@mui/icons-material/Help';
-import ConstitutionIcon from '@mui/icons-material/ReceiptLong';
-import DonationIcon from '@mui/icons-material/Paid';
+import MainMenu from './MainMenu';
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -44,79 +38,16 @@ HideOnScroll.propTypes = {
 
 const MainHeader = (props) => {
 
-  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('lg'));
   
-  const handleActionClick = (action) => {
-    //handle the click of each speed dial action here
-    //IMplement custom logic for each action
-    console.log('clicked action: ', action);
-
-    //performs based on the clicked action
-    switch(action) {
-      case 'Home':
-        window.location.href = "/";
-        break;
-      case 'Board':
-        window.location.href = "/board";
-        break;
-      case 'Resources':
-        window.location.href = "/resources";
-        break;
-      case 'Constitution':
-        window.location.href = "/constitution";
-        break;
-      case 'Donation':
-        window.location.href = "/donation";
-        break;
-      default:
-        window.location.href = "/";
-        break;
-    }
-  }
-
-  const actions = [
-    {icon: <HomeIcon />, name: 'Home'}, 
-    {icon: <DashboardIcon />, name: 'Board'},
-    {icon: <HelpIcon />, name: 'Resources'},
-    {icon: <ConstitutionIcon />, name: 'Constitution'},
-    {icon: <DonationIcon />, name: 'Donation'},
-    
-  ]
+  
     
 
     return (
         <Box>
             <HideOnScroll {...props}>
             
-            {isSmallScreen ? (
-            <SpeedDial
-              ariaLabel="SpeedDial example"
-              icon={<Avatar 
-                src = {FasaImg}
-                sx = {{
-                    width: '75px',
-                    height: '75px',
-                    marginRight: '10px'
-                }}/>}
-              open= {true}
-              direction="right"
-              sx={{
-                position: 'fixed',
-                top: '20px', // Adjust the position as needed
-                left: '20px', // Adjust the position as needed
-                zIndex: 9999, // Set a high z-index to ensure the speed dial is on top
-              }}
-            >
-              {actions.map((action) => (
-                <SpeedDialAction
-                  key={action.name}
-                  icon={action.icon}
-                  tooltipTitle={action.name}
-                  onClick={() => handleActionClick(action.name)}
-                />
-              ))}
-            </SpeedDial>
-          ) : (
+            
             <AppBar sx = {{
               marginBottom: '5px',
               height: '100px'
@@ -151,7 +82,15 @@ const MainHeader = (props) => {
                       }}>{props.text}
                   </Typography>
                   
-                  <ButtonGroup 
+                  {isSmallScreen ? (
+                    <ButtonGroup 
+                    variant = 'contained' disableElevation
+                    aria-label="outlined primary button group">
+                    <MainMenu/>
+                    </ButtonGroup>
+                    
+                  ) : (
+                    <ButtonGroup 
                       variant = 'contained' disableElevation
                       aria-label="outlined primary button group">
                       
@@ -223,12 +162,27 @@ const MainHeader = (props) => {
                           Donate Now
                           </Typography>                                 
                       </Button>
+                      <Button href = "/pictures"
+                          sx={{ my: 2, color: 'white', display: 'block' }}>
+                          <Typography variant = "h6" fontWeight={'bold'}
+                          sx = {{fontSize: {
+                              xs: '0.3rem',   // Extra-small devices (phones)
+                              sm: '0.7rem', // Small devices (tablets)
+                              md: '1rem',   // Medium devices (desktops)
+                              lg: '1rem',   // Large devices (large desktops)
+                              
+                            },}} >
+                          Pictures
+                          </Typography>                                 
+                      </Button>
                       
                   </ButtonGroup>
+
+                  )}
+
+                  
               </Toolbar>
           </AppBar>
-
-          )}
                 
             
             </HideOnScroll>
