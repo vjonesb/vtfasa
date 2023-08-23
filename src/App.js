@@ -18,6 +18,7 @@ import BoardPage from './components/pages/boardPage/BoardPage';
 import ConstitutionPage from './components/pages/constitutionPage/ConstitutionPage';
 import ResourcesPage from './components/pages/resourcesPage/ResourcesPage';
 import DonationPage from './components/pages/donationPage/DonationPage';
+import PicturesPage from './components/pages/picturesPage/PicturesPage';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
           <Route path = "constitution" element = {<ConstitutionPage theme = {theme}/>}/>
           <Route path = "resources" element = {<ResourcesPage theme = {theme}/>}/>
           <Route path = "donation" element = {<DonationPage theme = {theme}/>}/>
+          <Route path = "pictures" element = {<PicturesPage theme = {theme}/>}/>
         </Routes>
       </main>
     </BrowserRouter>

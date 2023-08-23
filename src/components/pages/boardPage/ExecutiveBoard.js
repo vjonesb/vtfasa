@@ -46,7 +46,7 @@ function ExecutiveBoard() {
             image = {President}
             position = "President"
             name = "Pamela Untalan" 
-            major = "Buisness International Technology"
+            major = "Buisness Information Technology"
             minor = "NA"/>
           </CutomPositionCard>
         );
@@ -57,7 +57,7 @@ function ExecutiveBoard() {
             image = {VicePresident}
             position = "Internal Vice President"
             name = "Delfin Lagman" 
-            major = "Buisness International Technology"
+            major = "Buisness Information Technology"
             minor = "NA"/>
           </CutomPositionCard>
         );
@@ -68,7 +68,7 @@ function ExecutiveBoard() {
             image = {ExternalPres}
             position = "External Vice President"
             name = "Alexa Marticio" 
-            major = "Buisness International Technology"
+            major = "Buisness Information Technology"
             minor = "NA"/>
           </CutomPositionCard>
         );
@@ -79,7 +79,7 @@ function ExecutiveBoard() {
               image = {Secretary}
               position = "Secretary"
               name = "Eric Domingo" 
-              major = "Buisness International Technology"
+              major = "Buisness Information Technology"
               minor = "NA"/>
             </CutomPositionCard>
           );
@@ -90,7 +90,7 @@ function ExecutiveBoard() {
               image = {Treasurer}
               position = "Treasurer"
               name = "Megan Sambile" 
-              major = "Buisness International Technology"
+              major = "Buisness Information Technology"
               minor = "NA"/>
             </CutomPositionCard>
           );
@@ -101,8 +101,12 @@ function ExecutiveBoard() {
             image = {President}
             position = "President"
             name = "Pamela Untalan" 
-            major = "Buisness International Technology"
-            minor = "NA"/>
+            major = "Mathematics"
+            minor = "Computer Science, Music, Asian American Studies"
+            memory = "Retreat from last year!"
+            listening = "Better Apart By Emotional Oranges"
+            hobbies = "Singing and Reading"
+            mL = "_be rich and famous_"/>
           </CutomPositionCard>
         );
     }

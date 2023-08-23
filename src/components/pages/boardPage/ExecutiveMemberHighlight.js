@@ -65,8 +65,7 @@ const ExecutiveMemberHighlight = (props) => {
                   Major: {props.major}<br/>
                   Minor: {props.minor}<br />
                   Favorite FASA Memory: {props.memory}<br />
-                  Currently listening to: {props.listening}<br />
-                  Hobbies: {props.hobbies}<br/>
+                  Hobbies: {props.hobbies}<br/> <br />
 
                   Will most likely {props.mL} in 5 years
                 </Typography>
