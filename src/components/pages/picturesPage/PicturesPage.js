@@ -69,7 +69,7 @@ function PicturesPage(){
               </div>
                 <div style = {{marginLeft: 30, marginTop: 100}}>
                   {isMediumScreen ? (
-                    <Masonry columns={2} spacing={4}>
+                    <Masonry columns={1} spacing={4}>
                     <NewPictureSet cover = "/pictures/events/WinterFormal.JPG"
                     event = "Winter Formal 2023"
                     link = "https://drive.google.com/drive/folders/1fs8UTg2FBdTNIlzMdD0huQH0zZW0OBI4"/>
@@ -86,7 +86,7 @@ function PicturesPage(){
 
                 </Masonry>
 
-                  ): (<Masonry columns={4} spacing={4}>
+                  ): (<Masonry columns={3} spacing={4}>
                     <NewPictureSet cover = "/pictures/events/WinterFormal.JPG"
                     event = "Winter Formal 2023"
                     link = "https://drive.google.com/drive/folders/1fs8UTg2FBdTNIlzMdD0huQH0zZW0OBI4"/>

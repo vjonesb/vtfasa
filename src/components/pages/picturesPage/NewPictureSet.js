@@ -21,9 +21,9 @@ const NewPictureSet = (props) => {
         <Card elevation = {6}>
             {isSmallScreen ? (
                 <div>
-                <CardMedia sx = {{height: 100}}
+                <CardMedia sx = {{height: 200}}
                 image = {props.cover}/>
-                <Typography variant = "h6" ml = {1}>
+                <Typography variant = "h4" ml = {1}>
                     {props.event}
                 </Typography>
                 </div>
@@ -31,7 +31,7 @@ const NewPictureSet = (props) => {
             ) : ( <div>
                 <CardMedia sx = {{height: 400}}
                 image = {props.cover}/>
-                <Typography variant = "h4" ml = {1}>
+                <Typography variant = "h6" ml = {1}>
                     {props.event}
                 </Typography>
                 </div>

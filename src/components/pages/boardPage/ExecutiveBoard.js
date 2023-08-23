@@ -46,8 +46,12 @@ function ExecutiveBoard() {
             image = {President}
             position = "President"
             name = "Pamela Untalan" 
-            major = "Buisness Information Technology"
-            minor = "NA"/>
+            major = "Mathematics"
+            minor = "Computer Science, Music, Asian American Studies"
+            memory = "Retreat from last year!"
+            listening = "Better Apart By Emotional Oranges"
+            hobbies = "Singing and Reading"
+            mL = "_be rich and famous_"/>
           </CutomPositionCard>
         );
       case 'internalvicepres':
@@ -90,8 +94,12 @@ function ExecutiveBoard() {
               image = {Treasurer}
               position = "Treasurer"
               name = "Megan Sambile" 
-              major = "Buisness Information Technology"
-              minor = "NA"/>
+              major = "Accounting and Information Systems"
+              minor = "NA"
+              memory = "Winning Miss FASA😏😏😏😏😏😏"
+              listening = "Better Apart By Emotional Oranges"
+              hobbies = " Dance, interior design, painting, riding on my motorcycle"
+              mL = "_corporate baddie 💅🏼💅🏼💅🏼💅🏼💅🏼_"/>
             </CutomPositionCard>
           );
       default:
