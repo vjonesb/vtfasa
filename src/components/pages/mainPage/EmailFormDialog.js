@@ -74,7 +74,8 @@ function EmailFormDialog() {
                 <Button variant="outlined" onClick={handleClickOpen}>
                     Subscribe
                 </Button>
-                <Dialog open={open} onClose={handleClose}>
+                <Dialog open={open} onClose={handleClose} 
+                component = "form" onSubmit = {(event) => handleEmailSubmit(event)}>
                     <DialogTitle>Subscribe</DialogTitle>
                     <DialogContent>
                     <DialogContentText>
@@ -84,7 +85,8 @@ function EmailFormDialog() {
                     <TextField
                         autoFocus
                         margin="dense"
-                        id="name"
+                        placeholder='Email'
+                        name = "Email"
                         label="Email Address"
                         type="email"
                         fullWidth
@@ -92,13 +94,13 @@ function EmailFormDialog() {
                         value = {email}
                         onChange={handleEmailChange}
                     />
-                    <form className = "form" onSubmit = {(event) => handleEmailSubmit(event)}>
-                        <input placeholder = "Email" name = "Email" type = "email" />
-                        <input className = "button" type = "submit"/>
-                    </form>
+
+                    
                     </DialogContent>
                     <DialogActions>
                     <Button onClick={handleClose}>Cancel</Button>
+                    <Button onClick={handleClose} type = "submit">Submit</Button>
+
                    
                     </DialogActions>
                 </Dialog>
