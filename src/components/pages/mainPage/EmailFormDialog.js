@@ -11,27 +11,47 @@ import axios from 'axios';
 
 import { Button,TextField,Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
+import { EventRepeat } from '@mui/icons-material';
+
 
 
 function EmailFormDialog() {
 
+  function Submite(e){
+
+  }
+
   //The email
   const [email, setEmail] = React.useState('');
 
+
   const handleEmailChange = (event) => {
+    //is called whenever the input value changes
     setEmail(event.target.value);
   }
 
-  const handleEmailSubmit = () => {
-    axios.post('http://localhost:3000/api/updateExcel', {email})
-      .then ((response) => {
-        //Success message
-        handleClose();
-      })
-      .catch((error) => {
-        console.error('Error sending email: ', error);
-      })
-  }
+  const handleEmailSubmit = (event) => {
+    const formEle = document.querySelector("form");
+
+    event.preventDefault();
+    const formData = new FormData(formEle);
+
+
+    fetch("https://script.google.com/macros/s/AKfycbxOKFdcUzKdneHg3jmgun6u4CrxwFlsr0FIi8yRaASqwYHSr7QOheaYyHL7VsPnfxE/exec"
+    , 
+    {
+        method: "POST",
+        body: formData,
+        mode: "no-cors"
+    })
+    .then(response => {
+        console.log("Success");
+    })
+    .catch(error => {
+        console.error("Fetch error:", error);
+    });
+    handleClose();
+}
 
   //Is set true so that it opens when it first loads
   const [open, setOpen] = React.useState(true);
@@ -72,10 +92,14 @@ function EmailFormDialog() {
                         value = {email}
                         onChange={handleEmailChange}
                     />
+                    <form className = "form" onSubmit = {(event) => handleEmailSubmit(event)}>
+                        <input placeholder = "Email" name = "Email" type = "email" />
+                        <input className = "button" type = "submit"/>
+                    </form>
                     </DialogContent>
                     <DialogActions>
                     <Button onClick={handleClose}>Cancel</Button>
-                    <Button onClick={handleEmailSubmit}>Subscribe</Button>
+                   
                     </DialogActions>
                 </Dialog>
 

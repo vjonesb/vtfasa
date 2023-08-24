@@ -99,7 +99,7 @@ function ExecutiveBoard() {
               memory = "Winning Miss FASA😏😏😏😏😏😏"
               listening = "Better Apart By Emotional Oranges"
               hobbies = " Dance, interior design, painting, riding on my motorcycle"
-              mL = "_corporate baddie 💅🏼💅🏼💅🏼💅🏼💅🏼_"/>
+              mL = "_to be a corporate baddie 💅🏼💅🏼💅🏼💅🏼💅🏼_"/>
             </CutomPositionCard>
           );
       default:
