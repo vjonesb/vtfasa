@@ -14,7 +14,7 @@ import Youtube from '@mui/icons-material/SubscriptionsOutlined';
 
 const Events = (props) => {
 
-    const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+    const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('md'));
 
     const instagram = 'https://www.instagram.com/vt_fasa/';
     const youtube = 'https://youtu.be/fxG30pJZt1Q';

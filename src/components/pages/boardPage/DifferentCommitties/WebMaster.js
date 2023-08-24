@@ -1,3 +1,10 @@
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * description:
+ * Is the webmasters section, uses a custom background image
+ * displays name year and role if screen is big enough
+ */
 import styled from "@emotion/styled";
 import { Card, CardContent, CardMedia, Paper, Typography, useMediaQuery } from "@mui/material";
 import backgroundImage from '../BackgroundPic.png';

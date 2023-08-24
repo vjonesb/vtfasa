@@ -6,20 +6,14 @@
  * Is centered with the help of the Grid components
  */
 import * as React from 'react';
-import axios from 'axios';
 
 
 import { Button,TextField,Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
-import { EventRepeat } from '@mui/icons-material';
 
 
 
 function EmailFormDialog() {
-
-  function Submite(e){
-
-  }
 
   //The email
   const [email, setEmail] = React.useState('');
@@ -30,7 +24,10 @@ function EmailFormDialog() {
     setEmail(event.target.value);
   }
 
+
+  //is called when the "submit" button has been clicked
   const handleEmailSubmit = (event) => {
+    
     const formEle = document.querySelector("form");
 
     event.preventDefault();
@@ -46,11 +43,12 @@ function EmailFormDialog() {
     })
     .then(response => {
         console.log("Success");
+        handleClose();
     })
     .catch(error => {
         console.error("Fetch error:", error);
     });
-    handleClose();
+    
 }
 
   //Is set true so that it opens when it first loads
@@ -99,7 +97,7 @@ function EmailFormDialog() {
                     </DialogContent>
                     <DialogActions>
                     <Button onClick={handleClose}>Cancel</Button>
-                    <Button onClick={handleClose} type = "submit">Submit</Button>
+                    <Button type = "submit">Submit</Button>
 
                    
                     </DialogActions>
