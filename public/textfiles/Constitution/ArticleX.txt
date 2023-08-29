@@ -9,16 +9,27 @@ The duties and powers of the President shall be:
 
 
 a. To preside at all meetings.
+
 b. To be responsible for the University Relations aspect of the organization.
+
 c. To serve, along with the Internal and External Vice Presidents, as the official representative of the organization.
+
 d. To serve as a representative on the Asian American Student Union Council.
+
 e. To assist the Vice President in the coordination of the Culture Night Committees.
+
 f. To appoint special committees as necessary and proper to the well-being of this organization.
+
 g. To serve as a liaison between FASA and FASA’s alumni.
+
 h. To update the Faculty Advisor of the organization’s progress and scheduled events.
+
 i. To call special meetings at their discretion.
+
 j. To make sure all officers are on task and abiding by the VT Student Code of Conduct
+
 k. To inform the office of the Student Organizations on any changes in the Constitution at their discretion.
+
 l. To update the Executive Council of their progress.
 
 SECTION 2. EXTERNAL VICE PRESIDENT
@@ -26,18 +37,25 @@ SECTION 2. EXTERNAL VICE PRESIDENT
 The powers and duties of the External Vice President shall be:
 
 a. To take on the above responsibilities in the absence of the President.
+
 b. To serve, along with the President and Internal Vice President, as the official representative of the organization.
+
 c. To serve as the prime representative on the Asian American Student Union Council.
+
 d. To be the representative for FASA at VT among other D7 Presidents and Vice Presidents, rather than solely the President.
+
 e. To work alongside the two Hospitality Chairs, all three officers (the External Vice President and the two Hospitality Chairs) will serve as the Hospitality committee.
-f. To update the Executive Council of their progress.
+
+sf. To update the Executive Council of their progress.
 
 SECTION 3. INTERNAL VICE PRESIDENT
 
 The powers and duties of the Internal Vice President shall be:
 
 a. To take on the above responsibilities in the absence of the President.
+
 b. To serve, along with the President and External Vice President, as the official representative of the organization.
+
 c. To serve as the Culture Night coordinator and create the Culture Night committees along with the Culture Committee.
 Culture Night Committees include:
 
@@ -53,7 +71,9 @@ HOSPITALITY (BRUNCH AND HOTEL RESERVATIONS)
 AFTER PARTY
 
 d. To make sure all standing and special committees are on task.
+
 e. To update the President on the progress of the Cultural Night committee.
+
 f. To update the Executive Council of their progress.
 
 SECTION 4. SECRETARY
@@ -61,12 +81,19 @@ SECTION 4. SECRETARY
 The powers and duties of the Secretary shall be:
 
 a. To keep records (minutes) of the business carried on at all general, officers, Executive Council, and special meetings and to provide minutes from previous meetings.
+
 b. To maintain and update the FASA listserv and social media outlets as needed.
+
 c. To be responsible for informing all members of meetings or events through the FASA listserv and social media outlets.
+
 d. To be responsible for any correspondence with outside relations and mailings.
+
 e. To maintain a file of all committee reports, projects, and evaluations.
+
 f. To update the Executive Council of their progress.
+
 g. To update the President on the progress of their assigned committees.
+
 h. To maintain a master copy of the calendar for the year of events and the most recently updated Constitution.
 
 SECTION 5. TREASURER
@@ -83,3 +110,22 @@ h. To pay all bills and reimbursements which must be accounted for by a receipt.
 i. To prepare, submit, and present an annual budget request to the appropriate funding board at the University.
 j. To hold a cash manager position with Lane Stadium during Virginia Tech Football Concessions.
 k. To update the President on the progress of their assigned committees.
+
+SECTION 6. SENIOR ADVISOR/S (Undercover GM)
+
+The powers and duties of the Senior Advisor/s shall be:
+
+a. To call special meetings at their discretion.
+
+b. To act as a separate council to represent the board’s interests and provide general governance and oversight, monitor performance, and aiding in decision-making and risk management
+
+c. To have a higher degree of authority than the president; in situations of conflict, the Senior Advisor’s recommendations and input shall carry greater weight and influence than those of the president
+
+d. To be required to attend/assist major events including but not limited to:
+
+FIRST GBM
+D7 OLYMPICS
+WINTER CLASSIC
+LECHONSGIVING/PIG EVENT
+
+e. To oversee both Officer Meetings and Executive Council Meetings
