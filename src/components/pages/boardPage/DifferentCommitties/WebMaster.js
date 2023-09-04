@@ -23,10 +23,14 @@ const BackgroundImageCard = styled(Card)(({theme}) => ({
     backgroundPosition: 'center',
     width: '100%',
     padding: theme.spacing(1),
-  // Add other styles as needed for the Paper component
+
 }));
 
 function WebMaster() {
+
+    const customStyles = {
+        textDecoration: 'none', // Remove underline
+      };
 
     const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
     return(
@@ -35,7 +39,8 @@ function WebMaster() {
             <Grid item xs>
                 <BackgroundImageCard>
                     <a href="https://www.instagram.com/patrick.vyn/" target="_blank" rel="noopener noreferrer"
-                    >
+                    style = {customStyles}
+                   >
                     <CardContent>
                         <CardMedia 
                         component="img"
@@ -67,7 +72,8 @@ function WebMaster() {
             </Grid>
             <Grid item xs>
                 <BackgroundImageCard>
-                    <a href = "https://www.instagram.com/nessa.fna/" target="_blank" rel="noopener noreferrer">
+                    <a href = "https://www.instagram.com/nessa.fna/" target="_blank" rel="noopener noreferrer"
+                    style = {customStyles}>
                     <CardContent>
                         <CardMedia 
                         component="img"

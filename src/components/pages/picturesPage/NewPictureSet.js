@@ -15,15 +15,19 @@ const NewPictureSet = (props) => {
 
     const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
 
+    const customStyles = {
+        textDecoration: 'none', // Remove underline
+      };
 
     return(
-        <a href={props.link} target="_blank" rel="noopener noreferrer">
+        <a href={props.link} target="_blank" rel="noopener noreferrer"
+        style = {customStyles}>
         <Card elevation = {6}>
             {isSmallScreen ? (
                 <div>
                 <CardMedia sx = {{height: 200}}
                 image = {props.cover}/>
-                <Typography variant = "h4" ml = {1}>
+                <Typography variant = "h4" ml = {1} align="center">
                     {props.event}
                 </Typography>
                 </div>
@@ -31,7 +35,7 @@ const NewPictureSet = (props) => {
             ) : ( <div>
                 <CardMedia sx = {{height: 400}}
                 image = {props.cover}/>
-                <Typography variant = "h6" ml = {1}>
+                <Typography variant = "h6" ml = {1} align="center">
                     {props.event}
                 </Typography>
                 </div>

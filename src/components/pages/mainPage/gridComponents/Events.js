@@ -16,7 +16,7 @@ const Events = (props) => {
 
     const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('md'));
 
-    const instagram = 'https://www.instagram.com/vt_fasa/';
+    const instagram = 'https://www.instagram.com/p/Cwnl5RTOxuY/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==';
     const youtube = 'https://youtu.be/fxG30pJZt1Q';
 
 
@@ -37,7 +37,7 @@ const Events = (props) => {
                                 <CardContent style = {{overflow: 'auto', height:500}}>
                                 <div 
                                 style={{ display: 'flex', justifyContent: 'center' }}>
-                                    <InstagramEmbed url="https://www.instagram.com/p/Crb6yT_M5TH/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="                   
+                                    <InstagramEmbed url= {instagram}                   
                                 style={{
                                     maxWidth: 550,           
                                 }}
@@ -63,7 +63,7 @@ const Events = (props) => {
                     </Button>
                 ) : (
                     <CardContent>
-                        <YouTubeEmbed url="https://youtu.be/fxG30pJZt1Q"
+                        <YouTubeEmbed url={youtube}
                         height = {460}
                         width = '100%'
                         align = 'center' />

@@ -1,0 +1,20 @@
+/* Define the custom scrollbar styles */
+.custom-scrollbar {
+    overflow-y: scroll;
+  }
+  
+  /* Customize the scrollbar track */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+  }
+  
+  /* Customize the scrollbar thumb (the draggable part) */
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #888; /* Set the color of the thumb */
+    border-radius: 5px; /* Add rounded corners to the thumb */
+  }
+  
+  /* Customize the scrollbar track when hovered */
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Change the color on hover */
+  }

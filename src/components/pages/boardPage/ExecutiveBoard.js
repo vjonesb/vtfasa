@@ -61,8 +61,12 @@ function ExecutiveBoard() {
             image = {VicePresident}
             position = "Internal Vice President"
             name = "Delfin Lagman" 
-            major = "Buisness Information Technology"
-            minor = "NA"/>
+            major = "Telecommunication"
+            minor = "Racism Studies"
+            memory = "Last year's Culture Show!"
+            listening = ""
+            hobbies = "Engaging in intellectual discussions and eating fruit bowls"
+            mL = "_perish or meet Lebron James_"/>
           </CutomPositionCard>
         );
       case 'externalvicepres':
@@ -72,8 +76,12 @@ function ExecutiveBoard() {
             image = {ExternalPres}
             position = "External Vice President"
             name = "Alexa Marticio" 
-            major = "Buisness Information Technology"
-            minor = "NA"/>
+            major = "Psychology and Human Development"
+            minor = "NA"
+            memory = "D7 Olympics 2022"
+            listening = ""
+            hobbies = "Baking, Working out, Photography, Travel"
+            mL = "_be a therapist_"/>
           </CutomPositionCard>
         );
         case 'secretary':
@@ -83,8 +91,12 @@ function ExecutiveBoard() {
               image = {Secretary}
               position = "Secretary"
               name = "Eric Domingo" 
-              major = "Buisness Information Technology"
-              minor = "NA"/>
+              major = "Computer Science"
+              minor = "Canadian Studies"
+              memory = "Singing at Karaoke Night"
+              listening = ""
+              hobbies = "Piano, listening to music, volleyball, and soccer"
+              mL = "_griddy_"/>
             </CutomPositionCard>
           );
         case 'treasurer' :
