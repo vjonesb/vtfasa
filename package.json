@@ -1,5 +1,5 @@
 {
-  "homepage": "https://vjonesb.github.io/vtfasa2.github.io/",
+  "homepage": "https://vjonesb.github.io/vtfasa/",
   "name": "materialui",
   "version": "0.1.0",
   "private": true,
@@ -42,13 +42,8 @@
     "child_process": false
   },
   "scripts": {
-    //"start": "react-scripts start --config webpack.config.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "dev": "toolpad dev",
-    "build": "toolpad build",
-    //"build": "react-scripts build",
-    "start": "toolpad start",
+    "start": "react-scripts start --config webpack.config.js",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
