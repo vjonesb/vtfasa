@@ -16,7 +16,7 @@ const Events = (props) => {
 
     const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('md'));
 
-    const instagram = 'https://www.instagram.com/p/Cwnl5RTOxuY/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==';
+    const instagram = 'https://www.instagram.com/p/Cw0YtwHs5uS/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==';
     const youtube = 'https://youtu.be/fxG30pJZt1Q';
 
 
