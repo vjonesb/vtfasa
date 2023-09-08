@@ -66,7 +66,7 @@ function MainMenu() {
           <ListItemButton component = "a" href = "/donation">
             <ListItemText primary="Donate Now"/>
           </ListItemButton>
-          <ListItemButton component = "a" href = "/pictures">
+          <ListItemButton component = "a" href = "/fasapictures">
             <ListItemText primary = "Pictures"/>
           </ListItemButton>
 

@@ -43,7 +43,7 @@ function App() {
           <Route path = "constitution" element = {<ConstitutionPage theme = {theme}/>}/>
           <Route path = "resources" element = {<ResourcesPage theme = {theme}/>}/>
           <Route path = "donation" element = {<DonationPage theme = {theme}/>}/>
-          <Route path = "pictures" element = {<PicturesPage theme = {theme}/>}/>
+          <Route path = "fasapictures" element = {<PicturesPage theme = {theme}/>}/>
         </Routes>
       </main>
     </BrowserRouter>

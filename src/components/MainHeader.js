@@ -162,7 +162,7 @@ const MainHeader = (props) => {
                           Donate Now
                           </Typography>                                 
                       </Button>
-                      <Button href = "/pictures"
+                      <Button href = "/fasapictures"
                           sx={{ my: 2, color: 'white', display: 'block' }}>
                           <Typography variant = "h6" fontWeight={'bold'}
                           sx = {{fontSize: {

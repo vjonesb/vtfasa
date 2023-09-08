@@ -45,9 +45,9 @@ export const themeOptions: ThemeOptions = {
 
     }, 
     h3: {
-        fontSize: '1rem',   // Default font size for all devices
+        fontSize: '0.8rem',   // Default font size for all devices
         '@media (min-width:600px)': {
-          fontSize: '1.7rem', // Font size for tablets and larger
+          fontSize: '1.3rem', // Font size for tablets and larger
         },
         '@media (min-width:960px)': {
           fontSize: '2.8rem', // Font size for small laptops and larger
