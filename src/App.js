@@ -8,7 +8,7 @@ import MainHeader from './components/MainHeader';
 import CssBaseline from '@mui/material/CssBaseline';
 
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes, HashRouter } from 'react-router-dom';
 
 import { themeOptions } from './ThemeOptions.tsx';
 
@@ -31,7 +31,7 @@ function App() {
 
         <CssBaseline />
         
-        <BrowserRouter>
+        <HashRouter>
         <div>
           <MainHeader text = {fasaName}/>
         </div>
@@ -46,7 +46,7 @@ function App() {
           <Route path = "pictures" element = {<PicturesPage theme = {theme}/>}/>
         </Routes>
       </main>
-    </BrowserRouter>
+    </HashRouter>
     </ThemeProvider>
     
 
