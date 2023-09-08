@@ -8,7 +8,7 @@
 import * as React from 'react';
 
 
-import { Button,TextField,Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
+import { Button,TextField,Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Alert, Snackbar, Typography } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 
 
@@ -42,7 +42,7 @@ function EmailFormDialog() {
         mode: "no-cors"
     })
     .then(response => {
-        console.log("Success");
+        openSuccess();
         handleClose();
     })
     .catch(error => {
@@ -61,6 +61,16 @@ function EmailFormDialog() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const [success, setSuccess] = React.useState(false);
+
+  const openSuccess = () => {
+    setSuccess(true);
+  }
+
+  const closeSuccess = () => {
+    setSuccess(false);
+  }
 
 
 
@@ -98,10 +108,25 @@ function EmailFormDialog() {
                     <DialogActions>
                     <Button onClick={handleClose}>Cancel</Button>
                     <Button type = "submit">Submit</Button>
+                    
 
                    
                     </DialogActions>
                 </Dialog>
+                <Snackbar
+                  open={success}
+                  autoHideDuration={6000}
+                  onClose={closeSuccess}
+                  message="Email Added"
+                >
+                  <Alert open = {success}
+                  onClose = {closeSuccess}> 
+                    <Typography variant='body1'>
+                    Email Added Successfully 
+                    </Typography>
+                </Alert>
+                </Snackbar>
+                
 
             </Grid>
             <Grid item xs/>
