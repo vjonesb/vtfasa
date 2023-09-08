@@ -51,7 +51,7 @@ function ExecutiveBoard() {
             memory = "Retreat from last year!"
             listening = "Better Apart By Emotional Oranges"
             hobbies = "Singing and Reading"
-            mL = "_be rich and famous_"/>
+            mL = "be rich and famous"/>
           </CutomPositionCard>
         );
       case 'internalvicepres':
@@ -66,7 +66,7 @@ function ExecutiveBoard() {
             memory = "Last year's Culture Show!"
             listening = ""
             hobbies = "Engaging in intellectual discussions and eating fruit bowls"
-            mL = "_perish or meet Lebron James_"/>
+            mL = "perish or meet Lebron James"/>
           </CutomPositionCard>
         );
       case 'externalvicepres':
@@ -81,7 +81,7 @@ function ExecutiveBoard() {
             memory = "D7 Olympics 2022"
             listening = ""
             hobbies = "Baking, Working out, Photography, Travel"
-            mL = "_be a therapist_"/>
+            mL = "be a therapist"/>
           </CutomPositionCard>
         );
         case 'secretary':
@@ -96,7 +96,7 @@ function ExecutiveBoard() {
               memory = "Singing at Karaoke Night"
               listening = ""
               hobbies = "Piano, listening to music, volleyball, and soccer"
-              mL = "_griddy_"/>
+              mL = "griddy"/>
             </CutomPositionCard>
           );
         case 'treasurer' :
@@ -111,7 +111,7 @@ function ExecutiveBoard() {
               memory = "Winning Miss FASA😏😏😏😏😏😏"
               listening = "Better Apart By Emotional Oranges"
               hobbies = " Dance, interior design, painting, riding on my motorcycle"
-              mL = "_to be a corporate baddie 💅🏼💅🏼💅🏼💅🏼💅🏼_"/>
+              mL = "to be a corporate baddie 💅🏼💅🏼💅🏼💅🏼💅🏼"/>
             </CutomPositionCard>
           );
       default:
@@ -126,7 +126,7 @@ function ExecutiveBoard() {
             memory = "Retreat from last year!"
             listening = "Better Apart By Emotional Oranges"
             hobbies = "Singing and Reading"
-            mL = "_be rich and famous_"/>
+            mL = "be rich and famous"/>
           </CutomPositionCard>
         );
     }
