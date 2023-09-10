@@ -27,7 +27,7 @@ const NewPictureSet = (props) => {
                 <div>
                 <CardMedia sx = {{height: 200}}
                 image = {props.cover}/>
-                <Typography variant = "h4" ml = {1} align="center">
+                <Typography variant = "h5" ml = {1} align="center">
                     {props.event}
                 </Typography>
                 </div>

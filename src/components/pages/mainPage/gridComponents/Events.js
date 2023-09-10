@@ -16,7 +16,8 @@ const Events = (props) => {
 
     const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('md'));
 
-    const instagram = 'https://www.instagram.com/p/Cw0YtwHs5uS/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==';
+    const instagramFitFasa = 'https://www.instagram.com/p/Cw1fbimsgQ-/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==';
+    const instagramFasa = 'https://www.instagram.com/p/Cw0YtwHs5uS/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==';
     const youtube = 'https://youtu.be/fxG30pJZt1Q';
 
 
@@ -27,7 +28,7 @@ const Events = (props) => {
                     <Grid item xs>
                         <Card sx = {{borderRadius: '30px'}}>
                             {isSmallScreen ? (
-                                <Button href= {instagram} target="_blank" rel="noopener" 
+                                <Button href= {instagramFasa} target="_blank" rel="noopener" 
                                 startIcon = {<Instagram/>}>
                                 <Typography align="center">
                                     Latest Instagram Post
@@ -37,7 +38,7 @@ const Events = (props) => {
                                 <CardContent style = {{overflow: 'auto', height:500}}>
                                 <div 
                                 style={{ display: 'flex', justifyContent: 'center' }}>
-                                    <InstagramEmbed url= {instagram}                   
+                                    <InstagramEmbed url= {instagramFasa}                   
                                 style={{
                                     maxWidth: 550,           
                                 }}
@@ -52,7 +53,8 @@ const Events = (props) => {
                 
                 
             </Grid>
-            <Grid item xs = {6}>
+
+            <Grid item xs = {4}>
             <Card sx = {{borderRadius: '30px'}}>
                 {isSmallScreen ? (
                     <Button href= {youtube} target="_blank" rel="noopener" 
@@ -76,6 +78,37 @@ const Events = (props) => {
                 
                 
             </Grid>
+
+            <Grid item xs>
+                    <Grid item xs>
+                        <Card sx = {{borderRadius: '30px'}}>
+                            {isSmallScreen ? (
+                                <Button href= {instagramFitFasa} target="_blank" rel="noopener" 
+                                startIcon = {<Instagram/>}>
+                                <Typography align="center">
+                                    Latest FitxFasa Post
+                                </Typography>
+                                </Button>
+                            ) : (
+                                <CardContent style = {{overflow: 'auto', height:500}}>
+                                <div 
+                                style={{ display: 'flex', justifyContent: 'center' }}>
+                                    <InstagramEmbed url= {instagramFitFasa}                   
+                                style={{
+                                    maxWidth: 550,           
+                                }}
+                                    width="100%"
+                                    align = 'center' />
+                                    </div>
+                                </CardContent>
+                            )}
+                           
+                        </Card>
+                </Grid>
+                
+                
+            </Grid>
+            
             <Grid item xs = {1}/>
             
         </Grid>

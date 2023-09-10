@@ -65,7 +65,11 @@ function Scholarship() {
                         target="_blank" rel="noopener"
                         endIcon = {<SendIcon/>}
                         sx = {{marginBottom: '15px'}}
-                    >Scholarship</Button>
+                    >
+                        <Typography variant='body1'>
+                        Scholarship
+                        </Typography>
+                        </Button>
                     
                 </div>
             </Grid>
