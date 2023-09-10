@@ -1,4 +1,15 @@
-
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * description: 
+ *  Is the mainPage for FASA
+ *  When there is a new link here is the following procedure:
+ *   - Make a new "NewPictureSet" element
+ *   - Define the props
+ *      - Cover Photo
+ *      - Link Name
+ *      - Link (This is the google form or any form link)
+ */
 import {useMediaQuery } from "@mui/material";
 
 

@@ -1,3 +1,9 @@
+/**
+ * author: Patrick Vyn Badiang
+ * 
+ * description: 
+ *  Is the mainPage for forms
+ */
 
 import { Box, Paper, Typography } from "@mui/material";
 import Divider from "../../Divider";
