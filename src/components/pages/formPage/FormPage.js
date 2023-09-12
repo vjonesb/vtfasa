@@ -62,6 +62,7 @@ function FormPage() {
           </div>
           <div style = {{marginLeft: 30, marginTop: 50}}/>
             <FASAFormPage/>
+            
             <Section text = "Fitness with FASA Forms"/>
             <FASAFitFormPage/>
         <Paper sqaure sx = {{width: 'full'}}>
