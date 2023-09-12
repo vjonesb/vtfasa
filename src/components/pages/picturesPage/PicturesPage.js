@@ -70,6 +70,9 @@ function PicturesPage(){
                 <div style = {{marginLeft: 30, marginTop: 100}}>
                   {isMediumScreen ? (
                     <Masonry columns={1} spacing={4}>
+                    <NewPictureSet cover = "/pictures/events/WelcomeBackGBM.JPG"
+                    event = "Welcome Back GBM 2023"
+                    link = "https://drive.google.com/drive/folders/1tafYuPpCYlrJkQRhD55Ktq9V3VJe-pgE"/>
                     <NewPictureSet cover = "/pictures/events/WinterFormal.JPG"
                     event = "Winter Formal 2023"
                     link = "https://drive.google.com/drive/folders/1fs8UTg2FBdTNIlzMdD0huQH0zZW0OBI4"/>
@@ -87,6 +90,9 @@ function PicturesPage(){
                 </Masonry>
 
                   ): (<Masonry columns={3} spacing={4}>
+                    <NewPictureSet cover = "/pictures/events/WelcomeBackGBM.JPG"
+                    event = "Welcome Back GBM 2023"
+                    link = "https://drive.google.com/drive/folders/1tafYuPpCYlrJkQRhD55Ktq9V3VJe-pgE"/>
                     <NewPictureSet cover = "/pictures/events/WinterFormal.JPG"
                     event = "Winter Formal 2023"
                     link = "https://drive.google.com/drive/folders/1fs8UTg2FBdTNIlzMdD0huQH0zZW0OBI4"/>

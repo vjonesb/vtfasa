@@ -20,6 +20,7 @@ import ResourcesPage from './components/pages/resourcesPage/ResourcesPage';
 import DonationPage from './components/pages/donationPage/DonationPage';
 import PicturesPage from './components/pages/picturesPage/PicturesPage';
 import FormPage from './components/pages/formPage/FormPage';
+import SlidesPage from './components/pages/slidesPage/SlidesPage';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           <Route path = "donation" element = {<DonationPage theme = {theme}/>}/>
           <Route path = "fasapictures" element = {<PicturesPage theme = {theme}/>}/>
           <Route path = "forms" element = {<FormPage theme = {theme}/>}/>
+          <Route path = "slides" element = {<SlidesPage theme = {theme}/>}/>
 
         </Routes>
       </main>

@@ -72,6 +72,9 @@ function MainMenu() {
           <ListItemButton component = "a" href = "/forms">
             <ListItemText primary = "Forms"/>
           </ListItemButton>
+          <ListItemButton component = "a" href = "/slides">
+            <ListItemText primary = "Slides"/>
+          </ListItemButton>
 
         </List>
         

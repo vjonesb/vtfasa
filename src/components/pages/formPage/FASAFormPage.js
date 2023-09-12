@@ -31,6 +31,9 @@ function FASAFormPage() {
                 <NewPictureSet cover = "/pictures/forms/CommitteeHead.png"
                 event = "Committee Head Interest Form"
                 link = "https://docs.google.com/forms/d/e/1FAIpQLSf2ueN986imLlb6yHJa_dmilLzKTHu0o-Ox9Dxe57oMkk4DoA/viewform?pli=1"/>
+                <NewPictureSet cover = "/pictures/forms/AASUCultureShow.png"
+                event = "AASU Culture Show Interest Form"
+                link = "https://forms.gle/WQawoTHgQtRwjNxm7"/>
                 
                 
 
@@ -40,6 +43,10 @@ function FASAFormPage() {
                 <NewPictureSet cover = "/pictures/forms/CommitteeHead.png"
                 event = "Committee Head Interest Form"
                 link = "https://docs.google.com/forms/d/e/1FAIpQLSf2ueN986imLlb6yHJa_dmilLzKTHu0o-Ox9Dxe57oMkk4DoA/viewform?pli=1"/>
+                <NewPictureSet cover = "/pictures/forms/AASUCultureShow.png"
+                event = "AASU Culture Show Interest Form"
+                link = "https://forms.gle/WQawoTHgQtRwjNxm7"/>
+                
                 
 
             </Masonry>)}
