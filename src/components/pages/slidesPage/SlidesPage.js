@@ -64,6 +64,10 @@ return (
                 <NewPictureSet cover = "/pictures/forms/AASUCultureShow.png"
                 event = "AASU Culture Show"
                 link = "https://www.canva.com/design/DAFuPXoFqhQ/aNkIqAluMG_1EwA8KqjgvQ/view?utm_content=DA[…]mpaign=designshare&utm_medium=link&utm_source=publishsharelink"/>
+                <NewPictureSet cover = "/pictures/slides/WelcomeBackGBM.png"
+                event = "Welcome Back GBM"
+                link = "https://docs.google.com/presentation/d/1ASOFRZCd1KlxJLNBUTlmOArzcpPAbr5FcPnvOLF_QdE/edit?usp=sharing"/>
+                
                 
 
             </Masonry>
@@ -72,6 +76,10 @@ return (
                 <NewPictureSet cover = "/pictures/forms/AASUCultureShow.png"
                 event = "AASU Culture Show"
                 link = "https://www.canva.com/design/DAFuPXoFqhQ/aNkIqAluMG_1EwA8KqjgvQ/view?utm_content=DA[…]mpaign=designshare&utm_medium=link&utm_source=publishsharelink"/>
+                <NewPictureSet cover = "/pictures/slides/WelcomeBackGBM.png"
+                event = "Welcome Back GBM"
+                link = "https://docs.google.com/presentation/d/1ASOFRZCd1KlxJLNBUTlmOArzcpPAbr5FcPnvOLF_QdE/edit?usp=sharing"/>
+                
                 
             </Masonry>)}
             
