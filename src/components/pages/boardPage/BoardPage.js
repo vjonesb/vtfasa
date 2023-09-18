@@ -5,11 +5,14 @@
  * Is the board Page manager
  */
 import BoardMembers from "./BoardMembers";
-import { Box, Paper, Typography} from '@mui/material';
+import { Box, Card, CardContent, Paper, Typography, useMediaQuery} from '@mui/material';
 
 import BottomFooter from '../mainPage/gridComponents/BottomFooter';
+import { YouTubeEmbed } from 'react-social-media-embed';
+
 import Divider from '../../Divider';
 import { styled } from '@mui/system';
+import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
 const CustomPaper = styled(Paper)(({ theme }) => ({
   background: '#FFC000',
@@ -18,6 +21,9 @@ const CustomPaper = styled(Paper)(({ theme }) => ({
 
 
 function BoardPage() {
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+  const youtube = 'https://youtu.be/vQ4zeBsLpqM';
+
     
     const styles = {
         container: {
@@ -41,6 +47,8 @@ function BoardPage() {
           },
     };
 
+
+
     return (<div>
               <div style={styles.container}>
                 <img
@@ -60,10 +68,40 @@ function BoardPage() {
                         lg: '3rem',   // Large devices (large desktops)
                       }
                   }}>
-                    Executive Board
+                    2023 Officer Video!
                   </Typography>
                 </CustomPaper>
               </div>
+              <Grid container xs = {12} mt ={10} spacing = {1}>
+                <Grid xs/>
+                <Grid xs = {10}>
+                  <Card sx = {{borderRadius: '20px'}}>
+                  {isSmallScreen ? (
+                      <CardContent>
+                      <YouTubeEmbed url={youtube}
+                      height = {200}
+                      width = '100%'
+                      align = 'center' />
+                  
+                  </CardContent>
+                  ) : (
+                      <CardContent>
+                          <YouTubeEmbed url={youtube}
+                          height = {460}
+                          width = '100%'
+                          align = 'center' />
+                      
+                      </CardContent>
+
+                  )}
+                      
+                  </Card>
+
+                </Grid>
+                <Grid xs/>
+              </Grid>
+              
+                
             
             
             <BoardMembers/>

@@ -33,7 +33,25 @@ function BoardMembers() {
   justifyContent="center" alignItems="center"
   spacing={2}>
     
+    <Grid item xs>
+      <CustomPaper>
+        <Typography variant='h3'
+        sx = {{
+          marginLeft: '10px',
+          marginRight: '10px',
+          fontSize: {
+            xs: '1rem',   // Extra-small devices (phones)
+            sm: '1.5rem', // Small devices (tablets)
+            md: '2rem',   // Medium devices (desktops)
+            lg: '4rem',   // Large devices (large desktops)
+          }
+      }}>
+          Executive Board
+        </Typography>
+        
+      </CustomPaper>
 
+    </Grid>
     <Grid item>
       <ExecutiveBoard/>
     </Grid>
