@@ -85,6 +85,9 @@ function PicturesPage(){
                     <NewPictureSet cover = "/pictures/events/CultureShowInterest.JPG"
                     event = "Culture Show Interest Meeting 2023"
                     link = "https://drive.google.com/drive/folders/18AZgZeFXcSO5BoflkwmbvPYx-Hj1QbUf"/>
+                    <NewPictureSet cover = "/pictures/events/WelcomeBackPicnic.JPG"
+                    event = "Welcome Back Picnic 2023"
+                    link = "https://drive.google.com/file/d/1jiBIzMoi8nwCt_B_5RJxAr-D7MBs1dZX/view?usp=sharing"/>
                     
 
                 </Masonry>
@@ -105,6 +108,9 @@ function PicturesPage(){
                     <NewPictureSet cover = "/pictures/events/CultureShowInterest.JPG"
                     event = "Culture Show Interest Meeting 2023"
                     link = "https://drive.google.com/drive/folders/18AZgZeFXcSO5BoflkwmbvPYx-Hj1QbUf"/>
+                    <NewPictureSet cover = "/pictures/events/WelcomeBackPicnic.JPG"
+                    event = "Welcome Back Picnic 2023"
+                    link = "https://drive.google.com/file/d/1jiBIzMoi8nwCt_B_5RJxAr-D7MBs1dZX/view?usp=sharing"/>
                     
 
                 </Masonry>)}
