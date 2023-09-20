@@ -70,6 +70,9 @@ function PicturesPage(){
                 <div style = {{marginLeft: 30, marginTop: 100}}>
                   {isMediumScreen ? (
                     <Masonry columns={1} spacing={4}>
+                    <NewPictureSet cover = "/pictures/events/WelcomeBackPicnic.JPG"
+                    event = "Welcome Back Picnic 2023"
+                    link = "https://drive.google.com/drive/u/1/folders/1-X3au_Ezsv64wIgZNvcGbdE-cXIn_7AS"/>
                     <NewPictureSet cover = "/pictures/events/WelcomeBackGBM.JPG"
                     event = "Welcome Back GBM 2023"
                     link = "https://drive.google.com/drive/folders/1tafYuPpCYlrJkQRhD55Ktq9V3VJe-pgE"/>
@@ -85,14 +88,14 @@ function PicturesPage(){
                     <NewPictureSet cover = "/pictures/events/CultureShowInterest.JPG"
                     event = "Culture Show Interest Meeting 2023"
                     link = "https://drive.google.com/drive/folders/18AZgZeFXcSO5BoflkwmbvPYx-Hj1QbUf"/>
-                    <NewPictureSet cover = "/pictures/events/WelcomeBackPicnic.JPG"
-                    event = "Welcome Back Picnic 2023"
-                    link = "https://drive.google.com/file/d/1jiBIzMoi8nwCt_B_5RJxAr-D7MBs1dZX/view?usp=sharing"/>
                     
 
                 </Masonry>
 
                   ): (<Masonry columns={3} spacing={4}>
+                    <NewPictureSet cover = "/pictures/events/WelcomeBackPicnic.JPG"
+                    event = "Welcome Back Picnic 2023"
+                    link = "https://drive.google.com/drive/u/1/folders/1-X3au_Ezsv64wIgZNvcGbdE-cXIn_7AS"/>
                     <NewPictureSet cover = "/pictures/events/WelcomeBackGBM.JPG"
                     event = "Welcome Back GBM 2023"
                     link = "https://drive.google.com/drive/folders/1tafYuPpCYlrJkQRhD55Ktq9V3VJe-pgE"/>
@@ -108,9 +111,6 @@ function PicturesPage(){
                     <NewPictureSet cover = "/pictures/events/CultureShowInterest.JPG"
                     event = "Culture Show Interest Meeting 2023"
                     link = "https://drive.google.com/drive/folders/18AZgZeFXcSO5BoflkwmbvPYx-Hj1QbUf"/>
-                    <NewPictureSet cover = "/pictures/events/WelcomeBackPicnic.JPG"
-                    event = "Welcome Back Picnic 2023"
-                    link = "https://drive.google.com/file/d/1jiBIzMoi8nwCt_B_5RJxAr-D7MBs1dZX/view?usp=sharing"/>
                     
 
                 </Masonry>)}
