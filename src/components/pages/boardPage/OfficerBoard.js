@@ -12,7 +12,7 @@ import BigOfficerBoard from "./BigOfficierBoard";
 
 function OfficerBoard() {
 
-    const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+    const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('md'));
 
     return (
         <div>

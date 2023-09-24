@@ -61,6 +61,15 @@ return (
             <div style = {{marginLeft: 30, marginTop: 100}}>
               {isMediumScreen ? (
                 <Masonry columns={1} spacing={4}>
+                <NewPictureSet cover = "/pictures/slides/Ate_Kuya.png"
+                event = "Ate/Kuya (Big) Slides"
+                link = "https://docs.google.com/presentation/d/1dDWSz_Gi6DhChYjngQhgYIdj7M6o9s8w1dIUYTHsxU8/edit?usp=sharing"/>
+                <NewPictureSet cover = "/pictures/slides/Ading.png"
+                event = "Ading Slides"
+                link = "https://docs.google.com/presentation/d/1q0CAz3x3ygUAcjk_wRg-zXa0KVCXs_nVF3CGAFGdUFE/edit?usp=sharing"/>
+                <NewPictureSet cover = "/pictures/slides/Ate_Kuya_Interest.png"
+                event = "Ate/Kuya Interest Meeting Slides"
+                link = "https://docs.google.com/presentation/d/1BICae3P4iFn6VBtMtn9r-cF0LcN-jo7V3ECfzY2wv2Q/edit?usp=sharing"/>
                 <NewPictureSet cover = "/pictures/forms/AASUCultureShow.png"
                 event = "AASU Culture Show"
                 link = "https://www.canva.com/design/DAFuPXoFqhQ/aNkIqAluMG_1EwA8KqjgvQ/view?utm_content=DA[…]mpaign=designshare&utm_medium=link&utm_source=publishsharelink"/>
@@ -73,6 +82,15 @@ return (
             </Masonry>
 
               ): (<Masonry columns={3} spacing={4}>
+                <NewPictureSet cover = "/pictures/slides/Ate_Kuya.png"
+                event = "Ate/Kuya (Big) Slides"
+                link = "https://docs.google.com/presentation/d/1dDWSz_Gi6DhChYjngQhgYIdj7M6o9s8w1dIUYTHsxU8/edit?usp=sharing"/>
+                <NewPictureSet cover = "/pictures/slides/Ading.png"
+                event = "Ading Slides"
+                link = "https://docs.google.com/presentation/d/1q0CAz3x3ygUAcjk_wRg-zXa0KVCXs_nVF3CGAFGdUFE/edit?usp=sharing"/>
+                <NewPictureSet cover = "/pictures/slides/Ate_Kuya_Interest.png"
+                event = "Ate/Kuya Interest Meeting Slides"
+                link = "https://docs.google.com/presentation/d/1BICae3P4iFn6VBtMtn9r-cF0LcN-jo7V3ECfzY2wv2Q/edit?usp=sharing"/>
                 <NewPictureSet cover = "/pictures/forms/AASUCultureShow.png"
                 event = "AASU Culture Show"
                 link = "https://www.canva.com/design/DAFuPXoFqhQ/aNkIqAluMG_1EwA8KqjgvQ/view?utm_content=DA[…]mpaign=designshare&utm_medium=link&utm_source=publishsharelink"/>

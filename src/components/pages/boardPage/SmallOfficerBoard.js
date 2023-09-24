@@ -5,135 +5,212 @@
  * is the oBoard manager with a new row every 7 members
  */
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
-//Sports chairs
-import SportsChair1 from '../../../pictures/OfficerBoard/SportsChair1.png';
-import SportsChair2 from '../../../pictures/OfficerBoard/SportsChair2.png';
+import { InstagramEmbed } from 'react-social-media-embed';
+import { Card, CardContent } from '@mui/material';
 
-//Fundraising chairs
-import FundRaisingChair1 from '../../../pictures/OfficerBoard/FundraisingChair1.png';
-import FundRaisingChair2 from '../../../pictures/OfficerBoard/FundraisingChair2.png';
-import FundRaisingChair3 from '../../../pictures/OfficerBoard/FundraisingChair3.png';
-
-//Service chairs
-import ServiceChair1 from '../../../pictures/OfficerBoard/ServiceChair1.png';
-import ServiceChair2 from '../../../pictures/OfficerBoard/ServiceChair2.png';
-import ServiceChair3 from '../../../pictures/OfficerBoard/ServiceChair3.png';
-
-//Promo chairs
-import PromoChair1 from '../../../pictures/OfficerBoard/PromoChair1.png';
-import PromoChair2 from '../../../pictures/OfficerBoard/PromoChair2.png';
-
-//Culture Chairs
-import CultureChair1 from '../../../pictures/OfficerBoard/CultureChair1.png';
-import CultureChair2 from '../../../pictures/OfficerBoard/CultureChair2.png';
-
-//Hospitality Chairs
-import HospitalityChair1 from '../../../pictures/OfficerBoard/HospitalityChair1.png';
-import HospitalityChair2 from '../../../pictures/OfficerBoard/HospitalityChair2.png';
-
-//Event Chairs
-import EventChair1 from '../../../pictures/OfficerBoard/EventsChair1.png';
-import EventChair2 from '../../../pictures/OfficerBoard/EventsChair2.png';
-import EventChair3 from '../../../pictures/OfficerBoard/EventsChair3.png';
-
-//D7 Chairs
-import D7Chair1 from '../../../pictures/OfficerBoard/D7Chair1.png';
-import D7Chair2 from '../../../pictures/OfficerBoard/D7Chair2.png';
-
-//Historian
-import HistorianChair1 from '../../../pictures/OfficerBoard/HistorianChair1.png';
-import HistorianChair2 from '../../../pictures/OfficerBoard/HistorianChair2.png';
-import MemberIcon from "./DifferentCommitties/MemberIcon.js";
 
 function SmallOfficerBoard() {
 
+    const historian = "https://www.instagram.com/p/CxjYjCAMXL1/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==";
+    const d7 = "https://www.instagram.com/p/CxjY9basymJ/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==";
+    const culture = "https://www.instagram.com/p/CxjayXSMa6A/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==";
+    const events = "https://www.instagram.com/p/CxjcPfNsZxl/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==";
+    const fundraising = "https://www.instagram.com/p/CxjddvPs3_O/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==";
+    const hospitality = "https://www.instagram.com/p/Cxjfu9dM0Dl/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==";
+    const promo = "https://www.instagram.com/p/CxlF5XwsrIP/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==";
+    const service = "https://www.instagram.com/p/CxlGTw4MNI1/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==";
+    const sports = "https://www.instagram.com/p/CxlG6raMFQL/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==";
+    const webmaster = "https://www.instagram.com/p/CxlIISEMqRX/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==";
+
+
     return (
-        <Grid container xs = {12} justifyContent="center" >
-            <Grid container xs = {8}>
-        <MemberIcon chair = {PromoChair1}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-        <MemberIcon chair = {PromoChair2}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-    </Grid>
-    <Grid container xs = {8}>
-        <MemberIcon chair = {FundRaisingChair1}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-        <MemberIcon chair = {FundRaisingChair2}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-        <MemberIcon chair = {FundRaisingChair3}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-    </Grid>
-    <Grid container xs = {8}>
-        <MemberIcon chair = {HistorianChair1}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-        <MemberIcon chair = {HistorianChair2}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-    </Grid>
-    <Grid container xs = {8}>
-        <MemberIcon chair = {EventChair1}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-        <MemberIcon chair = {EventChair2}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-        <MemberIcon chair = {EventChair3}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-    </Grid>
-    <Grid container xs = {8}>
-        <MemberIcon chair = {D7Chair1}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-        <MemberIcon chair = {D7Chair2}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-    </Grid>
-    <Grid container xs = {8}>
-        <MemberIcon chair = {ServiceChair1}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-        <MemberIcon chair = {ServiceChair2}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-        <MemberIcon chair = {ServiceChair3}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-    </Grid>
-    
-    <Grid container xs = {8}>
-        <MemberIcon chair = {SportsChair1}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-        <MemberIcon chair = {SportsChair2}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-    </Grid>
-    
-    <Grid container xs = {8}>
-        <MemberIcon chair = {CultureChair1}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-        <MemberIcon chair = {CultureChair2}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-    </Grid>
-    <Grid container xs = {8}>
-        <MemberIcon chair = {HospitalityChair1}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-        <MemberIcon chair = {HospitalityChair2}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-    </Grid>
+        <Grid container xs = {12} mt ={5} ml = {1}spacing = {2} direction={'row'}>
+            <Grid item xs = {1}/>
+            <Grid item xs = {10}>
+                <Card sx = {{borderRadius: '30px'}}>
+                    <CardContent style = {{overflow: 'auto', height:500}}>
+                    <div 
+                    style={{ display: 'flex', justifyContent: 'center' }}>
+                        <InstagramEmbed url= {historian}                   
+                    style={{
+                        maxWidth: 550,           
+                    }}
+                        width="100%"
+                        align = 'center' />
+                        </div>
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item xs = {1}/>
+            <Grid item xs = {1}/>
+
+            <Grid item xs = {10}>
+                <Card sx = {{borderRadius: '30px'}}>
+                    <CardContent style = {{overflow: 'auto', height:500}}>
+                    <div 
+                    style={{ display: 'flex', justifyContent: 'center' }}>
+                        <InstagramEmbed url= {d7}                
+                    style={{
+                        maxWidth: 550,           
+                    }}
+                        width="100%"
+                        align = 'center' />
+                        </div>
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item xs = {1}/>
+
+            {/*New Row*/}
+            <Grid item xs = {1}/>
+            <Grid item xs = {10}>
+                <Card sx = {{borderRadius: '30px'}}>
+                    <CardContent style = {{overflow: 'auto', height:500}}>
+                    <div 
+                    style={{ display: 'flex', justifyContent: 'center' }}>
+                        <InstagramEmbed url= {culture}                   
+                    style={{
+                        maxWidth: 550,           
+                    }}
+                        width="100%"
+                        align = 'center' />
+                        </div>
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item xs = {1}/>
+
+            <Grid item xs = {1}/>
+
+            <Grid item xs = {10}>
+                <Card sx = {{borderRadius: '30px'}}>
+                    <CardContent style = {{overflow: 'auto', height:500}}>
+                    <div 
+                    style={{ display: 'flex', justifyContent: 'center' }}>
+                        <InstagramEmbed url= {events}                
+                    style={{
+                        maxWidth: 550,           
+                    }}
+                        width="100%"
+                        align = 'center' />
+                        </div>
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item xs = {1}/>
+            {/*New Row*/}
+            <Grid item xs = {1}/>
+            <Grid item xs = {10}>
+                <Card sx = {{borderRadius: '30px'}}>
+                    <CardContent style = {{overflow: 'auto', height:500}}>
+                    <div 
+                    style={{ display: 'flex', justifyContent: 'center' }}>
+                        <InstagramEmbed url= {fundraising}                   
+                    style={{
+                        maxWidth: 550,           
+                    }}
+                        width="100%"
+                        align = 'center' />
+                        </div>
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item xs = {1}/>
+            <Grid item xs = {1}/>
+
+            <Grid item xs = {10}>
+                <Card sx = {{borderRadius: '30px'}}>
+                    <CardContent style = {{overflow: 'auto', height:500}}>
+                    <div 
+                    style={{ display: 'flex', justifyContent: 'center' }}>
+                        <InstagramEmbed url= {hospitality}                
+                    style={{
+                        maxWidth: 550,           
+                    }}
+                        width="100%"
+                        align = 'center' />
+                        </div>
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item xs = {1}/>
+            {/*New Row*/}
+            <Grid item xs = {1}/>
+            <Grid item xs = {10}>
+                <Card sx = {{borderRadius: '30px'}}>
+                    <CardContent style = {{overflow: 'auto', height:500}}>
+                    <div 
+                    style={{ display: 'flex', justifyContent: 'center' }}>
+                        <InstagramEmbed url= {promo}                   
+                    style={{
+                        maxWidth: 550,           
+                    }}
+                        width="100%"
+                        align = 'center' />
+                        </div>
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item xs = {1}/>
+            <Grid item xs = {1}/>
+
+            <Grid item xs = {10}>
+                <Card sx = {{borderRadius: '30px'}}>
+                    <CardContent style = {{overflow: 'auto', height:500}}>
+                    <div 
+                    style={{ display: 'flex', justifyContent: 'center' }}>
+                        <InstagramEmbed url= {service}                
+                    style={{
+                        maxWidth: 550,           
+                    }}
+                        width="100%"
+                        align = 'center' />
+                        </div>
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item xs = {1}/>
+            {/*New Row*/}
+            <Grid item xs = {1}/>
+            <Grid item xs = {10}>
+                <Card sx = {{borderRadius: '30px'}}>
+                    <CardContent style = {{overflow: 'auto', height:500}}>
+                    <div 
+                    style={{ display: 'flex', justifyContent: 'center' }}>
+                        <InstagramEmbed url= {sports}                   
+                    style={{
+                        maxWidth: 550,           
+                    }}
+                        width="100%"
+                        align = 'center' />
+                        </div>
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item xs = {1}/>
+            <Grid item xs = {1}/>
+            <Grid item xs = {10}>
+                <Card sx = {{borderRadius: '30px'}}>
+                    <CardContent style = {{overflow: 'auto', height:500}}>
+                    <div 
+                    style={{ display: 'flex', justifyContent: 'center' }}>
+                        <InstagramEmbed url= {webmaster}                   
+                    style={{
+                        maxWidth: 550,           
+                    }}
+                        width="100%"
+                        align = 'center' />
+                        </div>
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item xs = {1}/>
+
+
+            
+            
+        </Grid>
         
-  </Grid>
 
 
     );

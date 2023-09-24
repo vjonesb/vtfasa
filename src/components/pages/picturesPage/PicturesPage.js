@@ -76,20 +76,7 @@ function PicturesPage(){
                     <NewPictureSet cover = "/pictures/events/WelcomeBackGBM.JPG"
                     event = "Welcome Back GBM 2023"
                     link = "https://drive.google.com/drive/folders/1tafYuPpCYlrJkQRhD55Ktq9V3VJe-pgE"/>
-                    <NewPictureSet cover = "/pictures/events/WinterFormal.JPG"
-                    event = "Winter Formal 2023"
-                    link = "https://drive.google.com/drive/folders/1fs8UTg2FBdTNIlzMdD0huQH0zZW0OBI4"/>
-                    <NewPictureSet cover = "/pictures/events/WinterClassic.JPG"
-                    event = "Winter Classic 2023"
-                    link = "https://drive.google.com/drive/folders/1wMa3I6drpTHpsWTcGkLk-1hUrzqjVzkd"/>
-                    <NewPictureSet cover = "/pictures/events/LechonsGiving.JPG"
-                    event = "Lechons Giving 2023"
-                    link = "https://drive.google.com/drive/folders/14GiX9J5vKtxTECUcIb7asOwljn8pxWKV"/>
-                    <NewPictureSet cover = "/pictures/events/CultureShowInterest.JPG"
-                    event = "Culture Show Interest Meeting 2023"
-                    link = "https://drive.google.com/drive/folders/18AZgZeFXcSO5BoflkwmbvPYx-Hj1QbUf"/>
                     
-
                 </Masonry>
 
                   ): (<Masonry columns={3} spacing={4}>
@@ -99,18 +86,6 @@ function PicturesPage(){
                     <NewPictureSet cover = "/pictures/events/WelcomeBackGBM.JPG"
                     event = "Welcome Back GBM 2023"
                     link = "https://drive.google.com/drive/folders/1tafYuPpCYlrJkQRhD55Ktq9V3VJe-pgE"/>
-                    <NewPictureSet cover = "/pictures/events/WinterFormal.JPG"
-                    event = "Winter Formal 2023"
-                    link = "https://drive.google.com/drive/folders/1fs8UTg2FBdTNIlzMdD0huQH0zZW0OBI4"/>
-                    <NewPictureSet cover = "/pictures/events/WinterClassic.JPG"
-                    event = "Winter Classic 2023"
-                    link = "https://drive.google.com/drive/folders/1wMa3I6drpTHpsWTcGkLk-1hUrzqjVzkd"/>
-                    <NewPictureSet cover = "/pictures/events/LechonsGiving.JPG"
-                    event = "Lechons Giving 2023"
-                    link = "https://drive.google.com/drive/folders/14GiX9J5vKtxTECUcIb7asOwljn8pxWKV"/>
-                    <NewPictureSet cover = "/pictures/events/CultureShowInterest.JPG"
-                    event = "Culture Show Interest Meeting 2023"
-                    link = "https://drive.google.com/drive/folders/18AZgZeFXcSO5BoflkwmbvPYx-Hj1QbUf"/>
                     
 
                 </Masonry>)}

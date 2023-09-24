@@ -28,24 +28,30 @@ function FASAFormPage() {
         <div style = {{marginLeft: 30, marginTop: 20}}>
         {isMediumScreen ? (
                 <Masonry columns={1} spacing={4}>
-                <NewPictureSet cover = "/pictures/forms/CommitteeHead.png"
-                event = "Committee Head Interest Form"
-                link = "https://docs.google.com/forms/d/e/1FAIpQLSf2ueN986imLlb6yHJa_dmilLzKTHu0o-Ox9Dxe57oMkk4DoA/viewform?pli=1"/>
-                <NewPictureSet cover = "/pictures/forms/AASUCultureShow.png"
-                event = "AASU Culture Show Interest Form"
-                link = "https://forms.gle/WQawoTHgQtRwjNxm7"/>
+                <NewPictureSet cover = "/pictures/forms/Ading_App.png"
+                event = "Ading [Little] Application"
+                link = "https://docs.google.com/document/d/1a4HXxyljc0yIfsrFQmmLmpffzOkgJ0Aq6rALWS_2Wms/edit?usp=sharing"/>
+                <NewPictureSet cover = "/pictures/forms/Ate-Kuya_App.png"
+                event = "Ate/Kuya [Big] Application"
+                link = "https://docs.google.com/document/d/1tJ-0kT4hVSAT6BGVnLjcVlfP-I9L-R2jGit7rVSc_lQ/edit?usp=sharing"/>
+                <NewPictureSet cover = "/pictures/forms/HotspotHopping.png"
+                event = "Hotspot Hopping Tour"
+                link = "https://forms.gle/9k3en6mLM6ArDg7n9"/>
                 
                 
 
             </Masonry>
 
               ): (<Masonry columns={3} spacing={4}>
-                <NewPictureSet cover = "/pictures/forms/CommitteeHead.png"
-                event = "Committee Head Interest Form"
-                link = "https://docs.google.com/forms/d/e/1FAIpQLSf2ueN986imLlb6yHJa_dmilLzKTHu0o-Ox9Dxe57oMkk4DoA/viewform?pli=1"/>
-                <NewPictureSet cover = "/pictures/forms/AASUCultureShow.png"
-                event = "AASU Culture Show Interest Form"
-                link = "https://forms.gle/WQawoTHgQtRwjNxm7"/>
+                <NewPictureSet cover = "/pictures/forms/Ading_App.png"
+                event = "Ading [Little] Application"
+                link = "https://docs.google.com/document/d/1a4HXxyljc0yIfsrFQmmLmpffzOkgJ0Aq6rALWS_2Wms/edit?usp=sharing"/>
+                <NewPictureSet cover = "/pictures/forms/Ate-Kuya_App.png"
+                event = "Ate/Kuya [Big] Application"
+                link = "https://docs.google.com/document/d/1tJ-0kT4hVSAT6BGVnLjcVlfP-I9L-R2jGit7rVSc_lQ/edit?usp=sharing"/>
+                <NewPictureSet cover = "/pictures/forms/HotspotHopping.png"
+                event = "Hotspot Hopping Tour"
+                link = "https://forms.gle/9k3en6mLM6ArDg7n9"/>
                 
                 
 

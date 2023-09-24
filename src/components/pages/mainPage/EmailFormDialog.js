@@ -122,7 +122,7 @@ function EmailFormDialog() {
                   <Alert open = {success}
                   onClose = {closeSuccess}> 
                     <Typography variant='body1'>
-                    Email Added Successfully 
+                      Email Added Successfully 
                     </Typography>
                 </Alert>
                 </Snackbar>
