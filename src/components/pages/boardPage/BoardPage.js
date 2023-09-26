@@ -103,8 +103,13 @@ function BoardPage() {
               
                 
             
-            
-            <BoardMembers/>
+            <Grid container xs = {12}>
+              <Grid item xs>
+              <BoardMembers/>
+
+
+              </Grid>
+            </Grid>
             <Paper sqaure sx = {{width: 'full'}}>
                 <Box sx = {{height: '20px'}} mt = {10}/>
                 <Divider color = '#224343'/>

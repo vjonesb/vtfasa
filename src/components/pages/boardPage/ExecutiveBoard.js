@@ -7,10 +7,16 @@
  *
  */
 import President from '../../../pictures/ExecutiveBoard/President.png';
-import VicePresident from '../../../pictures/ExecutiveBoard/VicePres.png';
-import ExternalPres from '../../../pictures/ExecutiveBoard/ExternalPres.png';
+import VicePresident from '../../../pictures/ExecutiveBoard/InternalVP.png';
+import ExternalPres from '../../../pictures/ExecutiveBoard/ExternalVP.png';
 import Treasurer from '../../../pictures/ExecutiveBoard/Treasurer.png';
 import Secretary from '../../../pictures/ExecutiveBoard/Secretary.png';
+
+import PresText from '../../../pictures/ExecutiveBoard/PresText.jpg';
+import InternalText from '../../../pictures/ExecutiveBoard/InternalText.jpg';
+import ExternalText from '../../../pictures/ExecutiveBoard/ExternalText.jpg';
+import SecretaryText from '../../../pictures/ExecutiveBoard/SecretaryText.jpg';
+import TreasurerText from '../../../pictures/ExecutiveBoard/TreasurerText.jpg';
 
 
 
@@ -22,7 +28,7 @@ import React, { useState } from 'react';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 
 const CutomPositionCard = styled(Card)(({ theme}) => ({
-  background: '#FBF3DB',
+  background: '#7F5F49',
   borderRadius: '20px',
 }));
 
@@ -44,14 +50,8 @@ function ExecutiveBoard() {
           <CutomPositionCard elevation={5}>
             <ExecutiveMemberHighlight key = "president"
             image = {President}
-            position = "President"
-            name = "Pamela Untalan" 
-            major = "Mathematics"
-            minor = "Computer Science, Music, Asian American Studies"
-            memory = "Retreat from last year!"
-            listening = "Better Apart By Emotional Oranges"
-            hobbies = "Singing and Reading"
-            mL = "be rich and famous"/>
+            imageText = {PresText}
+            />
           </CutomPositionCard>
         );
       case 'internalvicepres':
@@ -59,14 +59,7 @@ function ExecutiveBoard() {
           <CutomPositionCard elevation={5}>
             <ExecutiveMemberHighlight key = "ivp"
             image = {VicePresident}
-            position = "Internal Vice President"
-            name = "Delfin Lagman" 
-            major = "Telecommunication"
-            minor = "Racism Studies"
-            memory = "Last year's Culture Show!"
-            listening = ""
-            hobbies = "Engaging in intellectual discussions and eating fruit bowls"
-            mL = "perish or meet Lebron James"/>
+            imageText = {InternalText}/>
           </CutomPositionCard>
         );
       case 'externalvicepres':
@@ -74,14 +67,7 @@ function ExecutiveBoard() {
           <CutomPositionCard elevation={5}>
             <ExecutiveMemberHighlight key = "evp"
             image = {ExternalPres}
-            position = "External Vice President"
-            name = "Alexa Marticio" 
-            major = "Psychology and Human Development"
-            minor = "NA"
-            memory = "D7 Olympics 2022"
-            listening = ""
-            hobbies = "Baking, Working out, Photography, Travel"
-            mL = "be a therapist"/>
+            imageText = {ExternalText}/>
           </CutomPositionCard>
         );
         case 'secretary':
@@ -89,14 +75,8 @@ function ExecutiveBoard() {
             <CutomPositionCard elevation={5}>
               <ExecutiveMemberHighlight key = "secretary"
               image = {Secretary}
-              position = "Secretary"
-              name = "Eric Domingo" 
-              major = "Computer Science"
-              minor = "Canadian Studies"
-              memory = "Singing at Karaoke Night"
-              listening = ""
-              hobbies = "Piano, listening to music, volleyball, and soccer"
-              mL = "griddy"/>
+              imageText = {SecretaryText}
+              />
             </CutomPositionCard>
           );
         case 'treasurer' :
@@ -104,14 +84,8 @@ function ExecutiveBoard() {
             <CutomPositionCard elevation={5}>
               <ExecutiveMemberHighlight key = "treasurer"
               image = {Treasurer}
-              position = "Treasurer"
-              name = "Megan Sambile" 
-              major = "Accounting and Information Systems"
-              minor = "NA"
-              memory = "Winning Miss FASA😏😏😏😏😏😏"
-              listening = "Better Apart By Emotional Oranges"
-              hobbies = " Dance, interior design, painting, riding on my motorcycle"
-              mL = "to be a corporate baddie 💅🏼💅🏼💅🏼💅🏼💅🏼"/>
+              imageText = {TreasurerText}
+              />
             </CutomPositionCard>
           );
       default:
@@ -119,14 +93,7 @@ function ExecutiveBoard() {
           <CutomPositionCard elevation={5}>
             <ExecutiveMemberHighlight key = "president"
             image = {President}
-            position = "President"
-            name = "Pamela Untalan" 
-            major = "Mathematics"
-            minor = "Computer Science, Music, Asian American Studies"
-            memory = "Retreat from last year!"
-            listening = "Better Apart By Emotional Oranges"
-            hobbies = "Singing and Reading"
-            mL = "be rich and famous"/>
+            imageText = {PresText}/>
           </CutomPositionCard>
         );
     }

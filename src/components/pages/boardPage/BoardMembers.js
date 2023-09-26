@@ -7,7 +7,7 @@
  * 
  *  Passes down the image as well as a title and description
  */
-import { Box, Typography, Paper } from '@mui/material';
+import { Box, Typography, Paper, Card, CardContent } from '@mui/material';
 
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 import ExecutiveBoard from './ExecutiveBoard';
@@ -15,10 +15,7 @@ import OfficerBoard from './OfficerBoard';
 import { styled } from '@mui/system';
 import WebMaster from './DifferentCommitties/WebMaster';
 
-//Senior Advisors (just simple to have here)
-import SeniorAdvisorChair1 from '../../../pictures/SeniorAdvisor/SeniorAdvisorChair1.png';
-import SeniorAdvisorChair2 from '../../../pictures/SeniorAdvisor/SeniorAdvisorChair2.png';
-import MemberIcon from './DifferentCommitties/MemberIcon';
+import { InstagramEmbed } from 'react-social-media-embed';
 
 
 const CustomPaper = styled(Paper)(({ theme }) => ({
@@ -27,6 +24,8 @@ const CustomPaper = styled(Paper)(({ theme }) => ({
 }));
 
 function BoardMembers() {
+
+  const advisors = "https://www.instagram.com/p/CxlZMNVvfHe/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==";
   
   return (<Box sx = {{ marginTop:'50px'}}>
   <Grid container xs = {12}direction={'column'}
@@ -75,20 +74,23 @@ function BoardMembers() {
 
     </Grid>
     <Grid item xs>
-      <Grid container xs = {12} spacing={2}>
-        <Grid item xs>
-          <MemberIcon chair = {SeniorAdvisorChair1}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-
-        </Grid>
-        <Grid item xs>
-        <MemberIcon chair = {SeniorAdvisorChair2}
-         link = "https://www.instagram.com/p/Crv8ryduWXi/?img_index=1"
-         />
-        </Grid>
-        
-      </Grid>
+    <Grid item xs = {1}/>
+            <Grid item xs = {10}>
+                <Card sx = {{borderRadius: '30px'}}>
+                    <CardContent style = {{overflow: 'auto', height:500}}>
+                    <div 
+                    style={{ display: 'flex', justifyContent: 'center' }}>
+                        <InstagramEmbed url= {advisors}                   
+                    style={{
+                        maxWidth: 550,           
+                    }}
+                        width="100%"
+                        align = 'center' />
+                        </div>
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item xs = {1}/>
     </Grid>
     <Grid item xs>
       <Paper>
