@@ -101,51 +101,69 @@ function ExecutiveBoard() {
   
   return (<div>
     <Grid item>
-      <ButtonGroup variant = 'text' elevation = {8}>
-        <Button
-          onClick={() => handleButtonClick('president')}
-          >
-            <Typography variant='body2'>
-            President
-            </Typography>
-        </Button>
-        <Button 
-          onClick={() => handleButtonClick('internalvicepres')}
-           >
-          <Typography variant='body2'>
+      <Grid container xs = {12}>
+        <Grid item xs/>
+        <Grid item xs = {10}>
+            <ButtonGroup variant = 'text' elevation = {8}>
+            <Button
+              onClick={() => handleButtonClick('president')}
+              >
+                <Typography variant='body2'>
+                President
+                </Typography>
+            </Button>
+            <Button 
+              onClick={() => handleButtonClick('internalvicepres')}
+              >
+              <Typography variant='body2'>
 
-          Internal Vice President
-          </Typography>
-        </Button>
-        <Button 
-          onClick={() => handleButtonClick('externalvicepres')}
-           >
-            <Typography variant='body2'>
-            External Vice President
+              Internal Vice President
+              </Typography>
+            </Button>
+            <Button 
+              onClick={() => handleButtonClick('externalvicepres')}
+              >
+                <Typography variant='body2'>
+                External Vice President
 
 
-            </Typography>
-        </Button>
-        <Button 
-          onClick={() => handleButtonClick('secretary')}
-           >
-          <Typography variant='body2'>
+                </Typography>
+            </Button>
+            <Button 
+              onClick={() => handleButtonClick('secretary')}
+              >
+              <Typography variant='body2'>
 
-          Secretary
-          </Typography>
-        </Button>
-        <Button 
-          onClick={() => handleButtonClick('treasurer')}
-           >
-          <Typography variant='body2'>
+              Secretary
+              </Typography>
+            </Button>
+            <Button 
+              onClick={() => handleButtonClick('treasurer')}
+              >
+              <Typography variant='body2'>
 
-          Treasurer
-          </Typography>
-        </Button>
-      </ButtonGroup>
+              Treasurer
+              </Typography>
+            </Button>
+          </ButtonGroup>
+
+
+        </Grid>
+        <Grid item xs/>
+      
+      </Grid>
+      
       <div style={{marginTop: '10px'}}>
         {/* Element to be showcased */}
-        {renderElement()}
+        <Grid container xs = {12}>
+          <Grid item xs = {1}/>
+          <Grid item xs>
+            {renderElement()}
+          </Grid>
+          <Grid item xs = {1}/>
+
+        </Grid>
+        
       </div>
     </Grid>
 

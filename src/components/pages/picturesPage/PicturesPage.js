@@ -70,7 +70,7 @@ function PicturesPage(){
                 <div style = {{marginLeft: 30, marginTop: 100}}>
                   {isMediumScreen ? (
                     <Masonry columns={1} spacing={4}>
-                    <NewPictureSet cover = "/pictures/events/Ate_Kuya_Interest.JPG"
+                    <NewPictureSet cover = "/pictures/events/Ate_Kuya_Interest.jpg"
                     event = " Ate/Kuya Interest Meeting Photos"
                     link = "https://drive.google.com/drive/folders/1vpsl9vDmg-xcphdnURGRIRgAgHMb2luS?usp=sharing"/>
                     
@@ -84,6 +84,10 @@ function PicturesPage(){
                 </Masonry>
 
                   ): (<Masonry columns={3} spacing={4}>
+                    <NewPictureSet cover = "/pictures/events/Ate_Kuya_Interest.jpg"
+                    event = " Ate/Kuya Interest Meeting Photos"
+                    link = "https://drive.google.com/drive/folders/1vpsl9vDmg-xcphdnURGRIRgAgHMb2luS?usp=sharing"/>
+                    
                     <NewPictureSet cover = "/pictures/events/WelcomeBackPicnic.JPG"
                     event = "Welcome Back Picnic 2023"
                     link = "https://drive.google.com/drive/u/1/folders/1-X3au_Ezsv64wIgZNvcGbdE-cXIn_7AS"/>
