@@ -1,8 +1,6 @@
 import { Card, CardContent  } from "@mui/material";
 import { InstagramEmbed, YouTubeEmbed } from 'react-social-media-embed';
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import NewPictureSet from "../../picturesPage/NewPictureSet";
-
 
 
 const SmallScreenEvents = (props) => {
@@ -12,15 +10,7 @@ const SmallScreenEvents = (props) => {
         <Grid container xs = {12} mt ={5} ml = {1}spacing = {2} direction={'column'}>
             <Grid item xs = {1}/>
 
-            <Grid item xs = {12}>
-                
-                <NewPictureSet cover = "/pictures/events/MingleWeek.png"
-                event = "Ate/Kuya Interest Meeting"
-                link = "https://vtfasa.org/slides"/>
-
-                
-               
-            </Grid>
+            
             <Grid item xs>
                 <Card sx = {{borderRadius: '30px'}}>
                     <CardContent style = {{overflow: 'auto', height:500}}>

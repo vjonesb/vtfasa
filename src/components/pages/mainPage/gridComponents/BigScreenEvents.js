@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@mui/material";
 import { InstagramEmbed, YouTubeEmbed } from 'react-social-media-embed';
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import NewPictureSet from "../../picturesPage/NewPictureSet";
 
 
 
@@ -10,17 +9,7 @@ const BigScreenEvents = (props) => {
 
     return(
         <Grid container xs = {12} mt ={5} spacing = {1}>
-            <Grid item xs = {1}/>
-            <Grid item xs = {10}>
-                
-                <NewPictureSet cover = "/pictures/events/MingleWeek.png"
-                event = "Ate/Kuya Interest Meeting"
-                link = "https://vtfasa.org/slides"/>
-
-                
-               
-            </Grid>
-            <Grid item xs = {1}/>
+            
             <Grid item xs = {1}/>
             <Grid item xs>
                 <Card sx = {{borderRadius: '30px'}}>
