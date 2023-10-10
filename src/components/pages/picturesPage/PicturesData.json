@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "cover": "/pictures/events/Ate_Kuya_Interest.jpg",
+        "event": "Ate/Kuya Interest Meeting Photos",
+        "link": "https://drive.google.com/drive/folders/1vpsl9vDmg-xcphdnURGRIRgAgHMb2luS?usp=sharing"
+    },
+    {
+        "id": 2,
+        "cover": "/pictures/events/WelcomeBackPicnic.JPG",
+        "event": "Welcome Back Picnic 2023",
+        "link": "https://drive.google.com/drive/u/1/folders/1-X3au_Ezsv64wIgZNvcGbdE-cXIn_7AS"
+    },
+    {
+        "id": 3,
+        "cover": "/pictures/events/WelcomeBackGBM.JPG",
+        "event": "Welcome Back GBM 2023",
+        "link": "https://drive.google.com/drive/folders/1tafYuPpCYlrJkQRhD55Ktq9V3VJe-pgE"
+    }
+]

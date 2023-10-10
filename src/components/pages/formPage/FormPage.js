@@ -11,7 +11,9 @@ import BottomFooter from "../mainPage/gridComponents/BottomFooter";
 
 import FASAFormPage from "./FASAFormPage";
 import Section from "../mainPage/Section";
-import FASAFitFormPage from "./FASAFitFormPage";
+
+import FasaData from './FasaData.json';
+import FasaFitData from './FasaFitData.json';
 
 function FormPage() {
 
@@ -61,10 +63,10 @@ function FormPage() {
             </Paper>
           </div>
           <div style = {{marginLeft: 30, marginTop: 50}}/>
-            <FASAFormPage/>
+            <FASAFormPage forms = {FasaData}/>
             
-            <Section text = "Fitness with FASA Forms"/>
-            <FASAFitFormPage/>
+            {/* <Section text = "Fitness with FASA Forms"/> */}
+            <FASAFormPage forms = {FasaFitData}/>
         <Paper sqaure sx = {{width: 'full'}}>
             <Box sx = {{height: '20px'}} mt = {10}/>
             <Divider color = '#224343'/>

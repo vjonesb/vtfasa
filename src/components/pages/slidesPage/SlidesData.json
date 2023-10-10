@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "cover": "/pictures/slides/Ate_Kuya.png",
+        "event": "Ate/Kuya (Big) Slides",
+        "link": "https://docs.google.com/presentation/d/1dDWSz_Gi6DhChYjngQhgYIdj7M6o9s8w1dIUYTHsxU8/edit?usp=sharing"
+    },
+    {
+        "id": 2,
+        "cover": "/pictures/slides/Ading.png",
+        "event": "Ading (Little) Slides",
+        "link": "https://docs.google.com/presentation/d/1q0CAz3x3ygUAcjk_wRg-zXa0KVCXs_nVF3CGAFGdUFE/edit?usp=sharing"
+        
+    },
+    {
+        "id": 3,
+        "cover": "/pictures/slides/Ate_Kuya_Interest.png",
+        "event": "Ate/Kuya Interest Meeting Slides",
+        "link": "https://docs.google.com/presentation/d/1BICae3P4iFn6VBtMtn9r-cF0LcN-jo7V3ECfzY2wv2Q/edit?usp=sharing"
+    },
+    {
+        "id": 4,
+        "cover": "/pictures/forms/AASUCultureShow.png",
+        "event": "AASU Culture Show",
+        "link": "https://www.canva.com/design/DAFuPXoFqhQ/aNkIqAluMG_1EwA8KqjgvQ/view?utm_content=DA[…]mpaign=designshare&utm_medium=link&utm_source=publishsharelink"
+    },
+    {
+        "id": 5,
+        "cover": "/pictures/slides/WelcomeBackGBM.png",
+        "event": "Welcome Back GBM",
+        "link": "https://docs.google.com/presentation/d/1ASOFRZCd1KlxJLNBUTlmOArzcpPAbr5FcPnvOLF_QdE/edit?usp=sharing"
+    }
+
+]
