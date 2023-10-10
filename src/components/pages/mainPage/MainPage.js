@@ -14,7 +14,7 @@ import { Paper, Box} from '@mui/material';
 import Divider from '../../Divider';
 import Grid from '@mui/material/Unstable_Grid2';
 
-import Events from './gridComponents/Events';
+import Events from './gridComponents/Updates';
 import BordordConerSection from './gridComponents/BordordCornerSection';
 
 //Section Texts
@@ -25,7 +25,7 @@ import EmailFormDialog from './EmailFormDialog';
 
 const MainPage = (props) => {
     //Section Titles
-  const events = "Events";
+  const events = "Updates";
 
   const styles = {
     container: {

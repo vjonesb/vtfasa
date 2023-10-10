@@ -18,9 +18,7 @@ import BoardPage from './components/pages/boardPage/BoardPage';
 import ConstitutionPage from './components/pages/constitutionPage/ConstitutionPage';
 import ResourcesPage from './components/pages/resourcesPage/ResourcesPage';
 import DonationPage from './components/pages/donationPage/DonationPage';
-import PicturesPage from './components/pages/picturesPage/PicturesPage';
-import FormPage from './components/pages/formPage/FormPage';
-import SlidesPage from './components/pages/slidesPage/SlidesPage';
+import EventsPage from './components/pages/eventsPage/EventsPage';
 
 
 function App() {
@@ -45,9 +43,8 @@ function App() {
           <Route path = "constitution" element = {<ConstitutionPage theme = {theme}/>}/>
           <Route path = "resources" element = {<ResourcesPage theme = {theme}/>}/>
           <Route path = "donation" element = {<DonationPage theme = {theme}/>}/>
-          <Route path = "fasapictures" element = {<PicturesPage theme = {theme}/>}/>
-          <Route path = "forms" element = {<FormPage theme = {theme}/>}/>
-          <Route path = "slides" element = {<SlidesPage theme = {theme}/>}/>
+          <Route path = "forms" element = {<EventsPage theme = {theme}/>}/>
+
 
         </Routes>
       </main>

@@ -162,19 +162,6 @@ const MainHeader = (props) => {
                           Donate Now
                           </Typography>                                 
                       </Button>
-                      <Button href = "/fasapictures"
-                          sx={{ my: 2, color: 'white', display: 'block' }}>
-                          <Typography variant = "h6" fontWeight={'bold'}
-                          sx = {{fontSize: {
-                              xs: '0.3rem',   // Extra-small devices (phones)
-                              sm: '0.7rem', // Small devices (tablets)
-                              md: '1rem',   // Medium devices (desktops)
-                              lg: '1rem',   // Large devices (large desktops)
-                              
-                            },}} >
-                          Pictures
-                          </Typography>                                 
-                      </Button>
                       <Button href = "/forms"
                           sx={{ my: 2, color: 'white', display: 'block' }}>
                           <Typography variant = "h6" fontWeight={'bold'}
@@ -185,20 +172,7 @@ const MainHeader = (props) => {
                               lg: '1rem',   // Large devices (large desktops)
                               
                             },}} >
-                          Forms
-                          </Typography>                                 
-                      </Button>
-                      <Button href = "/slides"
-                          sx={{ my: 2, color: 'white', display: 'block' }}>
-                          <Typography variant = "h6" fontWeight={'bold'}
-                          sx = {{fontSize: {
-                              xs: '0.3rem',   // Extra-small devices (phones)
-                              sm: '0.7rem', // Small devices (tablets)
-                              md: '1rem',   // Medium devices (desktops)
-                              lg: '1rem',   // Large devices (large desktops)
-                              
-                            },}} >
-                          Slides
+                          Events
                           </Typography>                                 
                       </Button>
                       

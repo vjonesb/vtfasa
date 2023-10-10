@@ -15,7 +15,10 @@ import Section from "../mainPage/Section";
 import FasaData from './FasaData.json';
 import FasaFitData from './FasaFitData.json';
 
-function FormPage() {
+import SlidesData from './SlidesData.json';
+import PicturesData from './PicturesData.json';
+
+function EventsPage() {
 
     const styles = {
         container: {
@@ -58,15 +61,20 @@ function FormPage() {
                     lg: '3rem',   // Large devices (large desktops)
                   }
               }}>
-                Forms
+                Pictures
               </Typography>
             </Paper>
           </div>
           <div style = {{marginLeft: 30, marginTop: 50}}/>
-            <FASAFormPage forms = {FasaData}/>
+            <FASAFormPage forms = {PicturesData}/>
             
-            {/* <Section text = "Fitness with FASA Forms"/> */}
+            
+            <Section text = "Forms"/>
+            <FASAFormPage forms = {FasaData}/>
             <FASAFormPage forms = {FasaFitData}/>
+
+            <Section text = "Slides"/>
+            <FASAFormPage forms = {SlidesData}/>
         <Paper sqaure sx = {{width: 'full'}}>
             <Box sx = {{height: '20px'}} mt = {10}/>
             <Divider color = '#224343'/>
@@ -81,4 +89,4 @@ function FormPage() {
 
 }
 
-export default FormPage;
+export default EventsPage;

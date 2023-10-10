@@ -14,13 +14,13 @@ import {useMediaQuery } from "@mui/material";
 
 
 import { Masonry } from "@mui/lab";
-import NewPictureSet from "../picturesPage/NewPictureSet";
+import NewPictureSet from "./NewPictureSet";
 
 
 
 const FASAFormPage = (props) => {
 
-    const isMediumScreen = useMediaQuery((theme) => theme.breakpoints.down('lg'));
+    const isMediumScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
 
 
     return(
