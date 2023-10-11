@@ -7,6 +7,13 @@
     },
     {
         "id": 1,
+        "cover": "/pictures/forms/Halo_Halo_form.png",
+        "event": "Halo-Halo Reservations",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSdTOy1MNfETS1qf2v_O34ELbJCKDJ1_ysnCVvFv873Vpy_z8A/viewform"
+        
+    },
+    {
+        "id": 1,
         "cover": "/pictures/forms/Ading_App.png",
         "event": "Ading [Little] Application",
         "link": "https://docs.google.com/document/d/1a4HXxyljc0yIfsrFQmmLmpffzOkgJ0Aq6rALWS_2Wms/edit?usp=sharing"
