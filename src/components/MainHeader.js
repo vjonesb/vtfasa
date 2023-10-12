@@ -172,7 +172,7 @@ const MainHeader = (props) => {
                               lg: '1rem',   // Large devices (large desktops)
                               
                             },}} >
-                          Events
+                          Pictures, Forms, and Slides
                           </Typography>                                 
                       </Button>
                       
