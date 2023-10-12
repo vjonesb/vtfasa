@@ -6,29 +6,43 @@
         "link": "https://docs.google.com/forms/d/e/1FAIpQLSf3gVlovmVT-OggmbLnCjL4SW55G-hE-bQVuAvh-MZqTFLiWg/viewform"
     },
     {
-        "id": 1,
+        "id": 2,
         "cover": "/pictures/forms/Ading_App.png",
         "event": "Ading [Little] Application",
         "link": "https://docs.google.com/document/d/1a4HXxyljc0yIfsrFQmmLmpffzOkgJ0Aq6rALWS_2Wms/edit?usp=sharing"
         
     },
     {
-        "id": 1,
+        "id": 3,
         "cover": "/pictures/forms/Ate-Kuya_App.png",
         "event": "Ate/Kuya [Big] Application",
         "link": "https://docs.google.com/document/d/1tJ-0kT4hVSAT6BGVnLjcVlfP-I9L-R2jGit7rVSc_lQ/edit?usp=sharing"
     },
     {
-        "id": 1,
+        "id": 4,
         "cover": "/pictures/forms/CharityBallTicketForm.png",
         "event": "Charity Ball Ticket Form",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLScO7sadxCfWl0zbbJnksfDbKejh72cGfpZcRvjSM0FsmL8eqA/viewform"
     },
     {
-        "id": 1,
+        "id": 5,
         "cover": "/pictures/forms/Halo_Halo_form.png",
         "event": "Halo-Halo Reservations",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLSdTOy1MNfETS1qf2v_O34ELbJCKDJ1_ysnCVvFv873Vpy_z8A/viewform"
+
+    },
+    {
+        "id": 6,
+        "cover": "/pictures/forms/Ate_Kuya_Preference.png",
+        "event": "Ate/Kuya Preference Form (Littles, click this)",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLScYxbPoj4UCMdImfb_nAaqX4QHKAnAPgNsShO_DHzt1PDcbvQ/viewform?usp=sf_link"
+
+    },
+    {
+        "id": 6,
+        "cover": "/pictures/forms/Ading_Preference.png",
+        "event": "Ading Preference Form (Bigs, click this)",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSeXy4a8s8ugJTQczSmiELI4nP-uzmczxMH9It4bwFhKIAXTlg/viewform?usp=sf_link"
 
     }
 ]
