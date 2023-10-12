@@ -17,19 +17,18 @@
         "cover": "/pictures/forms/Ate-Kuya_App.png",
         "event": "Ate/Kuya [Big] Application",
         "link": "https://docs.google.com/document/d/1tJ-0kT4hVSAT6BGVnLjcVlfP-I9L-R2jGit7rVSc_lQ/edit?usp=sharing"
-    }
+    },
     {
         "id": 1,
         "cover": "/pictures/forms/CharityBallTicketForm.png",
         "event": "Charity Ball Ticket Form",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLScO7sadxCfWl0zbbJnksfDbKejh72cGfpZcRvjSM0FsmL8eqA/viewform"
-        
     },
     {
         "id": 1,
         "cover": "/pictures/forms/Halo_Halo_form.png",
         "event": "Halo-Halo Reservations",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLSdTOy1MNfETS1qf2v_O34ELbJCKDJ1_ysnCVvFv873Vpy_z8A/viewform"
-        
-    },
+
+    }
 ]
