@@ -1,6 +1,12 @@
 [
     {
         "id": 1,
+        "cover": "/pictures/events/Mingle_Week.png",
+        "event": "Mingle Week Photos",
+        "link": "https://drive.google.com/drive/folders/1OHhfxjNA3ix9hZoHKA-w8zMT2TtCO-Wv?usp=sharing"
+    },
+    {
+        "id": 1,
         "cover": "/pictures/events/Ate_Kuya_Interest.jpg",
         "event": "Ate/Kuya Interest Meeting Photos",
         "link": "https://drive.google.com/drive/folders/1vpsl9vDmg-xcphdnURGRIRgAgHMb2luS?usp=sharing"
