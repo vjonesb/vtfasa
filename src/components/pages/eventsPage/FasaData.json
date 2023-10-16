@@ -14,16 +14,9 @@
     },
     {
         "id": 3,
-        "cover": "/pictures/forms/Ate_Kuya_Preference.png",
-        "event": "Ate/Kuya Preference Form (Littles, click this)",
-        "link": "https://docs.google.com/forms/d/e/1FAIpQLScYxbPoj4UCMdImfb_nAaqX4QHKAnAPgNsShO_DHzt1PDcbvQ/viewform?usp=sf_link"
-
-    },
-    {
-        "id": 4,
-        "cover": "/pictures/forms/Ading_Preference.png",
-        "event": "Ading Preference Form (Bigs, click this)",
-        "link": "https://docs.google.com/forms/d/e/1FAIpQLSeXy4a8s8ugJTQczSmiELI4nP-uzmczxMH9It4bwFhKIAXTlg/viewform?usp=sf_link"
+        "cover": "/pictures/forms/Bingo_Board.png",
+        "event": "Ading Clue Week Bingo Board",
+        "link": "/pictures/forms/FASA Clue Week Bingo Board 2023.pdf"
 
     }
 ]
