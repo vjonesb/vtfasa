@@ -18,5 +18,24 @@
         "event": "Ading Clue Week Bingo Board",
         "link": "/pictures/forms/FASA Clue Week Bingo Board 2023.pdf"
 
+    },
+    {
+        "id": 4,
+        "cover": "/pictures/forms/CostumeContest.png",
+        "event": "Costume Contest Sign up",
+        "link": "https://forms.gle/1Qzu9P3EtdH47j6v5"
+
+    },
+    {
+        "id": 1,
+        "cover": "/pictures/forms/fitFASA.png",
+        "event": "Volleyball and Soccer Interest Form",
+        "link": "https://forms.gle/YQusKGDLvwnYghem6"
+    },
+    {
+        "id": 7,
+        "cover": "/pictures/resources/AdvocacyDataLogos/Relay4Life.png",
+        "event": "(Community Work) Join FASA's Relay For Life Team!",
+        "link": "https://secure.acsevents.org/site/STR/RelayForLife/RFLCY24SER?team_id=2724630&pg=team&fr_id=106817"
     }
 ]
