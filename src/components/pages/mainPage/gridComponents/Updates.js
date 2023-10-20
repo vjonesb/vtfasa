@@ -14,8 +14,8 @@ function Events() {
 
     const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('md'));
 
-    const instagramFitFasa = 'https://www.instagram.com/p/CxrPGqZszps/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==';
-    const instagramFasa = 'https://www.instagram.com/p/Cx-zCa9MLSC/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==';
+    const instagramFitFasa = 'https://www.instagram.com/p/Cym1ROnMBzt/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==';
+    const instagramFasa = 'https://www.instagram.com/p/CyjBzPTuaIK/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==';
     const youtube = 'https://youtu.be/IsL0bMqfxP4?si=T-2LxWgHGWIxg8lI';
 
 

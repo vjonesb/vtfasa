@@ -8,69 +8,72 @@
 import * as React from 'react';
 
 
-import { Button,TextField,Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Alert, Snackbar, Typography } from '@mui/material';
+import { Button  } from '@mui/material';
+  //TextField,Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Alert, Snackbar, Typography } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 
 
 
 function EmailFormDialog() {
 
-  //The email
-  const [email, setEmail] = React.useState('');
+  const link = "https://forms.gle/Vb4wi5dg9cZJSG2Y6";
+
+//   //The email
+//   const [email, setEmail] = React.useState('');
 
 
-  const handleEmailChange = (event) => {
-    //is called whenever the input value changes
-    setEmail(event.target.value);
-  }
+//   const handleEmailChange = (event) => {
+//     //is called whenever the input value changes
+//     setEmail(event.target.value);
+//   }
 
 
-  //is called when the "submit" button has been clicked
-  const handleEmailSubmit = (event) => {
+//   //is called when the "submit" button has been clicked
+//   const handleEmailSubmit = (event) => {
     
-    const formEle = document.querySelector("form");
+//     const formEle = document.querySelector("form");
 
-    event.preventDefault();
-    const formData = new FormData(formEle);
+//     event.preventDefault();
+//     const formData = new FormData(formEle);
 
 
-    fetch("https://script.google.com/macros/s/AKfycbxOKFdcUzKdneHg3jmgun6u4CrxwFlsr0FIi8yRaASqwYHSr7QOheaYyHL7VsPnfxE/exec"
-    , 
-    {
-        method: "POST",
-        body: formData,
-        mode: "no-cors"
-    })
-    .then(response => {
-        openSuccess();
-        handleClose();
-    })
-    .catch(error => {
-        console.error("Fetch error:", error);
-    });
+//     fetch("https://script.google.com/macros/s/AKfycbxOKFdcUzKdneHg3jmgun6u4CrxwFlsr0FIi8yRaASqwYHSr7QOheaYyHL7VsPnfxE/exec"
+//     , 
+//     {
+//         method: "POST",
+//         body: formData,
+//         mode: "no-cors"
+//     })
+//     .then(response => {
+//         openSuccess();
+//         handleClose();
+//     })
+//     .catch(error => {
+//         console.error("Fetch error:", error);
+//     });
     
-}
+// }
 
-  //Is set true so that it opens when it first loads
-  const [open, setOpen] = React.useState(true);
+//   //Is set true so that it opens when it first loads
+//   const [open, setOpen] = React.useState(true);
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
+//   const handleClickOpen = () => {
+//     setOpen(true);
+//   };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+//   const handleClose = () => {
+//     setOpen(false);
+//   };
 
-  const [success, setSuccess] = React.useState(false);
+//   const [success, setSuccess] = React.useState(false);
 
-  const openSuccess = () => {
-    setSuccess(true);
-  }
+//   const openSuccess = () => {
+//     setSuccess(true);
+//   }
 
-  const closeSuccess = () => {
-    setSuccess(false);
-  }
+//   const closeSuccess = () => {
+//     setSuccess(false);
+//   }
 
 
 
@@ -79,10 +82,11 @@ function EmailFormDialog() {
         <Grid container xs = {12} justify="center" alignItems="center">
             <Grid item xs/>
             <Grid item>
-                <Button variant="outlined" onClick={handleClickOpen}>
+                <Button href={link} target="_blank" rel="noopener"
+                variant="outlined">
                     Subscribe
                 </Button>
-                <Dialog open={open} onClose={handleClose} 
+                {/* <Dialog open={open} onClose={handleClose} 
                 component = "form" onSubmit = {(event) => handleEmailSubmit(event)}>
                     <DialogTitle>Subscribe</DialogTitle>
                     <DialogContent>
@@ -126,7 +130,7 @@ function EmailFormDialog() {
                     </Typography>
                 </Alert>
                 </Snackbar>
-                
+                 */}
 
             </Grid>
             <Grid item xs/>
