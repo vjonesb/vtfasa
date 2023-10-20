@@ -1,17 +1,5 @@
 [
-    {
-        "id": 1,
-        "cover": "/pictures/slides/Ate_Kuya.png",
-        "event": "Ate/Kuya (Big) Slides",
-        "link": "https://docs.google.com/presentation/d/1dDWSz_Gi6DhChYjngQhgYIdj7M6o9s8w1dIUYTHsxU8/edit?usp=sharing"
-    },
-    {
-        "id": 2,
-        "cover": "/pictures/slides/Ading.png",
-        "event": "Ading (Little) Slides",
-        "link": "https://docs.google.com/presentation/d/1q0CAz3x3ygUAcjk_wRg-zXa0KVCXs_nVF3CGAFGdUFE/edit?usp=sharing"
-        
-    },
+    
     {
         "id": 3,
         "cover": "/pictures/slides/Ate_Kuya_Interest.png",
