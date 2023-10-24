@@ -8,7 +8,7 @@
 import * as React from 'react';
 
 
-import { Button  } from '@mui/material';
+import { Alert, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Snackbar, Typography  } from '@mui/material';
   //TextField,Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Alert, Snackbar, Typography } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 
@@ -18,62 +18,23 @@ function EmailFormDialog() {
 
   const link = "https://forms.gle/Vb4wi5dg9cZJSG2Y6";
 
-//   //The email
-//   const [email, setEmail] = React.useState('');
+  
 
 
-//   const handleEmailChange = (event) => {
-//     //is called whenever the input value changes
-//     setEmail(event.target.value);
-//   }
+  //Is set true so that it opens when it first loads
+  const [open, setOpen] = React.useState(true);
 
 
-//   //is called when the "submit" button has been clicked
-//   const handleEmailSubmit = (event) => {
-    
-//     const formEle = document.querySelector("form");
+  const handleClose = () => {
+    setOpen(false);
+  };
 
-//     event.preventDefault();
-//     const formData = new FormData(formEle);
+  const [success, setSuccess] = React.useState(false);
 
 
-//     fetch("https://script.google.com/macros/s/AKfycbxOKFdcUzKdneHg3jmgun6u4CrxwFlsr0FIi8yRaASqwYHSr7QOheaYyHL7VsPnfxE/exec"
-//     , 
-//     {
-//         method: "POST",
-//         body: formData,
-//         mode: "no-cors"
-//     })
-//     .then(response => {
-//         openSuccess();
-//         handleClose();
-//     })
-//     .catch(error => {
-//         console.error("Fetch error:", error);
-//     });
-    
-// }
-
-//   //Is set true so that it opens when it first loads
-//   const [open, setOpen] = React.useState(true);
-
-//   const handleClickOpen = () => {
-//     setOpen(true);
-//   };
-
-//   const handleClose = () => {
-//     setOpen(false);
-//   };
-
-//   const [success, setSuccess] = React.useState(false);
-
-//   const openSuccess = () => {
-//     setSuccess(true);
-//   }
-
-//   const closeSuccess = () => {
-//     setSuccess(false);
-//   }
+  const closeSuccess = () => {
+    setSuccess(false);
+  }
 
 
 
@@ -86,32 +47,24 @@ function EmailFormDialog() {
                 variant="outlined">
                     Subscribe
                 </Button>
-                {/* <Dialog open={open} onClose={handleClose} 
-                component = "form" onSubmit = {(event) => handleEmailSubmit(event)}>
+                <Dialog open={open} onClose={handleClose} 
+                component = "form">
                     <DialogTitle>Subscribe</DialogTitle>
                     <DialogContent>
                     <DialogContentText>
                         To receive emails about upcoming events and updates, please enter your email address here. We
                         will send updates occasionally.
                     </DialogContentText>
-                    <TextField
-                        autoFocus
-                        margin="dense"
-                        placeholder='Email'
-                        name = "Email"
-                        label="Email Address"
-                        type="email"
-                        fullWidth
-                        variant="standard"
-                        value = {email}
-                        onChange={handleEmailChange}
-                    />
+                    <Button href={link} target="_blank" rel="noopener"
+                variant="outlined">
+                    Subscribe
+                </Button>
 
                     
                     </DialogContent>
                     <DialogActions>
-                    <Button onClick={handleClose}>Cancel</Button>
-                    <Button type = "submit">Submit</Button>
+                    <Button onClick={handleClose}>Done</Button>
+                    
                     
 
                    
@@ -130,7 +83,7 @@ function EmailFormDialog() {
                     </Typography>
                 </Alert>
                 </Snackbar>
-                 */}
+                 
 
             </Grid>
             <Grid item xs/>
