@@ -63,9 +63,9 @@ function MainMenu() {
           <ListItemButton component = "a" href = "/constitution">
             <ListItemText primary="Constitution"/>
           </ListItemButton>
-          <ListItemButton component = "a" href = "/donation">
+          {/* <ListItemButton component = "a" href = "/donation">
             <ListItemText primary="Donate Now"/>
-          </ListItemButton>
+          </ListItemButton> */}
           <ListItemButton component = "a" href = "/forms">
             <ListItemText primary = "Pictures, Forms, and Slides"/>
           </ListItemButton>

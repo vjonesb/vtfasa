@@ -149,7 +149,7 @@ const MainHeader = (props) => {
                           Constitution
                           </Typography>                                 
                       </Button>
-                      <Button href = "/donation"
+                      {/* <Button href = "/donation"
                           sx={{ my: 2, color: 'white', display: 'block' }}>
                           <Typography variant = "h6" fontWeight={'bold'}
                           sx = {{fontSize: {
@@ -161,7 +161,7 @@ const MainHeader = (props) => {
                             },}} >
                           Donate Now
                           </Typography>                                 
-                      </Button>
+                      </Button> */}
                       <Button href = "/forms"
                           sx={{ my: 2, color: 'white', display: 'block' }}>
                           <Typography variant = "h6" fontWeight={'bold'}
