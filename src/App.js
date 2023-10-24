@@ -19,6 +19,7 @@ import ConstitutionPage from './components/pages/constitutionPage/ConstitutionPa
 import ResourcesPage from './components/pages/resourcesPage/ResourcesPage';
 import DonationPage from './components/pages/donationPage/DonationPage';
 import EventsPage from './components/pages/eventsPage/EventsPage';
+import PicturesPage from './components/pages/eventsPage/PicturesPage';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path = "constitution" element = {<ConstitutionPage theme = {theme}/>}/>
           <Route path = "resources" element = {<ResourcesPage theme = {theme}/>}/>
           <Route path = "donation" element = {<DonationPage theme = {theme}/>}/>
+          <Route path = "fasaPictures" element = {<PicturesPage theme = {theme}/>}/>
           <Route path = "forms" element = {<EventsPage theme = {theme}/>}/>
 
 

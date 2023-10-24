@@ -16,7 +16,6 @@ import FasaData from './FasaData.json';
 import FasaFitData from './FasaFitData.json';
 
 import SlidesData from './SlidesData.json';
-import PicturesData from './PicturesData.json';
 
 function EventsPage() {
 
@@ -61,15 +60,11 @@ function EventsPage() {
                     lg: '3rem',   // Large devices (large desktops)
                   }
               }}>
-                Pictures
+                Forms
               </Typography>
             </Paper>
           </div>
           <div style = {{marginLeft: 30, marginTop: 50}}/>
-            <FASAFormPage forms = {PicturesData}/>
-            
-            
-            <Section text = "Forms"/>
             <FASAFormPage forms = {FasaData}/>
 
             <FASAFormPage forms = {FasaFitData}/>
