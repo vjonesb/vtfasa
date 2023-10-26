@@ -1,5 +1,11 @@
 [
     {
+        "id": 6,
+        "cover": "/pictures/events/Reveal.JPG",
+        "event": "Reveal Photos",
+        "link": "https://drive.google.com/drive/folders/1LdlkGdbW9H2DhCqr8HywlvUc6KGsZyVc?usp=sharing"
+    },
+    {
         "id": 5,
         "cover": "/pictures/events/FahmXPusoGBM.JPG",
         "event": "FAHM X PUSO GBM photos",
