@@ -8,18 +8,7 @@
         "cover": "/pictures/forms/HospitalityPromo.png",
         "event": "FASA Family Trees",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLSdqQdxd2mppX9Ulp1TvjbN1LgNhHTPbNuR9DbdTJ0wk-4SgEA/viewform?usp=sf_link"
-    },
-    {
-        "cover": "/pictures/forms/CBall.png",
-        "event": "Charity Ball Ticket Form",
-        "link": "https://docs.google.com/forms/d/e/1FAIpQLScO7sadxCfWl0zbbJnksfDbKejh72cGfpZcRvjSM0FsmL8eqA/viewform"
-    },
-    {
-        "cover": "/pictures/forms/CBall.png",
-        "event": "Charity Ball Raffle Tickets",
-        "link": "https://docs.google.com/forms/d/1gfsbF6VLxYzoYeYn1iy5m43flfcBGGu4XwftX8PFTwo/viewform?edit_requested=true"
-    },
-    
+    }, 
     {
         "cover": "/pictures/forms/D7Housing.png",
         "event": "D7 Housing/Ride Form",
@@ -30,6 +19,11 @@
         "event": "Thanksgiving RSVP Form",
         "link": "https://forms.gle/P9khEWgVJ6sHKg3P7"
     },
+    {
+        "cover": "/pictures/forms/CS_Instrument_form.png",
+        "event": "CS Instrument Interest Form",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSdimSp1u2oKhaYTHLVbmxxHwaN1GzAx99kdkKYnBaRhQ16SWQ/viewform?usp=sf_link"
+    }, 
     {
         "cover": "/pictures/forms/Fit.png",
         "event": "Volleyball and Soccer Interest Form",
