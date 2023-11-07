@@ -1,26 +1,26 @@
 [
     {
-        "cover": "/pictures/forms/FASAIncidentReport.png",
+        "cover": "/pictures/forms/FASAIncidentReportCover.png",
         "event": "FASA Incident Report",
         "link": " https://forms.gle/D3THM5SSFEkFighcA"
     },
     {
-        "cover": "/pictures/forms/HospitalityPromo.png",
+        "cover": "/pictures/forms/HospitalityPromoCover.png",
         "event": "FASA Family Trees",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLSdqQdxd2mppX9Ulp1TvjbN1LgNhHTPbNuR9DbdTJ0wk-4SgEA/viewform?usp=sf_link"
     }, 
     {
-        "cover": "/pictures/forms/D7Housing.png",
+        "cover": "/pictures/forms/D7HousingCover.png",
         "event": "D7 Housing/Ride Form",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLSdBbnUB3JZhx9b68vqx29zG-rD3mSN64rULMFD0faH58HFwLw/viewform?usp=sf_link"
     },
     {
-        "cover": "/pictures/forms/ThanksGivingRSVP.png",
+        "cover": "/pictures/forms/ThanksGivingRSVPCover.png",
         "event": "Thanksgiving RSVP Form",
         "link": "https://forms.gle/P9khEWgVJ6sHKg3P7"
     },
     {
-        "cover": "/pictures/forms/CSINterestForm.png",
+        "cover": "/pictures/forms/CSINterestFormCover.png",
         "event": "Culture Show Interest Form",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLSfwlDl8Qlr2A5qASTiUjdOfSy3aUpEAcRPqoZRoSeoDWW-RQw/viewform"
     },
@@ -37,12 +37,12 @@
     
     
     {
-        "cover": "/pictures/forms/Fit.png",
+        "cover": "/pictures/forms/FitCover.png",
         "event": "Volleyball and Soccer Interest Form",
         "link": "https://forms.gle/YQusKGDLvwnYghem6"
     },
     {
-        "cover": "/pictures/resources/AdvocacyDataLogos/Relay4Life.png",
+        "cover": "/pictures/resources/AdvocacyDataLogos/Relay4LifeCover.png",
         "event": "(Community Work) Join FASA's Relay For Life Team!",
         "link": "https://secure.acsevents.org/site/STR/RelayForLife/RFLCY24SER?team_id=2724630&pg=team&fr_id=106817"
     }
