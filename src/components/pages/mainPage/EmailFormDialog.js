@@ -55,10 +55,11 @@ function EmailFormDialog() {
                         To receive emails about upcoming events and updates, please enter your email address here. We
                         will send updates occasionally.
                     </DialogContentText>
-                    <Button href={link} target="_blank" rel="noopener"
-                variant="outlined">
-                    Subscribe
-                </Button>
+                    
+                      <Button href={link} target="_blank" rel="noopener"
+                    variant="outlined">
+                        Subscribe
+                    </Button>                    
 
                     
                     </DialogContent>
