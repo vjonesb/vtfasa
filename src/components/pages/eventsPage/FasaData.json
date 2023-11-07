@@ -20,10 +20,22 @@
         "link": "https://forms.gle/P9khEWgVJ6sHKg3P7"
     },
     {
+        "cover": "/pictures/forms/CSINterestForm.png",
+        "event": "Culture Show Interest Form",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfwlDl8Qlr2A5qASTiUjdOfSy3aUpEAcRPqoZRoSeoDWW-RQw/viewform"
+    },
+    {
+        "cover": "/pictures/forms/ModernInterestForm.png",
+        "event": "Modern Dance Interest Form",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfdpFLP5jYxNRG8c3lk3mUBWzrI0vLKyNQeZLf_dEJXUnPz2Q/viewform"
+    },
+    {
         "cover": "/pictures/forms/CS_Instrument_form.png",
         "event": "CS Instrument Interest Form",
         "link": "https://docs.google.com/forms/d/e/1FAIpQLSdimSp1u2oKhaYTHLVbmxxHwaN1GzAx99kdkKYnBaRhQ16SWQ/viewform?usp=sf_link"
     }, 
+    
+    
     {
         "cover": "/pictures/forms/Fit.png",
         "event": "Volleyball and Soccer Interest Form",
