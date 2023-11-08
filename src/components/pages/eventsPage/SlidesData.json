@@ -1,6 +1,12 @@
 [
     {
         "id": 5,
+        "cover": "/pictures/slides/CultureShowGBM.png",
+        "event": "Culture Show GBM",
+        "link": "https://docs.google.com/presentation/d/1GLnWnG4D1XOnSeZx6pHdy95D8IbT15_kmYujEwo4Cn0/edit?usp=sharing"
+    },
+    {
+        "id": 5,
         "cover": "/pictures/slides/WelcomeBackGBM.png",
         "event": "Welcome Back GBM",
         "link": "https://docs.google.com/presentation/d/1ASOFRZCd1KlxJLNBUTlmOArzcpPAbr5FcPnvOLF_QdE/edit?usp=sharing"
